@@ -45,11 +45,11 @@ This project involves controlling a 4-Channel Relay Module using an ESP32-S3 mic
 - **Network**: Wi-Fi for MQTT communication
 
 ## Software Requirements
-- **Platform**: ESP32 IDF
+- **Platform**: ESP32-IDF
 - **Libraries**:
-  - PubSubClient (for MQTT)
+  - mqtt (for MQTT)
   - WiFi (for ESP32 Wi-Fi connectivity)
-  - ArduinoJson (for parsing MQTT JSON payloads)
+  - cJSON (for parsing MQTT JSON payloads)
 - **MQTT Broker**: e.g., Mosquitto, HiveMQ, or any cloud-based MQTT service
 
 ## System Description
