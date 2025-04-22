@@ -159,8 +159,6 @@ The system uses MQTT to receive configuration commands. Each message is a JSON p
 ## Notes
 - Ensure periods do not overlap to avoid conflicts (e.g., Period 1 ends at 08:59, Period 2 starts at 10:33).
 - Validate MQTT payloads to prevent invalid configurations.
-- Consider adding a real-time clock (RTC) module or NTP synchronization for accurate timekeeping.
-- Test relays with low-voltage loads initially to ensure safe operation.
 
 ## Future Improvements
 - Add local storage (e.g., SPIFFS) to save configurations during power loss.
