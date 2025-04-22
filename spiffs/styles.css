@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: image(url("/bg.jpg"));
+}
+.status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.green { background-color: green; }
+.red { background-color: red; }
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 適應不同裝置 */
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+#wifi_form {
+    display: flex;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    width: 48%;
+    min-width: 300px;
+    margin-right: 100px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+    #wifi_form {
+        display: contents;
+    };
+}

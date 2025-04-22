@@ -1,0 +1,15 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+Processing 1 dependencies:
+[1/1] idf (5.2.1)
+-- Project sdkconfig file /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "main" version: 0.0.1
+-- Adding linker script /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld

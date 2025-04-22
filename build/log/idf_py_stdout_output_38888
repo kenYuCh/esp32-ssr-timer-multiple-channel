@@ -1,0 +1,451 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c0b0020 size=2be3ch (179772) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=0004be64 vaddr=3fc97f00 size=041b4h ( 16820) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=acd20h (707872) map[0m
+[0;32mI (258) esp_image: segment 3: paddr=000fcd48 vaddr=3fc9c0b4 size=0062ch (  1580) load[0m
+[0;32mI (259) esp_image: segment 4: paddr=000fd37c vaddr=40374000 size=13e0ch ( 81420) load[0m
+[0;32mI (285) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (285) boot: Disabling RNG early entropy source...[0m
+[0;32mI (296) cpu_start: Multicore app[0m
+[0;32mI (306) cpu_start: Pro cpu start user code[0m
+[0;32mI (307) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (307) cpu_start: Application information:[0m
+[0;32mI (310) cpu_start: Project name:     main[0m
+[0;32mI (314) cpu_start: App version:      0.0.1[0m
+[0;32mI (319) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (325) cpu_start: ELF file SHA256:  46e04ccd4...[0m
+[0;32mI (330) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (336) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (341) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (345) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (350) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (357) heap_init: At 3FCA09E8 len 00048D28 (291 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (370) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (376) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (383) spi_flash: detected chip: boya[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;32mI (391) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (397) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (405) main_task: Started on CPU0[0m
+[0;32mI (415) main_task: Calling app_main()[0m
+[0;32mI (415) SYS: REBOOT[0m
+Build at Mar 23 2025 11:34:04
+[0;32mI (1155) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1225) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1225) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1225) pp: pp rom version: e7ae62f[0m
+[0;32mI (1225) net80211: net80211 rom version: e7ae62f[0m
+I (1245) wifi:wifi driver task: 3fcabc2c, prio:23, stack:6656, core=0
+I (1255) wifi:wifi firmware version: a9f5b59
+I (1255) wifi:wifi certification version: v7.0
+I (1255) wifi:config NVS flash: enabled
+I (1255) wifi:config nano formating: disabled
+I (1255) wifi:Init data frame dynamic rx buffer num: 32
+I (1265) wifi:Init static rx mgmt buffer num: 5
+I (1265) wifi:Init management short buffer num: 32
+I (1275) wifi:Init static tx buffer num: 16
+I (1275) wifi:Init static tx FG buffer num: 2
+I (1285) wifi:Init static rx buffer size: 1600
+I (1285) wifi:Init static rx buffer num: 10
+I (1285) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1295) wifi_init: rx ba win: 6[0m
+[0;32mI (1295) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1305) wifi_init: udp mbox: 6[0m
+[0;32mI (1305) wifi_init: tcp mbox: 6[0m
+[0;32mI (1305) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1315) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1315) wifi_init: tcp mss: 1440[0m
+[0;32mI (1325) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1325) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1335) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1375) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1375) wifi:enable tsf
+I (1375) wifi:Total power save buffer number: 8
+I (1375) wifi:Init max length of beacon: 752/752
+I (1375) wifi:Init max length of beacon: 752/752
+[0;32mI (1385) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1395) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1395) wifi:ap channel adjust o:1,1 n:11,2
+I (1405) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1405) wifi:state: init -> auth (b0)
+I (1665) wifi:state: auth -> init (600)
+I (1745) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (1745) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (1745) WiFi: 重新連線第 1 次[0m
+[0;32mI (4585) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (4585) WiFi: 重新連線第 2 次[0m
+I (4585) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (4585) wifi:state: init -> auth (b0)
+I (5125) wifi:state: auth -> assoc (0)
+I (5135) wifi:state: assoc -> run (10)
+I (5255) wifi:connected with SianAP, aid = 20, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (5255) wifi:security: WPA3-SAE, phy: bgn, rssi: -19
+I (5275) wifi:pm start, type: 1
+
+I (5275) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5275) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (5305) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (5365) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64
+[0;32mI (6285) esp_netif_handlers: sta ip: 192.168.1.169, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6285) WIFI: Connected! IP obtained: 192.168.1.169[0m
+[0;32mI (6285) WIFI: connected to ap SSID:SianAP password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (6295) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (11305) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (11305) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (11305) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (11305) Heap: Minimum free heap ever: 221900 bytes[0m
+[0;31mE (11315) FreeRTOS: FreeRTOS Task "PRIMARY" should not return, Aborting now![0m
+
+abort() was called at PC 0x4037cbcf on core 0
+
+
+Backtrace: 0x40375a1e:0x3fcc0ca0 0x4037c0a5:0x3fcc0cc0 0x403839c9:0x3fcc0ce0 0x4037cbcf:0x3fcc0d50
+
+
+
+
+ELF file SHA256: 46e04ccd4
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375994
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (49) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (50) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (50) boot: Multicore bootloader[0m
+[0;32mI (53) boot: chip revision: v0.2[0m
+[0;32mI (57) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (62) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (67) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (71) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (80) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (88) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (95) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (103) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (110) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (118) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (125) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (133) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (140) boot: End of partition table[0m
+[0;32mI (145) boot: Defaulting to factory image[0m
+[0;32mI (149) esp_image: segment 0: paddr=00020020 vaddr=3c0b0020 size=2be3ch (179772) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=0004be64 vaddr=3fc97f00 size=041b4h ( 16820) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=acd20h (707872) map[0m
+[0;32mI (263) esp_image: segment 3: paddr=000fcd48 vaddr=3fc9c0b4 size=0062ch (  1580) load[0m
+[0;32mI (263) esp_image: segment 4: paddr=000fd37c vaddr=40374000 size=13e0ch ( 81420) load[0m
+[0;32mI (289) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (289) boot: Disabling RNG early entropy source...[0m
+[0;32mI (301) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     main[0m
+[0;32mI (319) cpu_start: App version:      0.0.1[0m
+[0;32mI (324) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (330) cpu_start: ELF file SHA256:  46e04ccd4...[0m
+[0;32mI (335) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (340) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (345) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (350) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (362) heap_init: At 3FCA09E8 len 00048D28 (291 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: boya[0m
+[0;32mI (391) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (419) main_task: Calling app_main()[0m
+[0;32mI (419) SYS: REBOOT[0m
+Build at Mar 23 2025 11:34:04
+[0;32mI (1179) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1249) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1249) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1249) pp: pp rom version: e7ae62f[0m
+[0;32mI (1249) net80211: net80211 rom version: e7ae62f[0m
+I (1269) wifi:wifi driver task: 3fcabc2c, prio:23, stack:6656, core=0
+I (1279) wifi:wifi firmware version: a9f5b59
+I (1279) wifi:wifi certification version: v7.0
+I (1279) wifi:config NVS flash: enabled
+I (1279) wifi:config nano formating: disabled
+I (1279) wifi:Init data frame dynamic rx buffer num: 32
+I (1289) wifi:Init static rx mgmt buffer num: 5
+I (1289) wifi:Init management short buffer num: 32
+I (1299) wifi:Init static tx buffer num: 16
+I (1299) wifi:Init static tx FG buffer num: 2
+I (1309) wifi:Init static rx buffer size: 1600
+I (1309) wifi:Init static rx buffer num: 10
+I (1309) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1319) wifi_init: rx ba win: 6[0m
+[0;32mI (1319) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1329) wifi_init: udp mbox: 6[0m
+[0;32mI (1329) wifi_init: tcp mbox: 6[0m
+[0;32mI (1329) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1339) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1339) wifi_init: tcp mss: 1440[0m
+[0;32mI (1349) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1349) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1379) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1409) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1409) wifi:enable tsf
+I (1419) wifi:Total power save buffer number: 8
+I (1419) wifi:Init max length of beacon: 752/752
+I (1419) wifi:Init max length of beacon: 752/752
+[0;32mI (1419) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1429) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1489) wifi:ap channel adjust o:1,1 n:11,2
+I (1489) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1489) wifi:state: init -> auth (b0)
+I (1749) wifi:state: auth -> init (600)
+I (1759) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (1759) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (1759) WiFi: 重新連線第 1 次[0m
+[0;32mI (4599) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (4599) WiFi: 重新連線第 2 次[0m
+I (4659) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (4659) wifi:state: init -> auth (b0)
+I (5199) wifi:state: auth -> assoc (0)
+I (5209) wifi:state: assoc -> run (10)
+I (5349) wifi:connected with SianAP, aid = 20, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (5349) wifi:security: WPA3-SAE, phy: bgn, rssi: -19
+I (5419) wifi:pm start, type: 1
+
+I (5419) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5419) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (5429) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (5539) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64
+[0;32mI (6439) esp_netif_handlers: sta ip: 192.168.1.169, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6439) WIFI: Connected! IP obtained: 192.168.1.169[0m
+[0;32mI (6439) WIFI: connected to ap SSID:SianAP password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (6449) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (11459) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (11459) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (11459) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (11459) Heap: Minimum free heap ever: 221892 bytes[0m
+[0;31mE (11469) FreeRTOS: FreeRTOS Task "PRIMARY" should not return, Aborting now![0m
+
+abort() was called at PC 0x4037cbcf on core 0
+
+
+Backtrace: 0x40375a1e:0x3fcc0ca0 0x4037c0a5:0x3fcc0cc0 0x403839c9:0x3fcc0ce0 0x4037cbcf:0x3fcc0d50
+
+
+
+
+ELF file SHA256: 46e04ccd4
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375994
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (49) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (50) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (50) boot: Multicore bootloader[0m
+[0;32mI (53) boot: chip revision: v0.2[0m
+[0;32mI (57) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (62) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (67) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (71) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (80) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (88) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (95) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (103) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (110) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (118) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (125) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (133) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (140) boot: End of partition table[0m
+[0;32mI (145) boot: Defaulting to factory image[0m
+[0;32mI (149) esp_image: segment 0: paddr=00020020 vaddr=3c0b0020 size=2be3ch (179772) map[0m
+[0;32mI (178) esp_image: segment 1: paddr=0004be64 vaddr=3fc97f00 size=041b4h ( 16820) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=acd20h (707872) map[0m
+[0;32mI (263) esp_image: segment 3: paddr=000fcd48 vaddr=3fc9c0b4 size=0062ch (  1580) load[0m
+[0;32mI (263) esp_image: segment 4: paddr=000fd37c vaddr=40374000 size=13e0ch ( 81420) load[0m
+[0;32mI (289) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (289) boot: Disabling RNG early entropy source...[0m
+[0;32mI (301) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     main[0m
+[0;32mI (319) cpu_start: App version:      0.0.1[0m
+[0;32mI (324) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (330) cpu_start: ELF file SHA256:  46e04ccd4...[0m
+[0;32mI (335) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (340) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (345) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (350) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (362) heap_init: At 3FCA09E8 len 00048D28 (291 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: boya[0m
+[0;32mI (391) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (419) main_task: Calling app_main()[0m
+[0;32mI (419) SYS: REBOOT[0m
+Build at Mar 23 2025 11:34:04
+[0;32mI (1289) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1359) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1359) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1359) pp: pp rom version: e7ae62f[0m
+[0;32mI (1359) net80211: net80211 rom version: e7ae62f[0m
+I (1379) wifi:wifi driver task: 3fcabc2c, prio:23, stack:6656, core=0
+I (1389) wifi:wifi firmware version: a9f5b59
+I (1389) wifi:wifi certification version: v7.0
+I (1389) wifi:config NVS flash: enabled
+I (1389) wifi:config nano formating: disabled
+I (1389) wifi:Init data frame dynamic rx buffer num: 32
+I (1399) wifi:Init static rx mgmt buffer num: 5
+I (1399) wifi:Init management short buffer num: 32
+I (1409) wifi:Init static tx buffer num: 16
+I (1409) wifi:Init static tx FG buffer num: 2
+I (1419) wifi:Init static rx buffer size: 1600
+I (1419) wifi:Init static rx buffer num: 10
+I (1419) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1429) wifi_init: rx ba win: 6[0m
+[0;32mI (1429) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1439) wifi_init: udp mbox: 6[0m
+[0;32mI (1439) wifi_init: tcp mbox: 6[0m
+[0;32mI (1439) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1449) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1449) wifi_init: tcp mss: 1440[0m
+[0;32mI (1459) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1459) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1489) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1529) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1529) wifi:enable tsf
+I (1529) wifi:Total power save buffer number: 8
+I (1529) wifi:Init max length of beacon: 752/752
+I (1539) wifi:Init max length of beacon: 752/752
+[0;32mI (1539) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1549) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1619) wifi:ap channel adjust o:1,1 n:11,2
+I (1619) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1619) wifi:state: init -> auth (b0)
+I (1879) wifi:state: auth -> init (600)
+I (1889) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (1889) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (1889) WiFi: 重新連線第 1 次[0m
+[0;32mI (4729) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (4729) WiFi: 重新連線第 2 次[0m
+I (4789) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (4789) wifi:state: init -> auth (b0)
+I (5329) wifi:state: auth -> assoc (0)
+I (5339) wifi:state: assoc -> run (10)
+I (5539) wifi:connected with SianAP, aid = 20, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (5539) wifi:security: WPA3-SAE, phy: bgn, rssi: -19
+I (5549) wifi:pm start, type: 1
+
+I (5549) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5549) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (5609) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (5659) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64

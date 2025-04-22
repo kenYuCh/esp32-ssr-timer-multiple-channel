@@ -1,0 +1,121 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+Manifest files have changed, solving dependencies.
+.Updating lock file at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/dependencies.lock
+Processing 1 dependencies:
+[1/1] idf (5.2.1)
+-- Project sdkconfig file /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "main" version: 0.0.1
+-- Adding linker script /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/app_trace /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/app_update /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader_support /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bt /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/cmock /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/console /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/cxx /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/efuse /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp-tls /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_adc /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_app_format /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_bootloader_format /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_coex /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_common /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_eth /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_event /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_gdbstub /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hid /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_http_client /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_http_server /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_https_ota /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_https_server /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_lcd /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_local_ctrl /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_mm /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_netif /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_netif_stack /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_partition /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_phy /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_pm /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_psram /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_ringbuf /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_timer /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_wifi /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/espcoredump /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esptool_py /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/fatfs /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/hal /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/heap /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/http_parser /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/idf_test /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/ieee802154 /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/json /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/log /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/lwip /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mqtt /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/nvs_flash /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/nvs_sec_provider /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/openthread /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/perfmon /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/protobuf-c /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/protocomm /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/pthread /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/sdmmc /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/soc /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/spi_flash /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/spiffs /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/tcp_transport /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/touch_element /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/ulp /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/unity /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/usb /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/vfs /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/wear_levelling /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/wifi_provisioning /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/wpa_supplicant /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build
+[1/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/system/locks.c.obj
+[2/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/system/setting.c.obj
+[3/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/system/my_nvs.c.obj
+[4/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/system/system_monitor.c.obj
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/system/system_monitor.c:18:16: warning: 'reboot' defined but not used [-Wunused-variable]
+   18 | static uint8_t reboot = 3;
+      |                ^~~~~~
+[5/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/system/ticks.c.obj
+[6/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi/tcp_server.c.obj
+[7/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[8/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral/gpio.c.obj
+[9/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral/i2c.c.obj
+[10/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi/access_point.c.obj
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/wifi/access_point.c:20:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   20 | static const char *TAG = "WIFI-AP";
+      |                    ^~~
+[11/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral/pulse.c.obj
+[12/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral/pwm.c.obj
+[13/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral/uart.c.obj
+[14/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi/app_wifi.c.obj
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/wifi/app_wifi.c: In function 'wifi_init':
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/wifi/app_wifi.c:162:18: warning: unused variable 'ap_netif' [-Wunused-variable]
+  162 |     esp_netif_t *ap_netif = esp_netif_create_default_wifi_ap();
+      |                  ^~~~~~~~
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/wifi/app_wifi.c:161:18: warning: unused variable 'sta_netif' [-Wunused-variable]
+  161 |     esp_netif_t *sta_netif = esp_netif_create_default_wifi_sta();
+      |                  ^~~~~~~~~
+[15/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/models/model_helper.c.obj
+[16/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral/adc.c.obj
+In file included from /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/peripheral/adc.c:3:
+/Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+[17/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/models/sensor_model.c.obj
+[18/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/models/setpoint.c.obj
+[19/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/system/datetime.c.obj
+In file included from /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/system/datetime.c:8:
+/Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_event/include/esp_event_loop.h:2:2: warning: #warning "esp_event_loop.h is deprecated, please include esp_event.h instead" [-Wcpp]
+    2 | #warning "esp_event_loop.h is deprecated, please include esp_event.h instead"
+      |  ^~~~~~~
+[20/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/peripheral/led.c.obj
+[21/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/configuration/device_config.c.obj
+[22/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mqtt/mqtt.c.obj
+[23/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mqtt/mqtt_callback.c.obj
+[24/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/models/switch_timer_func.c.obj
+[25/40] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/ca_cert.pem.S.obj
+[26/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/models/switch_model.c.obj
+[27/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/helpers/cJSON.c.obj
+[28/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/nrf24/nrf24_init.c.obj
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:16: warning: "CONFIG_RETRANSMIT_DELAY" redefined
+   16 | #define CONFIG_RETRANSMIT_DELAY 50
+      | 
+In file included from /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/platform_include/assert.h:12,
+                 from /Users/yuhsienchang/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/sys/reent.h:458,
+                 from /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/platform_include/sys/reent.h:22,
+                 from /Users/yuhsienchang/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/stdio.h:60,
+                 from /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:1:
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/config/sdkconfig.h:424: note: this is the location of the previous definition
+  424 | #define CONFIG_RETRANSMIT_DELAY 0
+      | 
+[29/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/remote_ota/ota.c.obj
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/remote_ota/ota.c: In function 'ota_task':
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/remote_ota/ota.c:63:17: warning: variable 'ota_updated' set but not used [-Wunused-but-set-variable]
+   63 |     static bool ota_updated = false;
+      |                 ^~~~~~~~~~~
+[30/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/remote_ota/ota_rollback_v2.c.obj
+[31/40] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/nrf24/mirf.c.obj
+[32/40] Linking C static library esp-idf/main/libmain.a
+[33/40] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader_support /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/efuse /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_app_format /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_bootloader_format /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_common /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_rom /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esptool_py /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/hal /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/log /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader/subproject/main /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/bootloader/subproject/components/micro-ecc /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/soc /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/spi_flash /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/bootloader
+[1/1] cd /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/bootloader/esp-idf/esptool_py && /Users/yuhsienchang/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
+[34/38] Generating ld/sections.ld
+[35/38] Building C object CMakeFiles/main.elf.dir/project_elf_src_esp32s3.c.obj
+[36/38] Linking CXX executable main.elf
+[37/38] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/main.bin
+[38/38] cd /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/esp-idf/esptool_py && /Users/yuhsienchang/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/partition_table/partition-table.bin /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/main.bin
+main.bin binary size 0xf9fe0 bytes. Smallest app partition is 0x200000 bytes. 0x106020 bytes (51%) free.

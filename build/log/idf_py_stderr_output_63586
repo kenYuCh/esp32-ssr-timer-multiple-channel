@@ -1,0 +1,63 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.wchusbserial59090635051 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403759ca: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037ae5d: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403825e9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4037d7d2: xTaskPriorityDisinherit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5073 (discriminator 1)
+0x4037ae83: prvCopyDataToQueue at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4037b285: xQueueGenericSend at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x42008ccd: lock_give_mutex at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/system/locks.c:17
+0x42008fe1: model_task at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/models/switch_model.c:342
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403759ca: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037ae5d: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403825e9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4037d7d2: xTaskPriorityDisinherit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5073 (discriminator 1)
+0x4037ae83: prvCopyDataToQueue at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4037b285: xQueueGenericSend at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x42008ccd: lock_give_mutex at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/system/locks.c:17
+0x42008fe1: model_task at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/models/switch_model.c:342
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403759ca: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037ae5d: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403825e9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4037d7d2: xTaskPriorityDisinherit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5073 (discriminator 1)
+0x4037ae83: prvCopyDataToQueue at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4037b285: xQueueGenericSend at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x42008ccd: lock_give_mutex at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/system/locks.c:17
+0x42008fe1: model_task at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/models/switch_model.c:342
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403759ca: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037ae5d: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403825e9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4037d7d2: xTaskPriorityDisinherit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5073 (discriminator 1)
+0x4037ae83: prvCopyDataToQueue at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4037b285: xQueueGenericSend at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x42008ccd: lock_give_mutex at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/system/locks.c:17
+0x42008fe1: model_task at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/models/switch_model.c:342
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x403759ca: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037ae5d: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403825e9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4037d7d2: xTaskPriorityDisinherit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5073 (discriminator 1)
+0x4037ae83: prvCopyDataToQueue at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4037b285: xQueueGenericSend at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x42008ccd: lock_give_mutex at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/system/locks.c:17
+0x42008fe1: model_task at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/models/switch_model.c:342
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

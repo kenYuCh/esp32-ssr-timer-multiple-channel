@@ -1,0 +1,254 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.wchusbserial59090635051 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4204570e: mbedtls_mpi_copy at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/bignum.c:332
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4207aaf3: mpi_ll_write_to_mem_block at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/hal/esp32s3/include/hal/mpi_ll.h:111
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037ff89: pvTaskIncrementMutexHeldCount at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5637
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4204b220: add32 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/ecp_curves.c:4944
+ (inlined by) ecp_mod_p256 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/ecp_curves.c:5056
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42048a07: mbedtls_mpi_mul_mod at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/ecp.c:1061
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42051cf2: mbedtls_mpi_mul_mpi at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/port/bignum/esp_bignum.c:549
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4207aaf3: mpi_ll_write_to_mem_block at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/hal/esp32s3/include/hal/mpi_ll.h:111
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4204b4c4: sub32 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/ecp_curves.c:4950
+ (inlined by) ecp_mod_p256 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/ecp_curves.c:5066
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420aa4b1: esp_dport_access_read_buffer at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/soc/dport_access_common.c:15
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c42f: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:275
+0x4200c502: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:373
+0x4200c669: Nrf24_isSend at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:340
+0x4200c01e: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:102
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375a54: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42045938: mbedtls_mpi_cmp_abs at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/bignum.c:934
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c42f: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:275
+0x4200c502: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:373
+0x4200c511: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:217
+0x4200beff: receiver at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:70
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375a54: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420a917f: mbedtls_mpi_core_sub at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/bignum_core.c:449
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42045938: mbedtls_mpi_cmp_abs at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/bignum.c:934
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c43a: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:276
+0x4200c502: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:373
+0x4200c511: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:217
+0x4200beff: receiver at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:70
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375a54: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c3db: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:266
+0x4200c558: Nrf24_powerUpTx at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:394
+0x4200c5bf: Nrf24_send at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:305
+0x4200bfea: sender at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:99
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42048937: mbedtls_mpi_sub_mod at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/mbedtls/mbedtls/library/ecp.c:1090 (discriminator 1)
+[0m
+[0;33m0x40375ade: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037cced: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403858f9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42015e5d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x4200c37d: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:116
+0x4200c395: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:127
+0x4200c42f: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:275
+0x4200c502: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:373
+0x4200c511: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:217
+0x4200beff: receiver at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:70
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4205a742: ieee80211_hostap_send_beacon_process at ??:?
+[0m
+[0m

@@ -1,0 +1,159 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.wchusbserial59090635051 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037db9f: vPortClearInterruptMaskFromISR at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x403767c4: vPortExitCriticalSafe at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) esp_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/intr_alloc.c:812
+0x40377f19: spi_bus_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:591
+0x420a7552: bg_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:324
+ (inlined by) req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:350
+0x420168cd: spi_bus_lock_bg_request at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:763
+0x42015d66: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:973
+0x42015e1d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c37d: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:134
+0x4200c417: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:282
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4037f8b1: pvTaskGetThreadLocalStoragePointer at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4420
+0x42015df1: spi_device_get_trans_result at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:995
+0x42015e2a: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1020
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c422: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:283
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42015cfa: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:943
+0x42015e1d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c422: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:283
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037db9f: vPortClearInterruptMaskFromISR at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x403767c4: vPortExitCriticalSafe at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) esp_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/intr_alloc.c:812
+0x40377f19: spi_bus_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:591
+0x420a7552: bg_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:324
+ (inlined by) req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:350
+0x420168cd: spi_bus_lock_bg_request at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:763
+0x42015d66: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:973
+0x42015e1d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c422: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:283
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4037f8b1: pvTaskGetThreadLocalStoragePointer at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4420
+0x42015df1: spi_device_get_trans_result at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:995
+0x42015e2a: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1020
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c37d: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:134
+0x4200c417: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:282
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4037f8b1: pvTaskGetThreadLocalStoragePointer at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4420
+0x42015df1: spi_device_get_trans_result at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:995
+0x42015e2a: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1020
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c37d: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:134
+0x4200c417: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:282
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037db9f: vPortClearInterruptMaskFromISR at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x403767c4: vPortExitCriticalSafe at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) esp_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/intr_alloc.c:812
+0x40377f19: spi_bus_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:591
+0x420a7552: bg_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:324
+ (inlined by) req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:350
+0x420168cd: spi_bus_lock_bg_request at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:763
+0x42015d66: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:973
+0x42015e1d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c422: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:283
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037db9f: vPortClearInterruptMaskFromISR at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4037d1e7: xQueueGenericSend at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1056
+0x42015d5e: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:962
+0x42015e1d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c422: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:283
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420181bf: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42018644: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x4037772d: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400559dd: _xtos_set_intlevel in ROM
+0x4037db9f: vPortClearInterruptMaskFromISR at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x403767c4: vPortExitCriticalSafe at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:600
+ (inlined by) esp_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/intr_alloc.c:812
+0x40377f19: spi_bus_intr_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:591
+0x420a7552: bg_enable at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:324
+ (inlined by) req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:350
+0x420168cd: spi_bus_lock_bg_request at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:763
+0x42015d66: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:973
+0x42015e1d: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x4200c340: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:120
+0x4200c422: Nrf24_readRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:283
+0x4200c4ea: Nrf24_getStatus at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:380
+0x4200c4f9: Nrf24_dataReady at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:224
+0x4200bff1: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:108
+0x4037d7f9: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

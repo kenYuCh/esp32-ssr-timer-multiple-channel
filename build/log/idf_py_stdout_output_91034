@@ -1,0 +1,29 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/bootloader/esp-idf/esptool_py && /Users/yuhsienchang/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/nrf24/nrf24_init.c.obj
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c: In function 'secondary':
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:182:22: warning: unused variable 'received' [-Wunused-variable]
+  182 |                 bool received = false;
+      |                      ^~~~~~~~
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:181:28: warning: unused variable 'timeout_counter' [-Wunused-variable]
+  181 |                 static int timeout_counter = 0;
+      |                            ^~~~~~~~~~~~~~~
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c: At top level:
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:15:16: warning: 'dev' defined but not used [-Wunused-variable]
+   15 | static NRF24_t dev;  // **全域變數，供 sender & receiver 共用**
+      |                ^~~
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:14:21: warning: 'nrf24_data' defined but not used [-Wunused-variable]
+   14 | static NRF24_data_t nrf24_data = {0};
+      |                     ^~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable main.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/main.bin
+[7/7] cd /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/esp-idf/esptool_py && /Users/yuhsienchang/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/partition_table/partition-table.bin /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/main.bin
+main.bin binary size 0xf8bf0 bytes. Smallest app partition is 0x200000 bytes. 0x107410 bytes (51%) free.

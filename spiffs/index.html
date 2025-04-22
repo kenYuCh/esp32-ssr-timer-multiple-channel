@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Manage</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h2>Device Status</h2>
+    <div>
+        <strong>Wi-Fi status:</strong><span id="wifi_status" class="status-indicator red"></span>
+        <strong>MQTT status:</strong> <span id="mqtt_status" class="status-indicator red"></span>
+    </div>
+    <div class="container">
+        <!--  -->
+        <form id="wifi_form" action="/setting" method="post">
+            <div class="left-panel">
+                <h3>Wi-Fi Setting</h3>
+                    <div class="form-group">
+                        <label>SSID:</label>
+                        <input type="text" id="wifi_ssid" name="wifi_ssid" value="{wifi_ssid}" required maxlength="32">
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" id="wifi_password" name="wifi_password" value="{wifi_password}" required maxlength="32">
+                    </div>
+                    <h3>MQTT Setting</h3>
+                    <div class="form-group">
+                        <label>MQTT URL:</label>
+                        <input type="text" id="mqtt_url" name="mqtt_url" value="{mqtt_url}" required maxlength="32">
+                    </div>
+                    <div class="form-group">
+                        <label>MQTT Username:</label>
+                        <input type="text" id="mqtt_username" name="mqtt_username" value="{mqtt_username}" required maxlength="32">
+                    </div>
+                    <div class="form-group">
+                        <label>MQTT Password:</label>
+                        <input type="password" id="mqtt_password" name="mqtt_password" value="{mqtt_password}" required maxlength="32">
+                    </div>
+            </div>
+
+            <div class="right-panel">
+                <h3>Device Info</h3>
+                <div class="form-group">
+                    <label>Device Serial:</label>
+                    <input type="text" id="device_serial" name="device_serial" value="{device_serial}" required maxlength="10">
+                </div>
+                <div class="form-group">
+                    <label>UTC Time:</label>
+                    <input type="text" id="utc" name="utc" value="{utc}" required maxlength="15">
+                </div>
+                <div class="form-group">
+                    <label>Firmware Update URL:</label>
+                    <input type="text" id="ota_url" name="ota_url" value="{ota_url}" maxlength="128">
+                </div>
+                <input hidden type="password" name="default" id="default" value=""><br><br>
+                <input type="submit" value="Save">
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

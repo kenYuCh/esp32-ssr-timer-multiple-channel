@@ -1,0 +1,94 @@
+
+
+{
+	"id":	"0",
+	"serial":	"121",
+	"name":	"switch valve",
+	"name_en":	"multiple channels",
+	"control":	"1",
+	"params":	[
+        {"name": "period", "value": "1"},
+        {"name": "start_time", "value": "03:01"},
+        {"name": "stop_time", "value": "16:00"},
+        {"name": "on_time", "value": "3500"},
+        {"name": "interval_time", "value": "6500"},
+        {"name": "count", "value": "5000"},
+        {"name": "mode", "value": "1"}
+	]
+}
+
+
+
+// period-1
+{
+	"id":	"0",
+	"sn":	"123",
+	"label":	"switch valve",
+	"label_en": "multiple channels",
+	"ctrl":	"2-1",
+	"params":	[
+        {"name": "st_time", "value": "00:001"},
+        {"name": "sp_time", "value": "08:59"},
+        {"name": "on_dur", "value": "30"},
+        {"name": "intv_dur", "value": "10"},
+        {"name": "cnt", "value": "4002"},
+        {"name": "period_en", "value": "1"},
+        {"name": "mode", "value": "2"}
+	]
+}
+// period-2
+{
+	"id":	"0",
+	"sn":	"123",
+	"label":	"switch valve",
+	"label_en": "multiple channels",
+	"ctrl":	"2-2",
+	"params":	[
+        {"name": "st_time", "value": "10:33"},
+        {"name": "sp_time", "value": "14:59"},
+        {"name": "on_dur", "value": "30"},
+        {"name": "intv_dur", "value": "10"},
+        {"name": "cnt", "value": "4002"},
+        {"name": "period_en", "value": "1"},
+        {"name": "mode", "value": "2"}
+	]
+}
+// period-3
+{
+	"id":	"0",
+	"sn":	"123",
+	"label":	"switch valve",
+	"label_en": "multiple channels",
+	"ctrl":	"2-3",
+	"params":	[
+        {"name": "st_time", "value": "17:33"},
+        {"name": "sp_time", "value": "23:59"},
+        {"name": "on_dur", "value": "30"},
+        {"name": "intv_dur", "value": "10"},
+        {"name": "cnt", "value": "4002"},
+        {"name": "period_en", "value": "1"},
+        {"name": "mode", "value": "2"}
+	]
+}
+
+// trigger: count 0, 
+/*
+ trigger 後 會執行 schedule
+*/
+{
+	"id":	"0",
+	"sn":	"121",
+	"label":	"switch valve",
+	"label_en": "multiple channels",
+	"ctrl":	"2-1",
+	"params":	[
+        {"name": "st_time", "value": "01:01"},
+        {"name": "sp_time", "value": "03:59"},
+        {"name": "on_dur", "value": "49"},
+        {"name": "intv_dur", "value": "59"},
+        {"name": "cnt", "value": "4002"},
+        {"name": "period_en", "value": "0"},
+        {"name": "mode", "value": "2"},
+        {"name": "trig", "value": "1"}
+	]
+}

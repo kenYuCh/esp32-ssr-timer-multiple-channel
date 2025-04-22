@@ -1,0 +1,1120 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=2ddech (187884) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0004de14 vaddr=3fc99d00 size=02204h (  8708) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b0958h (723288) map[0m
+[0;32mI (261) esp_image: segment 3: paddr=00100980 vaddr=3fc9bf04 size=026f4h (  9972) load[0m
+[0;32mI (263) esp_image: segment 4: paddr=0010307c vaddr=40374000 size=15c00h ( 89088) load[0m
+[0;32mI (289) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (289) boot: Disabling RNG early entropy source...[0m
+[0;32mI (301) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     main[0m
+[0;32mI (319) cpu_start: App version:      0.0.1[0m
+[0;32mI (323) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (330) cpu_start: ELF file SHA256:  3e4b2a0b6...[0m
+[0;32mI (335) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (340) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (345) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (350) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (362) heap_init: At 3FCA2918 len 00046DF8 (283 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: boya[0m
+[0;32mI (391) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (419) main_task: Calling app_main()[0m
+[0;32mI (419) SYS: REBOOT[0m
+Build at Mar 23 2025 11:34:04
+[0;32mI (1379) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1449) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1449) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1449) pp: pp rom version: e7ae62f[0m
+[0;32mI (1449) net80211: net80211 rom version: e7ae62f[0m
+I (1459) wifi:wifi driver task: 3fcadb5c, prio:23, stack:6656, core=0
+I (1469) wifi:wifi firmware version: a9f5b59
+I (1469) wifi:wifi certification version: v7.0
+I (1469) wifi:config NVS flash: enabled
+I (1479) wifi:config nano formating: disabled
+I (1479) wifi:Init data frame dynamic rx buffer num: 32
+I (1479) wifi:Init static rx mgmt buffer num: 5
+I (1489) wifi:Init management short buffer num: 32
+I (1489) wifi:Init static tx buffer num: 16
+I (1499) wifi:Init static tx FG buffer num: 2
+I (1499) wifi:Init static rx buffer size: 1600
+I (1509) wifi:Init static rx buffer num: 10
+I (1509) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1509) wifi_init: rx ba win: 6[0m
+[0;32mI (1519) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1519) wifi_init: udp mbox: 6[0m
+[0;32mI (1519) wifi_init: tcp mbox: 6[0m
+[0;32mI (1529) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1529) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1539) wifi_init: tcp mss: 1440[0m
+[0;32mI (1539) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1549) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1579) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1609) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1609) wifi:enable tsf
+I (1609) wifi:Total power save buffer number: 8
+I (1609) wifi:Init max length of beacon: 752/752
+I (1619) wifi:Init max length of beacon: 752/752
+[0;32mI (1619) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1629) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1639) wifi:ap channel adjust o:1,1 n:11,2
+I (1639) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1649) wifi:state: init -> auth (b0)
+I (1899) wifi:state: auth -> init (600)
+I (1919) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (1919) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (1919) WiFi: 重新連線第 1 次[0m
+[0;32mI (4749) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (4759) WiFi: 重新連線第 2 次[0m
+I (4829) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (4839) wifi:state: init -> auth (b0)
+I (5369) wifi:state: auth -> assoc (0)
+I (5379) wifi:state: assoc -> run (10)
+I (5519) wifi:connected with SianAP, aid = 16, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (5519) wifi:security: WPA3-SAE, phy: bgn, rssi: -33
+I (5599) wifi:pm start, type: 1
+
+I (5599) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5599) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (5609) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (5669) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64
+[0;32mI (6619) esp_netif_handlers: sta ip: 192.168.1.169, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6619) WIFI: Connected! IP obtained: 192.168.1.169[0m
+[0;32mI (6619) WIFI: connected to ap SSID:SianAP password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (6629) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (11639) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (11639) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (11639) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (11639) Heap: Minimum free heap ever: 213924 bytes[0m
+[0;32mI (11649) PRIMARY: Start[0m
+[0;32mI (11649) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (11659) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (11659) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (11669) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (11669) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (11669) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11679) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11689) NRF24: spi_bus_initialize=0[0m
+[0;32mI (11699) NRF24: spi_bus_add_device=0[0m
+[0;33mW (11699) PRIMARY: Set RF Data Ratio to 250KBps[0m
+[0;33mW (11709) PRIMARY: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x4e RX_DR=1 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x4142434445
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (11759) PRIMARY: Wait for sending.....[0m
+[0;32mI (11769) PRIMARY: Send success![0m
+[0;32mI (11769) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x04 0x6F 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (12789) PRIMARY: Wait for sending.....[0m
+[0;32mI (12799) PRIMARY: Send success![0m
+[0;32mI (12799) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x04 0xD6 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (13809) PRIMARY: Wait for sending.....[0m
+[0;32mI (13819) PRIMARY: Send success![0m
+[0;32mI (13819) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x05 0x3C 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (14829) PRIMARY: Wait for sending.....[0m
+[0;32mI (14839) PRIMARY: Send success![0m
+[0;32mI (14839) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x05 0xA2 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (15849) PRIMARY: Wait for sending.....[0m
+[0;32mI (15859) PRIMARY: Send success![0m
+[0;32mI (15859) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x06 0x08 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (16869) PRIMARY: Wait for sending.....[0m
+[0;32mI (16879) PRIMARY: Send success![0m
+[0;32mI (16879) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x06 0x6E 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (17889) PRIMARY: Wait for sending.....[0m
+[0;32mI (17899) PRIMARY: Send success![0m
+[0;32mI (17899) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x06 0xD4 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (18909) PRIMARY: Wait for sending.....[0m
+[0;32mI (18919) PRIMARY: Send success![0m
+[0;32mI (18919) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x07 0x3A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (19929) PRIMARY: Wait for sending.....[0m
+[0;32mI (19939) PRIMARY: Send success![0m
+[0;32mI (19939) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x07 0xA0 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (20949) PRIMARY: Wait for sending.....[0m
+[0;32mI (20959) PRIMARY: Send success![0m
+[0;32mI (20959) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x08 0x06 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (21969) PRIMARY: Wait for sending.....[0m
+[0;32mI (21979) PRIMARY: Send success![0m
+[0;32mI (21979) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x08 0x6C 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (22989) PRIMARY: Wait for sending.....[0m
+[0;32mI (22999) PRIMARY: Send success![0m
+[0;32mI (22999) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x08 0xD2 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (24009) PRIMARY: Wait for sending.....[0m
+[0;32mI (24019) PRIMARY: Send success![0m
+[0;32mI (24019) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x09 0x38 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (25029) PRIMARY: Wait for sending.....[0m
+[0;32mI (25039) PRIMARY: Send success![0m
+[0;32mI (25039) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x09 0x9E 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (26049) PRIMARY: Wait for sending.....[0m
+[0;32mI (26059) PRIMARY: Send success![0m
+[0;32mI (26059) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0A 0x04 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (27069) PRIMARY: Wait for sending.....[0m
+[0;32mI (27079) PRIMARY: Send success![0m
+[0;32mI (27079) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0A 0x6A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (28089) PRIMARY: Wait for sending.....[0m
+[0;32mI (28099) PRIMARY: Send success![0m
+[0;32mI (28099) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0A 0xD0 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (29109) PRIMARY: Wait for sending.....[0m
+[0;32mI (29119) PRIMARY: Send success![0m
+[0;32mI (29119) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0B 0x36 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (30129) PRIMARY: Wait for sending.....[0m
+[0;32mI (30139) PRIMARY: Send success![0m
+[0;32mI (30139) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0B 0x9C 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (31149) PRIMARY: Wait for sending.....[0m
+[0;32mI (31159) PRIMARY: Send success![0m
+[0;32mI (31159) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0C 0x02 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (32169) PRIMARY: Wait for sending.....[0m
+[0;32mI (32179) PRIMARY: Send success![0m
+[0;32mI (32179) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0C 0x68 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (33189) PRIMARY: Wait for sending.....[0m
+[0;32mI (33199) PRIMARY: Send success![0m
+[0;32mI (33199) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0C 0xCE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (34209) PRIMARY: Wait for sending.....[0m
+[0;32mI (34219) PRIMARY: Send success![0m
+[0;32mI (34219) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0D 0x34 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (35229) PRIMARY: Wait for sending.....[0m
+[0;32mI (35239) PRIMARY: Send success![0m
+[0;32mI (35239) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x0D 0x9A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (36249) PRIMARY: Wait for sending.....[0m
+[0;33mW (36259) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (36259) PRIMARY: Send fail:[0m
+[0;32mI (37259) PRIMARY: Wait for sending.....[0m
+[0;33mW (37269) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (37269) PRIMARY: Send fail:[0m
+[0;32mI (38269) PRIMARY: Wait for sending.....[0m
+[0;33mW (38279) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (38279) PRIMARY: Send fail:[0m
+[0;32mI (39279) PRIMARY: Wait for sending.....[0m
+[0;33mW (39289) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (39289) PRIMARY: Send fail:[0m
+[0;32mI (40289) PRIMARY: Wait for sending.....[0m
+[0;33mW (40299) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (40299) PRIMARY: Send fail:[0m
+[0;32mI (41299) PRIMARY: Wait for sending.....[0m
+[0;33mW (41309) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (41309) PRIMARY: Send fail:[0m
+[0;32mI (42309) PRIMARY: Wait for sending.....[0m
+[0;33mW (42319) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (42319) PRIMARY: Send fail:[0m
+[0;32mI (43319) PRIMARY: Wait for sending.....[0m
+[0;33mW (43329) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (43329) PRIMARY: Send fail:[0m
+[0;32mI (44329) PRIMARY: Wait for sending.....[0m
+[0;33mW (44339) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (44339) PRIMARY: Send fail:[0m
+[0;32mI (45339) PRIMARY: Wait for sending.....[0m
+[0;33mW (45349) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (45349) PRIMARY: Send fail:[0m
+[0;32mI (46349) PRIMARY: Wait for sending.....[0m
+[0;33mW (46359) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (46359) PRIMARY: Send fail:[0m
+[0;32mI (47359) PRIMARY: Wait for sending.....[0m
+[0;33mW (47369) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (47369) PRIMARY: Send fail:[0m
+[0;32mI (48369) PRIMARY: Wait for sending.....[0m
+[0;33mW (48379) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (48379) PRIMARY: Send fail:[0m
+[0;32mI (49379) PRIMARY: Wait for sending.....[0m
+[0;33mW (49389) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (49389) PRIMARY: Send fail:[0m
+[0;32mI (50389) PRIMARY: Wait for sending.....[0m
+[0;33mW (50399) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (50399) PRIMARY: Send fail:[0m
+[0;32mI (51399) PRIMARY: Wait for sending.....[0m
+[0;33mW (51409) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (51409) PRIMARY: Send fail:[0m
+[0;32mI (52409) PRIMARY: Wait for sending.....[0m
+[0;33mW (52419) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (52419) PRIMARY: Send fail:[0m
+[0;32mI (53419) PRIMARY: Wait for sending.....[0m
+[0;33mW (53429) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (53429) PRIMARY: Send fail:[0m
+[0;32mI (54429) PRIMARY: Wait for sending.....[0m
+[0;33mW (54439) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (54439) PRIMARY: Send fail:[0m
+[0;32mI (55439) PRIMARY: Wait for sending.....[0m
+[0;33mW (55449) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (55449) PRIMARY: Send fail:[0m
+[0;32mI (56449) PRIMARY: Wait for sending.....[0m
+[0;33mW (56459) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (56459) PRIMARY: Send fail:[0m
+[0;32mI (57459) PRIMARY: Wait for sending.....[0m
+[0;33mW (57469) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (57469) PRIMARY: Send fail:[0m
+[0;32mI (58469) PRIMARY: Wait for sending.....[0m
+[0;33mW (58479) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (58479) PRIMARY: Send fail:[0m
+[0;32mI (59479) PRIMARY: Wait for sending.....[0m
+[0;33mW (59489) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (59489) PRIMARY: Send fail:[0m
+[0;32mI (60489) PRIMARY: Wait for sending.....[0m
+[0;33mW (60499) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (60499) PRIMARY: Send fail:[0m
+[0;32mI (61499) PRIMARY: Wait for sending.....[0m
+[0;33mW (61509) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (61509) PRIMARY: Send fail:[0m
+[0;32mI (62509) PRIMARY: Wait for sending.....[0m
+[0;33mW (62519) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (62519) PRIMARY: Send fail:[0m
+[0;32mI (63519) PRIMARY: Wait for sending.....[0m
+[0;33mW (63529) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (63529) PRIMARY: Send fail:[0m
+[0;32mI (64529) PRIMARY: Wait for sending.....[0m
+[0;33mW (64539) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (64539) PRIMARY: Send fail:[0m
+[0;32mI (65539) PRIMARY: Wait for sending.....[0m
+[0;33mW (65549) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (65549) PRIMARY: Send fail:[0m
+[0;32mI (66549) PRIMARY: Wait for sending.....[0m
+[0;33mW (66559) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (66559) PRIMARY: Send fail:[0m
+[0;32mI (67559) PRIMARY: Wait for sending.....[0m
+[0;33mW (67569) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (67569) PRIMARY: Send fail:[0m
+[0;32mI (68569) PRIMARY: Wait for sending.....[0m
+[0;33mW (68579) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (68579) PRIMARY: Send fail:[0m
+[0;32mI (69579) PRIMARY: Wait for sending.....[0m
+[0;33mW (69589) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (69589) PRIMARY: Send fail:[0m
+[0;32mI (70589) PRIMARY: Wait for sending.....[0m
+[0;33mW (70599) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (70599) PRIMARY: Send fail:[0m
+[0;32mI (71599) PRIMARY: Wait for sending.....[0m
+[0;33mW (71609) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (71609) PRIMARY: Send fail:[0m
+[0;32mI (72609) PRIMARY: Wait for sending.....[0m
+[0;33mW (72619) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (72619) PRIMARY: Send fail:[0m
+[0;32mI (73619) PRIMARY: Wait for sending.....[0m
+[0;33mW (73629) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (73629) PRIMARY: Send fail:[0m
+[0;32mI (74629) PRIMARY: Wait for sending.....[0m
+[0;33mW (74639) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (74639) PRIMARY: Send fail:[0m
+[0;32mI (75639) PRIMARY: Wait for sending.....[0m
+[0;33mW (75649) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (75649) PRIMARY: Send fail:[0m
+[0;32mI (76649) PRIMARY: Wait for sending.....[0m
+[0;33mW (76659) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (76659) PRIMARY: Send fail:[0m
+[0;32mI (77659) PRIMARY: Wait for sending.....[0m
+[0;33mW (77669) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (77669) PRIMARY: Send fail:[0m
+[0;32mI (78669) PRIMARY: Wait for sending.....[0m
+[0;33mW (78679) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (78679) PRIMARY: Send fail:[0m
+[0;32mI (79679) PRIMARY: Wait for sending.....[0m
+[0;33mW (79689) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (79689) PRIMARY: Send fail:[0m
+[0;32mI (80689) PRIMARY: Wait for sending.....[0m
+[0;33mW (80699) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (80699) PRIMARY: Send fail:[0m
+[0;32mI (81699) PRIMARY: Wait for sending.....[0m
+[0;33mW (81709) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (81709) PRIMARY: Send fail:[0m
+[0;32mI (82709) PRIMARY: Wait for sending.....[0m
+[0;33mW (82719) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (82719) PRIMARY: Send fail:[0m
+[0;32mI (83719) PRIMARY: Wait for sending.....[0m
+[0;33mW (83729) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (83729) PRIMARY: Send fail:[0m
+[0;32mI (84729) PRIMARY: Wait for sending.....[0m
+[0;33mW (84739) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (84739) PRIMARY: Send fail:[0m
+[0;32mI (85739) PRIMARY: Wait for sending.....[0m
+[0;33mW (85749) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (85749) PRIMARY: Send fail:[0m
+[0;32mI (86749) PRIMARY: Wait for sending.....[0m
+[0;33mW (86759) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (86759) PRIMARY: Send fail:[0m
+[0;32mI (87759) PRIMARY: Wait for sending.....[0m
+[0;33mW (87769) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (87769) PRIMARY: Send fail:[0m
+[0;32mI (88769) PRIMARY: Wait for sending.....[0m
+[0;33mW (88779) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (88779) PRIMARY: Send fail:[0m
+[0;32mI (89779) PRIMARY: Wait for sending.....[0m
+[0;33mW (89789) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (89789) PRIMARY: Send fail:[0m
+[0;32mI (90789) PRIMARY: Wait for sending.....[0m
+[0;33mW (90799) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (90799) PRIMARY: Send fail:[0m
+[0;32mI (91799) PRIMARY: Wait for sending.....[0m
+[0;33mW (91809) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (91809) PRIMARY: Send fail:[0m
+[0;32mI (92809) PRIMARY: Wait for sending.....[0m
+[0;33mW (92819) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (92819) PRIMARY: Send fail:[0m
+[0;32mI (93819) PRIMARY: Wait for sending.....[0m
+[0;33mW (93829) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (93829) PRIMARY: Send fail:[0m
+[0;32mI (94829) PRIMARY: Wait for sending.....[0m
+[0;33mW (94839) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (94839) PRIMARY: Send fail:[0m
+[0;32mI (95839) PRIMARY: Wait for sending.....[0m
+[0;33mW (95849) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (95849) PRIMARY: Send fail:[0m
+[0;32mI (96849) PRIMARY: Wait for sending.....[0m
+[0;33mW (96859) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (96859) PRIMARY: Send fail:[0m
+[0;32mI (97859) PRIMARY: Wait for sending.....[0m
+[0;33mW (97869) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (97869) PRIMARY: Send fail:[0m
+[0;32mI (98869) PRIMARY: Wait for sending.....[0m
+[0;33mW (98879) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (98879) PRIMARY: Send fail:[0m
+[0;32mI (99879) PRIMARY: Wait for sending.....[0m
+[0;33mW (99889) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (99889) PRIMARY: Send fail:[0m
+[0;32mI (100889) PRIMARY: Wait for sending.....[0m
+[0;33mW (100899) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (100899) PRIMARY: Send fail:[0m
+[0;32mI (101899) PRIMARY: Wait for sending.....[0m
+[0;33mW (101909) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (101909) PRIMARY: Send fail:[0m
+[0;32mI (102909) PRIMARY: Wait for sending.....[0m
+[0;32mI (102919) PRIMARY: Send success![0m
+[0;32mI (102919) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x28 0x0A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (103929) PRIMARY: Wait for sending.....[0m
+[0;32mI (103939) PRIMARY: Send success![0m
+[0;32mI (103939) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x28 0x70 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (104949) PRIMARY: Wait for sending.....[0m
+[0;32mI (104959) PRIMARY: Send success![0m
+[0;32mI (104959) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x28 0xD6 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (105969) PRIMARY: Wait for sending.....[0m
+[0;32mI (105979) PRIMARY: Send success![0m
+[0;32mI (105979) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x29 0x3C 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (106989) PRIMARY: Wait for sending.....[0m
+[0;32mI (106999) PRIMARY: Send success![0m
+[0;32mI (106999) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x29 0xA2 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (108009) PRIMARY: Wait for sending.....[0m
+[0;32mI (108019) PRIMARY: Send success![0m
+[0;32mI (108019) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2A 0x08 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (109029) PRIMARY: Wait for sending.....[0m
+[0;32mI (109039) PRIMARY: Send success![0m
+[0;32mI (109039) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2A 0x6E 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (110049) PRIMARY: Wait for sending.....[0m
+[0;32mI (110059) PRIMARY: Send success![0m
+[0;32mI (110059) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2A 0xD4 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (111069) PRIMARY: Wait for sending.....[0m
+[0;32mI (111079) PRIMARY: Send success![0m
+[0;32mI (111079) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2B 0x3A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (112089) PRIMARY: Wait for sending.....[0m
+[0;32mI (112099) PRIMARY: Send success![0m
+[0;32mI (112099) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2B 0xA0 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (113109) PRIMARY: Wait for sending.....[0m
+[0;32mI (113119) PRIMARY: Send success![0m
+[0;32mI (113119) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2C 0x06 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (114129) PRIMARY: Wait for sending.....[0m
+[0;32mI (114139) PRIMARY: Send success![0m
+[0;32mI (114139) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2C 0x6C 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (115149) PRIMARY: Wait for sending.....[0m
+[0;32mI (115159) PRIMARY: Send success![0m
+[0;32mI (115159) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2C 0xD2 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (116169) PRIMARY: Wait for sending.....[0m
+[0;32mI (116179) PRIMARY: Send success![0m
+[0;32mI (116179) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2D 0x38 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (117189) PRIMARY: Wait for sending.....[0m
+[0;32mI (117199) PRIMARY: Send success![0m
+[0;32mI (117199) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2D 0x9E 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (118209) PRIMARY: Wait for sending.....[0m
+[0;32mI (118219) PRIMARY: Send success![0m
+[0;32mI (118219) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2E 0x04 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (119229) PRIMARY: Wait for sending.....[0m
+[0;32mI (119239) PRIMARY: Send success![0m
+[0;32mI (119239) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2E 0x6A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (120249) PRIMARY: Wait for sending.....[0m
+[0;32mI (120259) PRIMARY: Send success![0m
+[0;32mI (120259) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2E 0xD0 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (121269) PRIMARY: Wait for sending.....[0m
+[0;32mI (121279) PRIMARY: Send success![0m
+[0;32mI (121279) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2F 0x36 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (122289) PRIMARY: Wait for sending.....[0m
+[0;32mI (122299) PRIMARY: Send success![0m
+[0;32mI (122299) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x2F 0x9C 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (123309) PRIMARY: Wait for sending.....[0m
+[0;32mI (123319) PRIMARY: Send success![0m
+[0;32mI (123319) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x30 0x02 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (124329) PRIMARY: Wait for sending.....[0m
+[0;32mI (124339) PRIMARY: Send success![0m
+[0;32mI (124339) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x30 0x68 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (125349) PRIMARY: Wait for sending.....[0m
+[0;32mI (125359) PRIMARY: Send success![0m
+[0;32mI (125359) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x30 0xCE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (126369) PRIMARY: Wait for sending.....[0m
+[0;32mI (126379) PRIMARY: Send success![0m
+[0;32mI (126379) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x31 0x34 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (127389) PRIMARY: Wait for sending.....[0m
+[0;32mI (127399) PRIMARY: Send success![0m
+[0;32mI (127399) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x31 0x9A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (128409) PRIMARY: Wait for sending.....[0m
+[0;32mI (128419) PRIMARY: Send success![0m
+[0;32mI (128419) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x32 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (129429) PRIMARY: Wait for sending.....[0m
+[0;32mI (129439) PRIMARY: Send success![0m
+[0;32mI (129439) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x32 0x66 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (130449) PRIMARY: Wait for sending.....[0m
+[0;32mI (130459) PRIMARY: Send success![0m
+[0;32mI (130459) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x32 0xCC 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (131469) PRIMARY: Wait for sending.....[0m
+[0;32mI (131479) PRIMARY: Send success![0m
+[0;32mI (131479) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x33 0x32 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (132489) PRIMARY: Wait for sending.....[0m
+[0;32mI (132499) PRIMARY: Send success![0m
+[0;32mI (132499) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x33 0x98 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (133509) PRIMARY: Wait for sending.....[0m
+[0;32mI (133519) PRIMARY: Send success![0m
+[0;32mI (133519) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x33 0xFE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (134529) PRIMARY: Wait for sending.....[0m
+[0;32mI (134539) PRIMARY: Send success![0m
+[0;32mI (134539) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x34 0x64 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (135549) PRIMARY: Wait for sending.....[0m
+[0;32mI (135559) PRIMARY: Send success![0m
+[0;32mI (135559) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x34 0xCA 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (136569) PRIMARY: Wait for sending.....[0m
+[0;32mI (136579) PRIMARY: Send success![0m
+[0;32mI (136579) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x01 0x02 0x35 0x30 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (137589) PRIMARY: Wait for sending.....[0m
+[0;33mW (137599) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (137599) PRIMARY: Send fail:[0m
+[0;32mI (138599) PRIMARY: Wait for sending.....[0m
+[0;33mW (138609) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (138609) PRIMARY: Send fail:[0m
+[0;32mI (139609) PRIMARY: Wait for sending.....[0m
+[0;33mW (139619) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (139619) PRIMARY: Send fail:[0m
+[0;32mI (140619) PRIMARY: Wait for sending.....[0m
+[0;33mW (140629) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (140629) PRIMARY: Send fail:[0m
+[0;32mI (141629) PRIMARY: Wait for sending.....[0m
+[0;33mW (141639) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (141639) PRIMARY: Send fail:[0m
+[0;32mI (142639) PRIMARY: Wait for sending.....[0m
+[0;33mW (142649) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (142649) PRIMARY: Send fail:[0m
+[0;32mI (143649) PRIMARY: Wait for sending.....[0m
+[0;33mW (143659) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (143659) PRIMARY: Send fail:[0m
+[0;32mI (144659) PRIMARY: Wait for sending.....[0m
+[0;33mW (144669) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (144669) PRIMARY: Send fail:[0m
+[0;32mI (145669) PRIMARY: Wait for sending.....[0m
+[0;33mW (145679) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (145679) PRIMARY: Send fail:[0m
+[0;32mI (146679) PRIMARY: Wait for sending.....[0m
+[0;33mW (146689) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (146689) PRIMARY: Send fail:[0m
+[0;32mI (147689) PRIMARY: Wait for sending.....[0m
+[0;33mW (147699) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (147699) PRIMARY: Send fail:[0m
+[0;32mI (148699) PRIMARY: Wait for sending.....[0m
+[0;33mW (148709) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (148709) PRIMARY: Send fail:[0m
+[0;32mI (149709) PRIMARY: Wait for sending.....[0m
+[0;33mW (149719) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (149719) PRIMARY: Send fail:[0m
+[0;32mI (150719) PRIMARY: Wait for sending.....[0m
+[0;33mW (150729) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (150729) PRIMARY: Send fail:[0m
+[0;32mI (151729) PRIMARY: Wait for sending.....[0m
+[0;33mW (151739) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (151739) PRIMARY: Send fail:[0m
+[0;32mI (152739) PRIMARY: Wait for sending.....[0m
+[0;33mW (152749) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (152749) PRIMARY: Send fail:[0m
+[0;32mI (153749) PRIMARY: Wait for sending.....[0m
+[0;33mW (153759) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (153759) PRIMARY: Send fail:[0m
+[0;32mI (154759) PRIMARY: Wait for sending.....[0m
+[0;33mW (154769) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (154769) PRIMARY: Send fail:[0m
+[0;32mI (155769) PRIMARY: Wait for sending.....[0m
+[0;33mW (155779) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (155779) PRIMARY: Send fail:[0m
+[0;32mI (156779) PRIMARY: Wait for sending.....[0m
+[0;33mW (156789) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (156789) PRIMARY: Send fail:[0m
+[0;32mI (157789) PRIMARY: Wait for sending.....[0m
+[0;33mW (157799) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (157799) PRIMARY: Send fail:[0m
+[0;32mI (158799) PRIMARY: Wait for sending.....[0m
+[0;33mW (158809) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (158809) PRIMARY: Send fail:[0m
+[0;32mI (159809) PRIMARY: Wait for sending.....[0m
+[0;33mW (159819) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (159819) PRIMARY: Send fail:[0m
+[0;32mI (160819) PRIMARY: Wait for sending.....[0m
+[0;33mW (160829) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (160829) PRIMARY: Send fail:[0m
+[0;32mI (161829) PRIMARY: Wait for sending.....[0m
+[0;32mI (161839) PRIMARY: Send success![0m
+[0;32mI (161839) PRIMARY: Wait for response.....[0m
+[0;31mE (166819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (166819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (166819) task_wdt:  - main (CPU 0)[0m
+[0;31mE (166819) task_wdt: Tasks currently running:[0m
+[0;31mE (166819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (166819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (166819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x4037FA16:0x3FCC2C00 0x4200C021:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (166819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (171819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (171819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (171819) task_wdt:  - main (CPU 0)[0m
+[0;31mE (171819) task_wdt: Tasks currently running:[0m
+[0;31mE (171819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (171819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (171819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x4037F8B1:0x3FCC2AC0 0x42015DD1:0x3FCC2B00 0x42015E0A:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (171819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (176819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (176819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (176819) task_wdt: Tasks currently running:[0m
+[0;31mE (176819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (176819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (176819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (176819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (181819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (181819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (181819) task_wdt: Tasks currently running:[0m
+[0;31mE (181819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (181819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (181819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (181819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (186819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (186819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (186819) task_wdt: Tasks currently running:[0m
+[0;31mE (186819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (186819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (186819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A20 0x4037DB9F:0x3FCC2A30 0x403767C4:0x3FCC2A50 0x40377F19:0x3FCC2A70 0x420A7532:0x3FCC2A90 0x420168AD:0x3FCC2AB0 0x42015D46:0x3FCC2AD0 0x42015DFD:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (186819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (191819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (191819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (191819) task_wdt: Tasks currently running:[0m
+[0;31mE (191819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (191819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (191819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A60 0x4037DB9F:0x3FCC2A70 0x4037D1E7:0x3FCC2A90 0x42015D3E:0x3FCC2AD0 0x42015DFD:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (191819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (196819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (196819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (196819) task_wdt: Tasks currently running:[0m
+[0;31mE (196819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (196819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (196819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (196819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (201819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (201819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (201819) task_wdt: Tasks currently running:[0m
+[0;31mE (201819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (201819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (201819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A20 0x4037DB9F:0x3FCC2A30 0x403767C4:0x3FCC2A50 0x40377F19:0x3FCC2A70 0x420A7532:0x3FCC2A90 0x420168AD:0x3FCC2AB0 0x42015D46:0x3FCC2AD0 0x42015DFD:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (201819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (206819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (206819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (206819) task_wdt: Tasks currently running:[0m
+[0;31mE (206819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (206819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (206819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A20 0x4037DB9F:0x3FCC2A30 0x403767C4:0x3FCC2A50 0x40377F19:0x3FCC2A70 0x420A7532:0x3FCC2A90 0x420168AD:0x3FCC2AB0 0x42015D46:0x3FCC2AD0 0x42015DFD:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (206819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (211819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (211819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (211819) task_wdt: Tasks currently running:[0m
+[0;31mE (211819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (211819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (211819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x420139D9:0x3FCC2B60 0x4200C380:0x3FCC2B90 0x4200C3EF:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (211819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (216819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (216819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (216819) task_wdt: Tasks currently running:[0m
+[0;31mE (216819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (216819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (216819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A60 0x4037DB9F:0x3FCC2A70 0x4037D1E7:0x3FCC2A90 0x42015D3E:0x3FCC2AD0 0x42015DFD:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (216819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (221819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (221819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (221819) task_wdt: Tasks currently running:[0m
+[0;31mE (221819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (221819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (221819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x4037F8B1:0x3FCC2AC0 0x42015DD1:0x3FCC2B00 0x42015E0A:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (221819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (226819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (226819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (226819) task_wdt: Tasks currently running:[0m
+[0;31mE (226819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (226819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (226819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (226819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (231819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (231819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (231819) task_wdt: Tasks currently running:[0m
+[0;31mE (231819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (231819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (231819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (231819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (236819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (236819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (236819) task_wdt: Tasks currently running:[0m
+[0;31mE (236819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (236819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (236819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (236819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (241819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (241819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (241819) task_wdt: Tasks currently running:[0m
+[0;31mE (241819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (241819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (241819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (241819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (246819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (246819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (246819) task_wdt: Tasks currently running:[0m
+[0;31mE (246819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (246819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (246819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x4037F8B1:0x3FCC2AC0 0x42015DD1:0x3FCC2B00 0x42015E0A:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (246819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (251819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (251819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (251819) task_wdt: Tasks currently running:[0m
+[0;31mE (251819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (251819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (251819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (251819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (256819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (256819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (256819) task_wdt: Tasks currently running:[0m
+[0;31mE (256819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (256819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (256819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x40376731:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (256819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (261819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (261819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (261819) task_wdt: Tasks currently running:[0m
+[0;31mE (261819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (261819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (261819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (261819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (266819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (266819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (266819) task_wdt: Tasks currently running:[0m
+[0;31mE (266819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (266819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (266819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (266819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (271819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (271819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (271819) task_wdt: Tasks currently running:[0m
+[0;31mE (271819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (271819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (271819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (271819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (276819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (276819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (276819) task_wdt: Tasks currently running:[0m
+[0;31mE (276819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (276819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (276819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x4037F8B1:0x3FCC2A90 0x42015DD1:0x3FCC2AD0 0x42015E0A:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (276819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (281819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (281819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (281819) task_wdt: Tasks currently running:[0m
+[0;31mE (281819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (281819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (281819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (281819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (286819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (286819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (286819) task_wdt: Tasks currently running:[0m
+[0;31mE (286819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (286819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (286819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x4037F8B1:0x3FCC2AC0 0x42015DD1:0x3FCC2B00 0x42015E0A:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (286819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (291819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (291819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (291819) task_wdt: Tasks currently running:[0m
+[0;31mE (291819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (291819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (291819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x40377EB1:0x3FCC2AD0 0x42015E0A:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (291819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (296819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (296819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (296819) task_wdt: Tasks currently running:[0m
+[0;31mE (296819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (296819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (296819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x4037FA16:0x3FCC2C00 0x4200C021:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (296819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (301819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (301819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (301819) task_wdt: Tasks currently running:[0m
+[0;31mE (301819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (301819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (301819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A50 0x4037DB9F:0x3FCC2A60 0x403767C4:0x3FCC2A80 0x40377F19:0x3FCC2AA0 0x420A7532:0x3FCC2AC0 0x420168AD:0x3FCC2AE0 0x42015D46:0x3FCC2B00 0x42015DFD:0x3FCC2B30 0x4200C345:0x3FCC2B60 0x4200C402:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (301819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+
+[0;31mE (306819) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (306819) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (306819) task_wdt: Tasks currently running:[0m
+[0;31mE (306819) task_wdt: CPU 0: PRIMARY[0m
+[0;31mE (306819) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (306819) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201819F:0x3FC9BFE0 0x42018624:0x3FC9C000 0x4037772D:0x3FC9C030 0x400559DD:0x3FCC2A60 0x4037DB9F:0x3FCC2A70 0x4037D566:0x3FCC2A90 0x42015DD1:0x3FCC2AD0 0x42015E0A:0x3FCC2B00 0x4200C345:0x3FCC2B30 0x4200C35D:0x3FCC2B80 0x4200C3F7:0x3FCC2BB0 0x4200C4CA:0x3FCC2BD0 0x4200C4D9:0x3FCC2C00 0x4200C019:0x3FCC2C20 0x4037D7F9:0x3FCC2C80
+
+[0;31mE (306819) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379626:0x3FC9C610 0x4037772D:0x3FC9C630 0x4037B3CF:0x3FCA7570 0x42004AFA:0x3FCA7590 0x4037EA19:0x3FCA75B0 0x4037D7F9:0x3FCA75D0
+

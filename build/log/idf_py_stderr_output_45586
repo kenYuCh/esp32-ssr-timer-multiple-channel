@@ -1,0 +1,41 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.wchusbserial59090635051 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4202b240: req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:336
+[0m
+[0;33m0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m0x4202b23d: req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:336
+0x42013e29: spi_bus_lock_bg_request at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:763
+0x420132de: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:973
+0x42013395: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x42009b79: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:148
+0x42009b91: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:163
+0x42009bd7: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:302
+0x42009e29: Nrf24_config at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:182
+0x42009484: set_primary_config at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:84
+0x42009591: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:133
+0x4037b8fd: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037594c: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x4202b240: req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:336
+[0m
+[0;33m0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m0x4202b23d: req_core at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:336
+0x42013e29: spi_bus_lock_bg_request at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:763
+0x420132de: spi_device_queue_trans at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:973
+0x42013395: spi_device_transmit at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_master.c:1017
+0x42009b79: spi_read_byte at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:148
+0x42009b91: spi_transfer at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:163
+0x42009bd7: Nrf24_configRegister at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:302
+0x42009e29: Nrf24_config at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:182
+0x42009484: set_primary_config at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:84
+0x42009591: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:133
+0x4037b8fd: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4037594c: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

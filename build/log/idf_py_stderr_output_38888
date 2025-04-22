@@ -1,0 +1,21 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.wchusbserial59090635051 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4037cbcf: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375a1e: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037c0a5: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403839c9: abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/abort.c:38
+0x4037cbcf: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375994: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x4037cbcf: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375a1e: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037c0a5: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403839c9: abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/abort.c:38
+0x4037cbcf: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:138
+[0m
+[0;33m0x40375994: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

@@ -1,0 +1,1613 @@
+V270) cpu_start: �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c030020 size=108a0h ( 67744) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000308c8 vaddr=3fc94600 size=02b80h ( 11136) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00033450 vaddr=40374000 size=0cbc8h ( 52168) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=2e114h (188692) map[0m
+[0;32mI (200) esp_image: segment 4: paddr=0006e13c vaddr=40380bc8 size=03938h ( 14648) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (209) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     main[0m
+[0;32mI (238) cpu_start: App version:      0.0.1[0m
+[0;32mI (243) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (249) cpu_start: ELF file SHA256:  048e41a3e...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (260) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (265) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (270) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (274) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FC97DE0 len 00051930 (326 KiB): RAM[0m
+[0;32mI (288) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (294) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (307) spi_flash: detected chip: boya[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (321) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) SYS: REBOOT[0m
+Build at Mar 23 2025 22:26:59
+[0;32mI (829) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (899) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (899) SYS: Initialize LED[0m
+[0;32mI (899) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (899) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (909) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (919) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (929) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+[0;32mI (969) Heap: Minimum free heap ever: 353076 bytes[0m
+[0;32mI (969) PRIMARY: Start[0m
+[0;32mI (969) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (979) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (979) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (989) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (989) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (989) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (999) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1009) NRF24: spi_bus_initialize=0[0m
+[0;32mI (1019) NRF24: spi_bus_add_device=0[0m
+[0;33mW (1019) PRIMARY: Set RF Data Ratio to 250KBps[0m
+[0;33mW (1029) PRIMARY: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x4142434445
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (1079) PRIMARY: Wait for sending.....[0m
+[0;32mI (1089) PRIMARY: Send success![0m
+[0;32mI (1089) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFA 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (2109) PRIMARY: Wait for sending.....[0m
+[0;32mI (2119) PRIMARY: Send success![0m
+[0;32mI (2119) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFB 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Into data_task 
+Channel-2, Schedule Running IDLE.
+[0;32mI (3129) PRIMARY: Wait for sending.....[0m
+[0;32mI (3139) PRIMARY: Send success![0m
+[0;32mI (3139) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFC 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (4149) PRIMARY: Wait for sending.....[0m
+[0;32mI (4159) PRIMARY: Send success![0m
+[0;32mI (4159) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFD 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (5169) PRIMARY: Wait for sending.....[0m
+[0;32mI (5179) PRIMARY: Send success![0m
+[0;32mI (5179) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (6189) PRIMARY: Wait for sending.....[0m
+[0;32mI (6199) PRIMARY: Send success![0m
+[0;32mI (6199) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFF 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (7209) PRIMARY: Wait for sending.....[0m
+[0;32mI (7219) PRIMARY: Send success![0m
+[0;32mI (7219) PRIMARY: Wait for response.....[0m
+[0;33mW (7279) NRF24: Timeout waiting for data[0m
+[0;33mW (7279) PRIMARY: No response[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (8279) PRIMARY: Wait for sending.....[0m
+[0;32mI (8289) PRIMARY: Send success![0m
+[0;32mI (8289) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xBA 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (9299) PRIMARY: Wait for sending.....[0m
+[0;32mI (9309) PRIMARY: Send success![0m
+[0;32mI (9309) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xBB 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (10319) PRIMARY: Wait for sending.....[0m
+[0;32mI (10329) PRIMARY: Send success![0m
+[0;32mI (10329) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFA 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (11339) PRIMARY: Wait for sending.....[0m
+[0;32mI (11349) PRIMARY: Send success![0m
+[0;32mI (11349) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFB 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (12359) PRIMARY: Wait for sending.....[0m
+[0;32mI (12369) PRIMARY: Send success![0m
+[0;32mI (12369) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFC 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (13379) PRIMARY: Wait for sending.....[0m
+[0;32mI (13389) PRIMARY: Send success![0m
+[0;32mI (13389) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFD 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (14399) PRIMARY: Wait for sending.....[0m
+[0;32mI (14409) PRIMARY: Send success![0m
+[0;32mI (14409) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (15419) PRIMARY: Wait for sending.....[0m
+[0;32mI (15429) PRIMARY: Send success![0m
+[0;32mI (15429) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFF 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (16489) PRIMARY: Wait for sending.....[0m
+[0;32mI (16489) PRIMARY: Send success![0m
+[0;32mI (16489) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xBA 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (17509) PRIMARY: Wait for sending.....[0m
+[0;32mI (17519) PRIMARY: Send success![0m
+[0;32mI (17519) PRIMARY: Wait for response.....[0m
+[0;33mW (17579) NRF24: Timeout waiting for data[0m
+[0;33mW (17579) PRIMARY: No response[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (18579) PRIMARY: Wait for sending.....[0m
+[0;32mI (18589) PRIMARY: Send success![0m
+[0;32mI (18589) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xBB 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (19599) PRIMARY: Wait for sending.....[0m
+[0;32mI (19609) PRIMARY: Send success![0m
+[0;32mI (19609) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFA 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (20619) PRIMARY: Wait for sending.....[0m
+[0;32mI (20629) PRIMARY: Send success![0m
+[0;32mI (20629) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFB 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (21649) PRIMARY: Wait for sending.....[0m
+[0;32mI (21659) PRIMARY: Send success![0m
+[0;32mI (21659) PRIMARY: Wait for response.....[0m
+Buffer contents: 0xFC 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (22679) PRIMARY: Wait for sending.....[0m
+[0;32mI (22689) PRIMARY: Send success![0m
+[0;32mI (22689) PRIMARY: Wait for response.....[0m
+[0;33mW (22749) NRF24: Timeout waiting for data[0m
+[0;33mW (22749) PRIMARY: No response[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (23749) PRIMARY: Wait for sending.....[0m
+[0;33mW (23759) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (23759) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (24759) PRIMARY: Wait for sending.....[0m
+[0;33mW (24769) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (24769) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (25769) PRIMARY: Wait for sending.....[0m
+[0;33mW (25779) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (25779) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (26819) PRIMARY: Wait for sending.....[0m
+[0;33mW (26839) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (26839) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (27839) PRIMARY: Wait for sending.....[0m
+[0;33mW (27849) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (27849) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (28849) PRIMARY: Wait for sending.....[0m
+[0;33mW (28859) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (28859) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (29859) PRIMARY: Wait for sending.....[0m
+[0;33mW (29869) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (29869) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (30869) PRIMARY: Wait for sending.....[0m
+[0;33mW (30879) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (30879) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (31989) PRIMARY: Wait for sending.....[0m
+[0;33mW (32009) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (32009) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (33009) PRIMARY: Wait for sending.....[0m
+[0;33mW (33019) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (33019) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (34019) PRIMARY: Wait for sending.....[0m
+[0;33mW (34029) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (34029) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (35029) PRIMARY: Wait for sending.....[0m
+[0;33mW (35039) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (35039) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (36039) PRIMARY: Wait for sending.....[0m
+[0;33mW (36049) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (36049) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (37159) PRIMARY: Wait for sending.....[0m
+[0;33mW (37179) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (37179) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (38179) PRIMARY: Wait for sending.....[0m
+[0;33mW (38189) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (38189) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (39189) PRIMARY: Wait for sending.....[0m
+[0;33mW (39199) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (39199) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (40199) PRIMARY: Wait for sending.....[0m
+[0;33mW (40209) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (40209) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (41209) PRIMARY: Wait for sending.....[0m
+[0;33mW (41219) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (41219) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (42329) PRIMARY: Wait for sending.....[0m
+[0;33mW (42349) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (42349) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (43349) PRIMARY: Wait for sending.....[0m
+[0;33mW (43359) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (43359) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (44359) PRIMARY: Wait for sending.....[0m
+[0;33mW (44369) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (44369) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (45369) PRIMARY: Wait for sending.....[0m
+[0;33mW (45379) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (45379) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (46379) PRIMARY: Wait for sending.....[0m
+[0;33mW (46389) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (46389) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (47499) PRIMARY: Wait for sending.....[0m
+[0;33mW (47519) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (47519) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (48519) PRIMARY: Wait for sending.....[0m
+[0;33mW (48529) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (48529) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (49529) PRIMARY: Wait for sending.....[0m
+[0;33mW (49539) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (49539) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (50539) PRIMARY: Wait for sending.....[0m
+[0;33mW (50549) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (50549) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (51549) PRIMARY: Wait for sending.....[0m
+[0;33mW (51559) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (51559) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (52669) PRIMARY: Wait for sending.....[0m
+[0;33mW (52689) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (52689) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (53689) PRIMARY: Wait for sending.....[0m
+[0;33mW (53699) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (53699) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (54699) PRIMARY: Wait for sending.....[0m
+[0;33mW (54709) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (54709) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (55709) PRIMARY: Wait for sending.....[0m
+[0;33mW (55719) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (55719) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (56719) PRIMARY: Wait for sending.....[0m
+[0;33mW (56729) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (56729) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (57839) PRIMARY: Wait for sending.....[0m
+[0;33mW (57859) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (57859) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (58859) PRIMARY: Wait for sending.....[0m
+[0;33mW (58869) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (58869) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (59869) PRIMARY: Wait for sending.....[0m
+[0;33mW (59879) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (59879) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (60879) PRIMARY: Wait for sending.....[0m
+[0;33mW (60889) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (60889) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (61889) PRIMARY: Wait for sending.....[0m
+[0;33mW (61899) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (61899) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (63019) PRIMARY: Wait for sending.....[0m
+[0;33mW (63029) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (63029) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (64029) PRIMARY: Wait for sending.....[0m
+[0;33mW (64039) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (64039) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (65039) PRIMARY: Wait for sending.....[0m
+[0;33mW (65049) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (65049) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (66049) PRIMARY: Wait for sending.....[0m
+[0;33mW (66059) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (66059) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (67059) PRIMARY: Wait for sending.....[0m
+[0;33mW (67069) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (67069) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (68199) PRIMARY: Wait for sending.....[0m
+[0;33mW (68209) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (68209) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (69209) PRIMARY: Wait for sending.....[0m
+[0;33mW (69219) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (69219) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (70219) PRIMARY: Wait for sending.....[0m
+[0;33mW (70229) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (70229) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (71229) PRIMARY: Wait for sending.....[0m
+[0;33mW (71239) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (71239) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (72239) PRIMARY: Wait for sending.....[0m
+[0;33mW (72249) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (72249) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (73379) PRIMARY: Wait for sending.....[0m
+[0;33mW (73389) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (73389) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (74389) PRIMARY: Wait for sending.....[0m
+[0;33mW (74399) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (74399) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (75399) PRIMARY: Wait for sending.....[0m
+[0;33mW (75409) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (75409) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (76409) PRIMARY: Wait for sending.....[0m
+[0;33mW (76419) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (76419) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (77419) PRIMARY: Wait for sending.....[0m
+[0;33mW (77429) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (77429) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (78559) PRIMARY: Wait for sending.....[0m
+[0;33mW (78569) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (78569) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (79569) PRIMARY: Wait for sending.....[0m
+[0;33mW (79579) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (79579) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (80579) PRIMARY: Wait for sending.....[0m
+[0;33mW (80589) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (80589) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (81589) PRIMARY: Wait for sending.....[0m
+[0;33mW (81599) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (81599) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (82599) PRIMARY: Wait for sending.....[0m
+[0;33mW (82609) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (82609) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (83739) PRIMARY: Wait for sending.....[0m
+[0;33mW (83749) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (83749) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (84749) PRIMARY: Wait for sending.....[0m
+[0;33mW (84759) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (84759) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (85759) PRIMARY: Wait for sending.....[0m
+[0;33mW (85769) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (85769) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (86769) PRIMARY: Wait for sending.....[0m
+[0;33mW (86779) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (86779) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (87779) PRIMARY: Wait for sending.....[0m
+[0;33mW (87789) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (87789) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (88919) PRIMARY: Wait for sending.....[0m
+[0;33mW (88929) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (88929) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (89929) PRIMARY: Wait for sending.....[0m
+[0;33mW (89939) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (89939) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (90939) PRIMARY: Wait for sending.....[0m
+[0;33mW (90949) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (90949) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (91949) PRIMARY: Wait for sending.....[0m
+[0;33mW (91959) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (91959) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (92959) PRIMARY: Wait for sending.....[0m
+[0;33mW (92969) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (92969) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (94099) PRIMARY: Wait for sending.....[0m
+[0;33mW (94109) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (94109) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (95109) PRIMARY: Wait for sending.....[0m
+[0;33mW (95119) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (95119) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (96119) PRIMARY: Wait for sending.....[0m
+[0;33mW (96129) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (96129) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (97129) PRIMARY: Wait for sending.....[0m
+[0;33mW (97139) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (97139) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (98139) PRIMARY: Wait for sending.....[0m
+[0;33mW (98149) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (98149) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (99279) PRIMARY: Wait for sending.....[0m
+[0;33mW (99289) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (99289) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (100289) PRIMARY: Wait for sending.....[0m
+[0;33mW (100299) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (100299) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (101299) PRIMARY: Wait for sending.....[0m
+[0;33mW (101309) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (101309) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (102309) PRIMARY: Wait for sending.....[0m
+[0;33mW (102319) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (102319) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (103319) PRIMARY: Wait for sending.....[0m
+[0;33mW (103329) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (103329) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (104459) PRIMARY: Wait for sending.....[0m
+[0;33mW (104469) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (104469) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (105469) PRIMARY: Wait for sending.....[0m
+[0;33mW (105479) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (105479) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (106479) PRIMARY: Wait for sending.....[0m
+[0;33mW (106489) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (106489) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (107489) PRIMARY: Wait for sending.....[0m
+[0;33mW (107499) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (107499) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (108499) PRIMARY: Wait for sending.....[0m
+[0;33mW (108509) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (108509) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (109639) PRIMARY: Wait for sending.....[0m
+[0;33mW (109649) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (109649) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (110649) PRIMARY: Wait for sending.....[0m
+[0;33mW (110659) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (110659) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (111659) PRIMARY: Wait for sending.....[0m
+[0;33mW (111669) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (111669) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (112669) PRIMARY: Wait for sending.....[0m
+[0;33mW (112679) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (112679) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (113679) PRIMARY: Wait for sending.....[0m
+[0;33mW (113689) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (113689) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (114819) PRIMARY: Wait for sending.....[0m
+[0;33mW (114829) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (114829) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (115829) PRIMARY: Wait for sending.....[0m
+[0;33mW (115839) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (115839) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (116839) PRIMARY: Wait for sending.....[0m
+[0;33mW (116849) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (116849) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (117849) PRIMARY: Wait for sending.....[0m
+[0;33mW (117859) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (117859) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (118859) PRIMARY: Wait for sending.....[0m
+[0;33mW (118869) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (118869) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (119999) PRIMARY: Wait for sending.....[0m
+[0;33mW (120009) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (120009) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (121009) PRIMARY: Wait for sending.....[0m
+[0;33mW (121019) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (121019) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (122019) PRIMARY: Wait for sending.....[0m
+[0;33mW (122029) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (122029) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (123029) PRIMARY: Wait for sending.....[0m
+[0;33mW (123039) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (123039) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (124039) PRIMARY: Wait for sending.....[0m
+[0;33mW (124049) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (124049) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (125179) PRIMARY: Wait for sending.....[0m
+[0;33mW (125189) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (125189) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (126189) PRIMARY: Wait for sending.....[0m
+[0;33mW (126199) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (126199) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (127199) PRIMARY: Wait for sending.....[0m
+[0;33mW (127209) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (127209) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (128209) PRIMARY: Wait for sending.....[0m
+[0;33mW (128219) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (128219) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (129219) PRIMARY: Wait for sending.....[0m
+[0;33mW (129229) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (129229) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (130359) PRIMARY: Wait for sending.....[0m
+[0;33mW (130369) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (130369) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (131369) PRIMARY: Wait for sending.....[0m
+[0;33mW (131379) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (131379) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (132379) PRIMARY: Wait for sending.....[0m
+[0;33mW (132389) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (132389) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (133389) PRIMARY: Wait for sending.....[0m
+[0;33mW (133399) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (133399) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (134399) PRIMARY: Wait for sending.....[0m
+[0;33mW (134409) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (134409) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (135539) PRIMARY: Wait for sending.....[0m
+[0;33mW (135549) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (135549) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (136549) PRIMARY: Wait for sending.....[0m
+[0;33mW (136559) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (136559) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (137559) PRIMARY: Wait for sending.....[0m
+[0;33mW (137569) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (137569) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (138569) PRIMARY: Wait for sending.....[0m
+[0;33mW (138579) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (138579) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (139579) PRIMARY: Wait for sending.....[0m
+[0;33mW (139589) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (139589) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (140719) PRIMARY: Wait for sending.....[0m
+[0;33mW (140729) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (140729) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (141729) PRIMARY: Wait for sending.....[0m
+[0;33mW (141739) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (141739) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (142739) PRIMARY: Wait for sending.....[0m
+[0;33mW (142749) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (142749) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (143749) PRIMARY: Wait for sending.....[0m
+[0;33mW (143759) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (143759) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (144759) PRIMARY: Wait for sending.....[0m
+[0;33mW (144769) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (144769) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (145899) PRIMARY: Wait for sending.....[0m
+[0;33mW (145909) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (145909) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (146909) PRIMARY: Wait for sending.....[0m
+[0;33mW (146919) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (146919) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (147919) PRIMARY: Wait for sending.....[0m
+[0;33mW (147929) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (147929) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (148929) PRIMARY: Wait for sending.....[0m
+[0;33mW (148939) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (148939) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (149939) PRIMARY: Wait for sending.....[0m
+[0;33mW (149949) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (149949) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (151079) PRIMARY: Wait for sending.....[0m
+[0;33mW (151089) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (151089) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (152089) PRIMARY: Wait for sending.....[0m
+[0;33mW (152099) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (152099) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (153099) PRIMARY: Wait for sending.....[0m
+[0;33mW (153109) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (153109) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (154109) PRIMARY: Wait for sending.....[0m
+[0;33mW (154119) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (154119) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (155119) PRIMARY: Wait for sending.....[0m
+[0;33mW (155129) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (155129) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (156259) PRIMARY: Wait for sending.....[0m
+[0;33mW (156269) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (156269) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (157269) PRIMARY: Wait for sending.....[0m
+[0;33mW (157279) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (157279) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (158279) PRIMARY: Wait for sending.....[0m
+[0;33mW (158289) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (158289) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (159289) PRIMARY: Wait for sending.....[0m
+[0;33mW (159299) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (159299) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (160299) PRIMARY: Wait for sending.....[0m
+[0;33mW (160309) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (160309) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (161439) PRIMARY: Wait for sending.....[0m
+[0;33mW (161449) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (161449) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (162449) PRIMARY: Wait for sending.....[0m
+[0;33mW (162459) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (162459) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (163459) PRIMARY: Wait for sending.....[0m
+[0;33mW (163469) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (163469) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (164469) PRIMARY: Wait for sending.....[0m
+[0;33mW (164479) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (164479) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (165479) PRIMARY: Wait for sending.....[0m
+[0;33mW (165489) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (165489) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (166619) PRIMARY: Wait for sending.....[0m
+[0;33mW (166629) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (166629) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (167629) PRIMARY: Wait for sending.....[0m
+[0;33mW (167639) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (167639) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (168639) PRIMARY: Wait for sending.....[0m
+[0;33mW (168649) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (168649) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (169649) PRIMARY: Wait for sending.....[0m
+[0;33mW (169659) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (169659) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (170659) PRIMARY: Wait for sending.....[0m
+[0;33mW (170669) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (170669) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (171799) PRIMARY: Wait for sending.....[0m
+[0;33mW (171809) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (171809) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (172809) PRIMARY: Wait for sending.....[0m
+[0;33mW (172819) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (172819) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (173819) PRIMARY: Wait for sending.....[0m
+[0;33mW (173829) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (173829) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (174829) PRIMARY: Wait for sending.....[0m
+[0;33mW (174839) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (174839) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (175839) PRIMARY: Wait for sending.....[0m
+[0;33mW (175849) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (175849) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (176979) PRIMARY: Wait for sending.....[0m
+[0;33mW (176989) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (176989) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (177989) PRIMARY: Wait for sending.....[0m
+[0;33mW (177999) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (177999) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (178999) PRIMARY: Wait for sending.....[0m
+[0;33mW (179009) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (179009) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (180009) PRIMARY: Wait for sending.....[0m
+[0;33mW (180019) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (180019) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (181019) PRIMARY: Wait for sending.....[0m
+[0;33mW (181029) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (181029) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (182159) PRIMARY: Wait for sending.....[0m
+[0;33mW (182169) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (182169) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (183169) PRIMARY: Wait for sending.....[0m
+[0;33mW (183179) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (183179) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (184179) PRIMARY: Wait for sending.....[0m
+[0;33mW (184189) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (184189) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (185189) PRIMARY: Wait for sending.....[0m
+[0;33mW (185199) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (185199) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (186199) PRIMARY: Wait for sending.....[0m
+[0;33mW (186209) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (186209) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 

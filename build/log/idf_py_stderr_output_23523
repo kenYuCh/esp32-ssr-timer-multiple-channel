@@ -1,0 +1,196 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.wchusbserial59090635051 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403759ca: panic_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4037ae5d: esp_system_abort at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x403825e9: __assert_func at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x42013ab3: spi_bus_deinit_lock at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/spi_bus_lock.c:594 (discriminator 1)
+0x42012951: spi_bus_free at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/driver/spi/gpspi/spi_common.c:931
+0x42009a11: Nrf24_deinit at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/mirf.c:89
+0x420096dc: primary at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:163
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x42007bf6: uart_ll_get_txfifo_len at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/vfs/vfs_uart.c:165
+0x42008abb: uart_write at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/vfs/vfs_uart.c:218
+0x42007625: console_write at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x42007196: esp_vfs_write at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4201a8ee: __swrite at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+0x42019d5d: __sflush_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+0x42019dba: _fflush_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+ (inlined by) _fflush_r at /builds/idf/crosstool-NG/.build/src/newlib-git-af24ceb7/newlib/libc/include/stdio.h:417
+0x4201a3f9: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x4202523b: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x42024bfe: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4201a47b: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x42008fa1: swv_printf at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/models/switch_model.c:314 (discriminator 4)
+0x42008fee: model_task at /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/models/switch_model.c:341
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x42014b23: task_wdt_timeout_handling at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x42014fa8: task_wdt_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40379186: esp_crosscore_isr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:103
+0x403772f5: _xt_lowint1 at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x40379637: xt_utils_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_hw_support/cpu.c:132
+0x4200345e: esp_vApplicationIdleHook at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esp_system/freertos_hooks.c:59
+0x4037c819: prvIdleTask at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037b8c5: vPortTaskWrapper at /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

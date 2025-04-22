@@ -1,0 +1,996 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=2de1ch (187932) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0004de44 vaddr=3fc99d00 size=021d4h (  8660) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b0960h (723296) map[0m
+[0;32mI (261) esp_image: segment 3: paddr=00100988 vaddr=3fc9bed4 size=02724h ( 10020) load[0m
+[0;32mI (263) esp_image: segment 4: paddr=001030b4 vaddr=40374000 size=15c00h ( 89088) load[0m
+[0;32mI (289) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (289) boot: Disabling RNG early entropy source...[0m
+[0;32mI (301) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     main[0m
+[0;32mI (319) cpu_start: App version:      0.0.1[0m
+[0;32mI (323) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (330) cpu_start: ELF file SHA256:  ad9e40c73...[0m
+[0;32mI (335) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (340) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (345) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (350) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (362) heap_init: At 3FCA2918 len 00046DF8 (283 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: boya[0m
+[0;32mI (391) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (419) main_task: Calling app_main()[0m
+[0;32mI (419) SYS: REBOOT[0m
+Build at Mar 23 2025 11:34:04
+[0;32mI (1219) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1289) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1289) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1289) pp: pp rom version: e7ae62f[0m
+[0;32mI (1289) net80211: net80211 rom version: e7ae62f[0m
+I (1299) wifi:wifi driver task: 3fcadb5c, prio:23, stack:6656, core=0
+I (1309) wifi:wifi firmware version: a9f5b59
+I (1309) wifi:wifi certification version: v7.0
+I (1309) wifi:config NVS flash: enabled
+I (1319) wifi:config nano formating: disabled
+I (1319) wifi:Init data frame dynamic rx buffer num: 32
+I (1319) wifi:Init static rx mgmt buffer num: 5
+I (1329) wifi:Init management short buffer num: 32
+I (1329) wifi:Init static tx buffer num: 16
+I (1339) wifi:Init static tx FG buffer num: 2
+I (1339) wifi:Init static rx buffer size: 1600
+I (1349) wifi:Init static rx buffer num: 10
+I (1349) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1349) wifi_init: rx ba win: 6[0m
+[0;32mI (1359) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1359) wifi_init: udp mbox: 6[0m
+[0;32mI (1359) wifi_init: tcp mbox: 6[0m
+[0;32mI (1369) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1369) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1379) wifi_init: tcp mss: 1440[0m
+[0;32mI (1379) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1389) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1419) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1449) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1449) wifi:enable tsf
+I (1449) wifi:Total power save buffer number: 8
+I (1449) wifi:Init max length of beacon: 752/752
+I (1459) wifi:Init max length of beacon: 752/752
+[0;32mI (1459) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1469) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1559) wifi:ap channel adjust o:1,1 n:11,2
+I (1559) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1559) wifi:state: init -> auth (b0)
+I (1819) wifi:state: auth -> init (600)
+I (1829) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (1829) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (1829) WiFi: 重新連線第 1 次[0m
+[0;32mI (4659) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (4669) WiFi: 重新連線第 2 次[0m
+I (4669) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (4669) wifi:state: init -> auth (b0)
+I (5219) wifi:state: auth -> assoc (0)
+I (5229) wifi:state: assoc -> run (10)
+I (5419) wifi:connected with SianAP, aid = 20, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (5419) wifi:security: WPA3-SAE, phy: bgn, rssi: -18
+I (5439) wifi:pm start, type: 1
+
+I (5439) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5439) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (5449) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (5499) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64
+[0;32mI (6459) esp_netif_handlers: sta ip: 192.168.1.169, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6459) WIFI: Connected! IP obtained: 192.168.1.169[0m
+[0;32mI (6459) WIFI: connected to ap SSID:SianAP password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (6469) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (11479) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (11479) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (11479) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (11479) Heap: Minimum free heap ever: 213876 bytes[0m
+[0;32mI (11489) PRIMARY: Start[0m
+[0;32mI (11489) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (11499) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (11499) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (11509) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (11509) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (11509) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11519) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11529) NRF24: spi_bus_initialize=0[0m
+[0;32mI (11539) NRF24: spi_bus_add_device=0[0m
+[0;33mW (11539) PRIMARY: Set RF Data Ratio to 250KBps[0m
+[0;33mW (11549) PRIMARY: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x4e RX_DR=1 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x4142434445
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (11599) PRIMARY: Wait for sending.....[0m
+[0;32mI (11609) PRIMARY: Send success:_[0m
+[0;32mI (11609) PRIMARY: Wait for response.....[0m
+[0;32mI (11619) PRIMARY: Got response:[_] Elapsed:2 ticks[0m
+[0;32mI (12619) PRIMARY: Wait for sending.....[0m
+[0;32mI (12629) PRIMARY: Send success:�
+[0;32mI (12629) PRIMARY: Wait for response.....[0m
+[0;32mI (12629) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (13629) PRIMARY: Wait for sending.....[0m
+[0;32mI (13639) PRIMARY: Send success:*[0m
+[0;32mI (13639) PRIMARY: Wait for response.....[0m
+[0;32mI (13639) PRIMARY: Got response:[*] Elapsed:1 ticks[0m
+[0;32mI (14639) PRIMARY: Wait for sending.....[0m
+[0;32mI (14649) PRIMARY: Send success:�
+[0;32mI (14649) PRIMARY: Wait for response.....[0m
+[0;32mI (14649) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (15649) PRIMARY: Wait for sending.....[0m
+[0;32mI (15659) PRIMARY: Send success:�
+[0;32mI (15659) PRIMARY: Wait for response.....[0m
+[0;32mI (15659) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (16659) PRIMARY: Wait for sending.....[0m
+[0;32mI (16669) PRIMARY: Send success:Y[0m
+[0;32mI (16669) PRIMARY: Wait for response.....[0m
+[0;32mI (16669) PRIMARY: Got response:[Y] Elapsed:1 ticks[0m
+[0;32mI (17669) PRIMARY: Wait for sending.....[0m
+[0;32mI (17679) PRIMARY: Send success:�
+[0;32mI (17679) PRIMARY: Wait for response.....[0m
+[0;32mI (17679) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (18679) PRIMARY: Wait for sending.....[0m
+[0;32mI (18689) PRIMARY: Send success:#[0m
+[0;32mI (18689) PRIMARY: Wait for response.....[0m
+[0;32mI (18689) PRIMARY: Got response:[#] Elapsed:1 ticks[0m
+[0;32mI (19689) PRIMARY: Wait for sending.....[0m
+[0;32mI (19699) PRIMARY: Send success:�
+[0;32mI (19699) PRIMARY: Wait for response.....[0m
+[0;32mI (19699) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (20699) PRIMARY: Wait for sending.....[0m
+[0;32mI (20709) PRIMARY: Send success:�
+[0;32mI (20709) PRIMARY: Wait for response.....[0m
+[0;32mI (20709) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (21709) PRIMARY: Wait for sending.....[0m
+[0;32mI (21719) PRIMARY: Send success:R[0m
+[0;32mI (21719) PRIMARY: Wait for response.....[0m
+[0;32mI (21719) PRIMARY: Got response:[R] Elapsed:1 ticks[0m
+[0;32mI (22719) PRIMARY: Wait for sending.....[0m
+[0;32mI (22729) PRIMARY: Send success:�
+[0;32mI (22729) PRIMARY: Wait for response.....[0m
+[0;32mI (22729) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (23729) PRIMARY: Wait for sending.....[0m
+[0;32mI (23739) PRIMARY: Send success:	[0m
+[0;32mI (23739) PRIMARY: Wait for response.....[0m
+[0;32mI (23739) PRIMARY: Got response:[	] Elapsed:1 ticks[0m
+[0;32mI (24739) PRIMARY: Wait for sending.....[0m
+[0;32mI (24749) PRIMARY: Send success:	�
+[0;32mI (24749) PRIMARY: Wait for response.....[0m
+[0;32mI (24749) PRIMARY: Got response:[	�] Elapsed:1 ticks[0m
+[0;32mI (25749) PRIMARY: Wait for sending.....[0m
+[0;32mI (25759) PRIMARY: Send success:	�
+[0;32mI (25759) PRIMARY: Wait for response.....[0m
+[0;32mI (25759) PRIMARY: Got response:[	�] Elapsed:1 ticks[0m
+[0;32mI (26759) PRIMARY: Wait for sending.....[0m
+[0;32mI (26769) PRIMARY: Send success:
+K[0m
+[0;32mI (26769) PRIMARY: Wait for response.....[0m
+[0;32mI (26769) PRIMARY: Got response:[
+K] Elapsed:1 ticks[0m
+[0;32mI (27769) PRIMARY: Wait for sending.....[0m
+[0;32mI (27779) PRIMARY: Send success:
+�
+[0;32mI (27779) PRIMARY: Wait for response.....[0m
+[0;32mI (27779) PRIMARY: Got response:[
+�] Elapsed:1 ticks[0m
+[0;32mI (28779) PRIMARY: Wait for sending.....[0m
+[0;32mI (28789) PRIMARY: Send success:[0m
+[0;32mI (28789) PRIMARY: Wait for response.....[0m
+[0;32mI (28789) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (29789) PRIMARY: Wait for sending.....[0m
+[0;32mI (29799) PRIMARY: Send success:z[0m
+[0;32mI (29799) PRIMARY: Wait for response.....[0m
+[0;32mI (29799) PRIMARY: Got response:[z] Elapsed:1 ticks[0m
+[0;32mI (30799) PRIMARY: Wait for sending.....[0m
+[0;32mI (30809) PRIMARY: Send success:�
+[0;32mI (30809) PRIMARY: Wait for response.....[0m
+[0;32mI (30809) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (31809) PRIMARY: Wait for sending.....[0m
+[0;32mI (31819) PRIMARY: Send success:D[0m
+[0;32mI (31819) PRIMARY: Wait for response.....[0m
+[0;32mI (31819) PRIMARY: Got response:[D] Elapsed:1 ticks[0m
+[0;32mI (32819) PRIMARY: Wait for sending.....[0m
+[0;32mI (32829) PRIMARY: Send success:�
+[0;32mI (32829) PRIMARY: Wait for response.....[0m
+[0;32mI (32829) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (33829) PRIMARY: Wait for sending.....[0m
+[0;32mI (33839) PRIMARY: Send success:[0m
+[0;32mI (33839) PRIMARY: Wait for response.....[0m
+[0;32mI (33839) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (34839) PRIMARY: Wait for sending.....[0m
+[0;32mI (34849) PRIMARY: Send success:s[0m
+[0;32mI (34849) PRIMARY: Wait for response.....[0m
+[0;32mI (34849) PRIMARY: Got response:[s] Elapsed:1 ticks[0m
+[0;32mI (35849) PRIMARY: Wait for sending.....[0m
+[0;32mI (35859) PRIMARY: Send success:�
+[0;32mI (35859) PRIMARY: Wait for response.....[0m
+[0;32mI (35859) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (36859) PRIMARY: Wait for sending.....[0m
+[0;32mI (36869) PRIMARY: Send success:=[0m
+[0;32mI (36869) PRIMARY: Wait for response.....[0m
+[0;32mI (36869) PRIMARY: Got response:[=] Elapsed:1 ticks[0m
+[0;32mI (37869) PRIMARY: Wait for sending.....[0m
+[0;32mI (37879) PRIMARY: Send success:�
+[0;32mI (37879) PRIMARY: Wait for response.....[0m
+[0;32mI (37879) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (38879) PRIMARY: Wait for sending.....[0m
+[0;32mI (38889) PRIMARY: Send success:[0m
+[0;32mI (38889) PRIMARY: Wait for response.....[0m
+[0;32mI (38889) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (39889) PRIMARY: Wait for sending.....[0m
+[0;32mI (39899) PRIMARY: Send success:l[0m
+[0;32mI (39899) PRIMARY: Wait for response.....[0m
+[0;32mI (39899) PRIMARY: Got response:[l] Elapsed:1 ticks[0m
+[0;32mI (40899) PRIMARY: Wait for sending.....[0m
+[0;32mI (40909) PRIMARY: Send success:�
+[0;32mI (40909) PRIMARY: Wait for response.....[0m
+[0;32mI (40909) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (41909) PRIMARY: Wait for sending.....[0m
+[0;32mI (41919) PRIMARY: Send success:6[0m
+[0;32mI (41919) PRIMARY: Wait for response.....[0m
+[0;32mI (41919) PRIMARY: Got response:[6] Elapsed:1 ticks[0m
+[0;32mI (42919) PRIMARY: Wait for sending.....[0m
+[0;32mI (42929) PRIMARY: Send success:�
+[0;32mI (42929) PRIMARY: Wait for response.....[0m
+[0;32mI (42929) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (43929) PRIMARY: Wait for sending.....[0m
+[0;32mI (43939) PRIMARY: Send success:[0m
+[0;32mI (43939) PRIMARY: Wait for response.....[0m
+[0;32mI (43939) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (44939) PRIMARY: Wait for sending.....[0m
+[0;32mI (44949) PRIMARY: Send success:e[0m
+[0;32mI (44949) PRIMARY: Wait for response.....[0m
+[0;32mI (44949) PRIMARY: Got response:[e] Elapsed:1 ticks[0m
+[0;32mI (45949) PRIMARY: Wait for sending.....[0m
+[0;32mI (45959) PRIMARY: Send success:�
+[0;32mI (45959) PRIMARY: Wait for response.....[0m
+[0;32mI (45959) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (46959) PRIMARY: Wait for sending.....[0m
+[0;32mI (46969) PRIMARY: Send success:/[0m
+[0;32mI (46969) PRIMARY: Wait for response.....[0m
+[0;32mI (46969) PRIMARY: Got response:[/] Elapsed:1 ticks[0m
+[0;32mI (47969) PRIMARY: Wait for sending.....[0m
+[0;32mI (47979) PRIMARY: Send success:�
+[0;32mI (47979) PRIMARY: Wait for response.....[0m
+[0;32mI (47979) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (48979) PRIMARY: Wait for sending.....[0m
+[0;32mI (48989) PRIMARY: Send success:�
+[0;32mI (48989) PRIMARY: Wait for response.....[0m
+[0;32mI (48989) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (49989) PRIMARY: Wait for sending.....[0m
+[0;32mI (49999) PRIMARY: Send success:^[0m
+[0;32mI (49999) PRIMARY: Wait for response.....[0m
+[0;32mI (49999) PRIMARY: Got response:[^] Elapsed:1 ticks[0m
+[0;32mI (50999) PRIMARY: Wait for sending.....[0m
+[0;32mI (51009) PRIMARY: Send success:�
+[0;32mI (51009) PRIMARY: Wait for response.....[0m
+[0;32mI (51009) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (52009) PRIMARY: Wait for sending.....[0m
+[0;32mI (52019) PRIMARY: Send success:([0m
+[0;32mI (52019) PRIMARY: Wait for response.....[0m
+[0;32mI (52019) PRIMARY: Got response:[(] Elapsed:1 ticks[0m
+[0;32mI (53019) PRIMARY: Wait for sending.....[0m
+[0;32mI (53029) PRIMARY: Send success:�
+[0;32mI (53029) PRIMARY: Wait for response.....[0m
+[0;32mI (53029) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (54029) PRIMARY: Wait for sending.....[0m
+[0;32mI (54039) PRIMARY: Send success:�
+[0;32mI (54039) PRIMARY: Wait for response.....[0m
+[0;32mI (54039) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (55039) PRIMARY: Wait for sending.....[0m
+[0;32mI (55049) PRIMARY: Send success:W[0m
+[0;32mI (55049) PRIMARY: Wait for response.....[0m
+[0;32mI (55049) PRIMARY: Got response:[W] Elapsed:1 ticks[0m
+[0;32mI (56049) PRIMARY: Wait for sending.....[0m
+[0;32mI (56059) PRIMARY: Send success:�
+[0;32mI (56059) PRIMARY: Wait for response.....[0m
+[0;32mI (56059) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (57059) PRIMARY: Wait for sending.....[0m
+[0;32mI (57069) PRIMARY: Send success:![0m
+[0;32mI (57069) PRIMARY: Wait for response.....[0m
+[0;32mI (57069) PRIMARY: Got response:[!] Elapsed:1 ticks[0m
+[0;32mI (58069) PRIMARY: Wait for sending.....[0m
+[0;32mI (58079) PRIMARY: Send success:�
+[0;32mI (58079) PRIMARY: Wait for response.....[0m
+[0;32mI (58079) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (59079) PRIMARY: Wait for sending.....[0m
+[0;32mI (59089) PRIMARY: Send success:�
+[0;32mI (59089) PRIMARY: Wait for response.....[0m
+[0;32mI (59089) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (60089) PRIMARY: Wait for sending.....[0m
+[0;32mI (60099) PRIMARY: Send success:P[0m
+[0;32mI (60099) PRIMARY: Wait for response.....[0m
+[0;32mI (60099) PRIMARY: Got response:[P] Elapsed:1 ticks[0m
+[0;32mI (61099) PRIMARY: Wait for sending.....[0m
+[0;32mI (61109) PRIMARY: Send success:�
+[0;32mI (61109) PRIMARY: Wait for response.....[0m
+[0;32mI (61109) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (62109) PRIMARY: Wait for sending.....[0m
+[0;32mI (62119) PRIMARY: Send success:[0m
+[0;32mI (62119) PRIMARY: Wait for response.....[0m
+[0;32mI (62119) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (63119) PRIMARY: Wait for sending.....[0m
+[0;32mI (63129) PRIMARY: Send success:[0m
+[0;32mI (63129) PRIMARY: Wait for response.....[0m
+[0;32mI (63129) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (64129) PRIMARY: Wait for sending.....[0m
+[0;32mI (64139) PRIMARY: Send success:�
+[0;32mI (64139) PRIMARY: Wait for response.....[0m
+[0;32mI (64139) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (65139) PRIMARY: Wait for sending.....[0m
+[0;32mI (65149) PRIMARY: Send success:I[0m
+[0;32mI (65149) PRIMARY: Wait for response.....[0m
+[0;32mI (65149) PRIMARY: Got response:[I] Elapsed:1 ticks[0m
+[0;32mI (66149) PRIMARY: Wait for sending.....[0m
+[0;32mI (66159) PRIMARY: Send success:�
+[0;32mI (66159) PRIMARY: Wait for response.....[0m
+[0;32mI (66159) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (67159) PRIMARY: Wait for sending.....[0m
+[0;32mI (67169) PRIMARY: Send success:[0m
+[0;32mI (67169) PRIMARY: Wait for response.....[0m
+[0;32mI (67169) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (68169) PRIMARY: Wait for sending.....[0m
+[0;32mI (68179) PRIMARY: Send success:x[0m
+[0;32mI (68179) PRIMARY: Wait for response.....[0m
+[0;32mI (68179) PRIMARY: Got response:[x] Elapsed:1 ticks[0m
+[0;32mI (69179) PRIMARY: Wait for sending.....[0m
+[0;32mI (69189) PRIMARY: Send success:�
+[0;32mI (69189) PRIMARY: Wait for response.....[0m
+[0;32mI (69189) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (70189) PRIMARY: Wait for sending.....[0m
+[0;32mI (70199) PRIMARY: Send success:B[0m
+[0;32mI (70199) PRIMARY: Wait for response.....[0m
+[0;32mI (70199) PRIMARY: Got response:[B] Elapsed:1 ticks[0m
+[0;32mI (71199) PRIMARY: Wait for sending.....[0m
+[0;32mI (71209) PRIMARY: Send success:�
+[0;32mI (71209) PRIMARY: Wait for response.....[0m
+[0;32mI (71209) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (72209) PRIMARY: Wait for sending.....[0m
+[0;32mI (72219) PRIMARY: Send success:[0m
+[0;32mI (72219) PRIMARY: Wait for response.....[0m
+[0;32mI (72219) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (73219) PRIMARY: Wait for sending.....[0m
+[0;32mI (73229) PRIMARY: Send success:q[0m
+[0;32mI (73229) PRIMARY: Wait for response.....[0m
+[0;32mI (73229) PRIMARY: Got response:[q] Elapsed:1 ticks[0m
+[0;32mI (74229) PRIMARY: Wait for sending.....[0m
+[0;32mI (74239) PRIMARY: Send success:�
+[0;32mI (74239) PRIMARY: Wait for response.....[0m
+[0;32mI (74239) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (75239) PRIMARY: Wait for sending.....[0m
+[0;32mI (75249) PRIMARY: Send success:;[0m
+[0;32mI (75249) PRIMARY: Wait for response.....[0m
+[0;32mI (75249) PRIMARY: Got response:[;] Elapsed:1 ticks[0m
+[0;32mI (76249) PRIMARY: Wait for sending.....[0m
+[0;32mI (76259) PRIMARY: Send success:�
+[0;32mI (76259) PRIMARY: Wait for response.....[0m
+[0;32mI (76259) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (77259) PRIMARY: Wait for sending.....[0m
+[0;32mI (77269) PRIMARY: Send success:[0m
+[0;32mI (77269) PRIMARY: Wait for response.....[0m
+[0;32mI (77269) PRIMARY: Got response:[] Elapsed:1 ticks[0m
+[0;32mI (78269) PRIMARY: Wait for sending.....[0m
+[0;32mI (78279) PRIMARY: Send success:j[0m
+[0;32mI (78279) PRIMARY: Wait for response.....[0m
+[0;32mI (78279) PRIMARY: Got response:[j] Elapsed:1 ticks[0m
+[0;32mI (79279) PRIMARY: Wait for sending.....[0m
+[0;32mI (79289) PRIMARY: Send success:�
+[0;32mI (79289) PRIMARY: Wait for response.....[0m
+[0;32mI (79289) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (80289) PRIMARY: Wait for sending.....[0m
+[0;32mI (80299) PRIMARY: Send success:4[0m
+[0;32mI (80299) PRIMARY: Wait for response.....[0m
+[0;32mI (80299) PRIMARY: Got response:[4] Elapsed:1 ticks[0m
+[0;32mI (81299) PRIMARY: Wait for sending.....[0m
+[0;32mI (81309) PRIMARY: Send success:�
+[0;32mI (81309) PRIMARY: Wait for response.....[0m
+[0;32mI (81309) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (82309) PRIMARY: Wait for sending.....[0m
+[0;32mI (82319) PRIMARY: Send success:�
+[0;32mI (82319) PRIMARY: Wait for response.....[0m
+[0;32mI (82319) PRIMARY: Got response:[�] Elapsed:1 ticks[0m
+[0;32mI (83319) PRIMARY: Wait for sending.....[0m
+[0;32mI (83329) PRIMARY: Send success: c[0m
+[0;32mI (83329) PRIMARY: Wait for response.....[0m
+[0;32mI (83329) PRIMARY: Got response:[ c] Elapsed:1 ticks[0m
+[0;32mI (84329) PRIMARY: Wait for sending.....[0m
+[0;32mI (84339) PRIMARY: Send success: �
+[0;32mI (84339) PRIMARY: Wait for response.....[0m
+[0;32mI (84339) PRIMARY: Got response:[ �] Elapsed:1 ticks[0m
+[0;32mI (85339) PRIMARY: Wait for sending.....[0m
+[0;32mI (85349) PRIMARY: Send success:!-[0m
+[0;32mI (85349) PRIMARY: Wait for response.....[0m
+[0;32mI (85349) PRIMARY: Got response:[!-] Elapsed:1 ticks[0m
+[0;32mI (86349) PRIMARY: Wait for sending.....[0m
+[0;32mI (86359) PRIMARY: Send success:!�
+[0;32mI (86359) PRIMARY: Wait for response.....[0m
+[0;32mI (86359) PRIMARY: Got response:[!�] Elapsed:1 ticks[0m
+[0;32mI (87359) PRIMARY: Wait for sending.....[0m
+[0;32mI (87369) PRIMARY: Send success:!�
+[0;32mI (87369) PRIMARY: Wait for response.....[0m
+[0;32mI (87369) PRIMARY: Got response:[!�] Elapsed:1 ticks[0m
+[0;32mI (88369) PRIMARY: Wait for sending.....[0m
+[0;32mI (88379) PRIMARY: Send success:"\[0m
+[0;32mI (88379) PRIMARY: Wait for response.....[0m
+[0;32mI (88379) PRIMARY: Got response:["\] Elapsed:1 ticks[0m
+[0;32mI (89379) PRIMARY: Wait for sending.....[0m
+[0;32mI (89389) PRIMARY: Send success:"�
+[0;32mI (89389) PRIMARY: Wait for response.....[0m
+[0;32mI (89389) PRIMARY: Got response:["�] Elapsed:1 ticks[0m
+[0;32mI (90389) PRIMARY: Wait for sending.....[0m
+[0;32mI (90399) PRIMARY: Send success:#&[0m
+[0;32mI (90399) PRIMARY: Wait for response.....[0m
+[0;32mI (90399) PRIMARY: Got response:[#&] Elapsed:1 ticks[0m
+[0;32mI (91399) PRIMARY: Wait for sending.....[0m
+[0;32mI (91409) PRIMARY: Send success:#�
+[0;32mI (91409) PRIMARY: Wait for response.....[0m
+[0;32mI (91409) PRIMARY: Got response:[#�] Elapsed:1 ticks[0m
+[0;32mI (92409) PRIMARY: Wait for sending.....[0m
+[0;32mI (92419) PRIMARY: Send success:#�
+[0;32mI (92419) PRIMARY: Wait for response.....[0m
+[0;32mI (92419) PRIMARY: Got response:[#�] Elapsed:1 ticks[0m
+[0;32mI (93419) PRIMARY: Wait for sending.....[0m
+[0;32mI (93429) PRIMARY: Send success:$U[0m
+[0;32mI (93429) PRIMARY: Wait for response.....[0m
+[0;32mI (93429) PRIMARY: Got response:[$U] Elapsed:1 ticks[0m
+[0;32mI (94429) PRIMARY: Wait for sending.....[0m
+[0;32mI (94439) PRIMARY: Send success:$�
+[0;32mI (94439) PRIMARY: Wait for response.....[0m
+[0;32mI (94439) PRIMARY: Got response:[$�] Elapsed:1 ticks[0m
+[0;32mI (95439) PRIMARY: Wait for sending.....[0m
+[0;32mI (95449) PRIMARY: Send success:%[0m
+[0;32mI (95449) PRIMARY: Wait for response.....[0m
+[0;32mI (95449) PRIMARY: Got response:[%] Elapsed:1 ticks[0m
+[0;32mI (96449) PRIMARY: Wait for sending.....[0m
+[0;32mI (96459) PRIMARY: Send success:%�
+[0;32mI (96459) PRIMARY: Wait for response.....[0m
+[0;32mI (96459) PRIMARY: Got response:[%�] Elapsed:1 ticks[0m
+[0;32mI (97459) PRIMARY: Wait for sending.....[0m
+[0;32mI (97469) PRIMARY: Send success:%�
+[0;32mI (97469) PRIMARY: Wait for response.....[0m
+[0;32mI (97469) PRIMARY: Got response:[%�] Elapsed:1 ticks[0m
+[0;32mI (98469) PRIMARY: Wait for sending.....[0m
+[0;32mI (98479) PRIMARY: Send success:&N[0m
+[0;32mI (98479) PRIMARY: Wait for response.....[0m
+[0;32mI (98479) PRIMARY: Got response:[&N] Elapsed:1 ticks[0m
+[0;32mI (99479) PRIMARY: Wait for sending.....[0m
+[0;32mI (99489) PRIMARY: Send success:&�
+[0;32mI (99489) PRIMARY: Wait for response.....[0m
+[0;32mI (99489) PRIMARY: Got response:[&�] Elapsed:1 ticks[0m
+[0;32mI (100489) PRIMARY: Wait for sending.....[0m
+[0;32mI (100499) PRIMARY: Send success:'[0m
+[0;32mI (100499) PRIMARY: Wait for response.....[0m
+[0;32mI (100499) PRIMARY: Got response:['] Elapsed:1 ticks[0m
+[0;32mI (101499) PRIMARY: Wait for sending.....[0m
+[0;32mI (101509) PRIMARY: Send success:'}[0m
+[0;32mI (101509) PRIMARY: Wait for response.....[0m
+[0;32mI (101509) PRIMARY: Got response:['}] Elapsed:1 ticks[0m
+[0;32mI (102509) PRIMARY: Wait for sending.....[0m
+[0;32mI (102519) PRIMARY: Send success:'�
+[0;32mI (102519) PRIMARY: Wait for response.....[0m
+[0;32mI (102519) PRIMARY: Got response:['�] Elapsed:1 ticks[0m
+[0;32mI (103519) PRIMARY: Wait for sending.....[0m
+[0;32mI (103529) PRIMARY: Send success:(G[0m
+[0;32mI (103529) PRIMARY: Wait for response.....[0m
+[0;32mI (103529) PRIMARY: Got response:[(G] Elapsed:1 ticks[0m
+[0;32mI (104529) PRIMARY: Wait for sending.....[0m
+[0;32mI (104539) PRIMARY: Send success:(�
+[0;32mI (104539) PRIMARY: Wait for response.....[0m
+[0;32mI (104539) PRIMARY: Got response:[(�] Elapsed:1 ticks[0m
+[0;32mI (105539) PRIMARY: Wait for sending.....[0m
+[0;32mI (105549) PRIMARY: Send success:)[0m
+[0;32mI (105549) PRIMARY: Wait for response.....[0m
+[0;32mI (105549) PRIMARY: Got response:[)] Elapsed:1 ticks[0m
+[0;32mI (106549) PRIMARY: Wait for sending.....[0m
+[0;32mI (106559) PRIMARY: Send success:)v[0m
+[0;32mI (106559) PRIMARY: Wait for response.....[0m
+[0;32mI (106559) PRIMARY: Got response:[)v] Elapsed:1 ticks[0m
+[0;32mI (107559) PRIMARY: Wait for sending.....[0m
+[0;32mI (107569) PRIMARY: Send success:)�
+[0;32mI (107569) PRIMARY: Wait for response.....[0m
+[0;32mI (107569) PRIMARY: Got response:[)�] Elapsed:1 ticks[0m
+[0;32mI (108569) PRIMARY: Wait for sending.....[0m
+[0;32mI (108579) PRIMARY: Send success:*@[0m
+[0;32mI (108579) PRIMARY: Wait for response.....[0m
+[0;32mI (108579) PRIMARY: Got response:[*@] Elapsed:1 ticks[0m
+[0;32mI (109579) PRIMARY: Wait for sending.....[0m
+[0;32mI (109589) PRIMARY: Send success:*�
+[0;32mI (109589) PRIMARY: Wait for response.....[0m
+[0;32mI (109589) PRIMARY: Got response:[*�] Elapsed:1 ticks[0m
+[0;32mI (110589) PRIMARY: Wait for sending.....[0m
+[0;32mI (110599) PRIMARY: Send success:+
+[0m
+[0;32mI (110599) PRIMARY: Wait for response.....[0m
+[0;32mI (110599) PRIMARY: Got response:[+
+] Elapsed:1 ticks[0m
+[0;32mI (111599) PRIMARY: Wait for sending.....[0m
+[0;32mI (111609) PRIMARY: Send success:+o[0m
+[0;32mI (111609) PRIMARY: Wait for response.....[0m
+[0;32mI (111609) PRIMARY: Got response:[+o] Elapsed:1 ticks[0m
+[0;32mI (112609) PRIMARY: Wait for sending.....[0m
+[0;32mI (112619) PRIMARY: Send success:+�
+[0;32mI (112619) PRIMARY: Wait for response.....[0m
+[0;32mI (112619) PRIMARY: Got response:[+�] Elapsed:1 ticks[0m
+[0;32mI (113619) PRIMARY: Wait for sending.....[0m
+[0;32mI (113629) PRIMARY: Send success:,9[0m
+[0;32mI (113629) PRIMARY: Wait for response.....[0m
+[0;32mI (113629) PRIMARY: Got response:[,9] Elapsed:1 ticks[0m
+[0;32mI (114629) PRIMARY: Wait for sending.....[0m
+[0;32mI (114639) PRIMARY: Send success:,�
+[0;32mI (114639) PRIMARY: Wait for response.....[0m
+[0;32mI (114639) PRIMARY: Got response:[,�] Elapsed:1 ticks[0m
+[0;32mI (115639) PRIMARY: Wait for sending.....[0m
+[0;32mI (115649) PRIMARY: Send success:-[0m
+[0;32mI (115649) PRIMARY: Wait for response.....[0m
+[0;32mI (115649) PRIMARY: Got response:[-] Elapsed:1 ticks[0m
+[0;32mI (116649) PRIMARY: Wait for sending.....[0m
+[0;32mI (116659) PRIMARY: Send success:-h[0m
+[0;32mI (116659) PRIMARY: Wait for response.....[0m
+[0;32mI (116659) PRIMARY: Got response:[-h] Elapsed:1 ticks[0m
+[0;32mI (117659) PRIMARY: Wait for sending.....[0m
+[0;32mI (117669) PRIMARY: Send success:-�
+[0;32mI (117669) PRIMARY: Wait for response.....[0m
+[0;32mI (117669) PRIMARY: Got response:[-�] Elapsed:1 ticks[0m
+[0;32mI (118669) PRIMARY: Wait for sending.....[0m
+[0;32mI (118679) PRIMARY: Send success:.2[0m
+[0;32mI (118679) PRIMARY: Wait for response.....[0m
+[0;32mI (118679) PRIMARY: Got response:[.2] Elapsed:1 ticks[0m
+[0;32mI (119679) PRIMARY: Wait for sending.....[0m
+[0;32mI (119689) PRIMARY: Send success:.�
+[0;32mI (119689) PRIMARY: Wait for response.....[0m
+[0;32mI (119689) PRIMARY: Got response:[.�] Elapsed:1 ticks[0m
+[0;32mI (120689) PRIMARY: Wait for sending.....[0m
+[0;32mI (120699) PRIMARY: Send success:.�
+[0;32mI (120699) PRIMARY: Wait for response.....[0m
+[0;32mI (120699) PRIMARY: Got response:[.�] Elapsed:1 ticks[0m
+[0;32mI (121699) PRIMARY: Wait for sending.....[0m
+[0;32mI (121709) PRIMARY: Send success:/a[0m
+[0;32mI (121709) PRIMARY: Wait for response.....[0m
+[0;32mI (121709) PRIMARY: Got response:[/a] Elapsed:1 ticks[0m
+[0;32mI (122709) PRIMARY: Wait for sending.....[0m
+[0;32mI (122719) PRIMARY: Send success:/�
+[0;32mI (122719) PRIMARY: Wait for response.....[0m
+[0;32mI (122719) PRIMARY: Got response:[/�] Elapsed:1 ticks[0m
+[0;32mI (123719) PRIMARY: Wait for sending.....[0m
+[0;32mI (123729) PRIMARY: Send success:0+[0m
+[0;32mI (123729) PRIMARY: Wait for response.....[0m
+[0;32mI (123729) PRIMARY: Got response:[0+] Elapsed:1 ticks[0m
+[0;32mI (124729) PRIMARY: Wait for sending.....[0m
+[0;32mI (124739) PRIMARY: Send success:0�
+[0;32mI (124739) PRIMARY: Wait for response.....[0m
+[0;32mI (124739) PRIMARY: Got response:[0�] Elapsed:1 ticks[0m
+[0;32mI (125739) PRIMARY: Wait for sending.....[0m
+[0;32mI (125749) PRIMARY: Send success:0�
+[0;32mI (125749) PRIMARY: Wait for response.....[0m
+[0;32mI (125749) PRIMARY: Got response:[0�] Elapsed:1 ticks[0m
+[0;32mI (126749) PRIMARY: Wait for sending.....[0m
+[0;32mI (126759) PRIMARY: Send success:1Z[0m
+[0;32mI (126759) PRIMARY: Wait for response.....[0m
+[0;32mI (126759) PRIMARY: Got response:[1Z] Elapsed:1 ticks[0m
+[0;32mI (127759) PRIMARY: Wait for sending.....[0m
+[0;32mI (127769) PRIMARY: Send success:1�
+[0;32mI (127769) PRIMARY: Wait for response.....[0m
+[0;32mI (127769) PRIMARY: Got response:[1�] Elapsed:1 ticks[0m
+[0;32mI (128769) PRIMARY: Wait for sending.....[0m
+[0;32mI (128779) PRIMARY: Send success:2$[0m
+[0;32mI (128779) PRIMARY: Wait for response.....[0m
+[0;32mI (128779) PRIMARY: Got response:[2$] Elapsed:1 ticks[0m
+[0;32mI (129779) PRIMARY: Wait for sending.....[0m
+[0;32mI (129789) PRIMARY: Send success:2�
+[0;32mI (129789) PRIMARY: Wait for response.....[0m
+[0;32mI (129789) PRIMARY: Got response:[2�] Elapsed:1 ticks[0m
+[0;32mI (130789) PRIMARY: Wait for sending.....[0m
+[0;32mI (130799) PRIMARY: Send success:2�
+[0;32mI (130799) PRIMARY: Wait for response.....[0m
+[0;32mI (130799) PRIMARY: Got response:[2�] Elapsed:1 ticks[0m
+[0;32mI (131799) PRIMARY: Wait for sending.....[0m
+[0;32mI (131809) PRIMARY: Send success:3S[0m
+[0;32mI (131809) PRIMARY: Wait for response.....[0m
+[0;32mI (131809) PRIMARY: Got response:[3S] Elapsed:1 ticks[0m
+[0;32mI (132809) PRIMARY: Wait for sending.....[0m
+[0;32mI (132819) PRIMARY: Send success:3�
+[0;32mI (132819) PRIMARY: Wait for response.....[0m
+[0;32mI (132819) PRIMARY: Got response:[3�] Elapsed:1 ticks[0m
+[0;32mI (133819) PRIMARY: Wait for sending.....[0m
+[0;32mI (133829) PRIMARY: Send success:4[0m
+[0;32mI (133829) PRIMARY: Wait for response.....[0m
+[0;32mI (133829) PRIMARY: Got response:[4] Elapsed:1 ticks[0m
+[0;32mI (134829) PRIMARY: Wait for sending.....[0m
+[0;32mI (134839) PRIMARY: Send success:4�
+[0;32mI (134839) PRIMARY: Wait for response.....[0m
+[0;32mI (134839) PRIMARY: Got response:[4�] Elapsed:1 ticks[0m
+[0;32mI (135839) PRIMARY: Wait for sending.....[0m
+[0;32mI (135849) PRIMARY: Send success:4�
+[0;32mI (135849) PRIMARY: Wait for response.....[0m
+[0;32mI (135849) PRIMARY: Got response:[4�] Elapsed:1 ticks[0m
+[0;32mI (136849) PRIMARY: Wait for sending.....[0m
+[0;32mI (136859) PRIMARY: Send success:5L[0m
+[0;32mI (136859) PRIMARY: Wait for response.....[0m
+[0;32mI (136859) PRIMARY: Got response:[5L] Elapsed:1 ticks[0m
+[0;32mI (137859) PRIMARY: Wait for sending.....[0m
+[0;32mI (137869) PRIMARY: Send success:5�
+[0;32mI (137869) PRIMARY: Wait for response.....[0m
+[0;32mI (137869) PRIMARY: Got response:[5�] Elapsed:1 ticks[0m
+[0;32mI (138869) PRIMARY: Wait for sending.....[0m
+[0;32mI (138879) PRIMARY: Send success:6[0m
+[0;32mI (138879) PRIMARY: Wait for response.....[0m
+[0;32mI (138879) PRIMARY: Got response:[6] Elapsed:1 ticks[0m
+[0;32mI (139879) PRIMARY: Wait for sending.....[0m
+[0;32mI (139889) PRIMARY: Send success:6{[0m
+[0;32mI (139889) PRIMARY: Wait for response.....[0m
+[0;32mI (139889) PRIMARY: Got response:[6{] Elapsed:1 ticks[0m
+[0;32mI (140889) PRIMARY: Wait for sending.....[0m
+[0;32mI (140899) PRIMARY: Send success:6�
+[0;32mI (140899) PRIMARY: Wait for response.....[0m
+[0;32mI (140899) PRIMARY: Got response:[6�] Elapsed:1 ticks[0m
+[0;32mI (141899) PRIMARY: Wait for sending.....[0m
+[0;32mI (141909) PRIMARY: Send success:7E[0m
+[0;32mI (141909) PRIMARY: Wait for response.....[0m
+[0;32mI (141909) PRIMARY: Got response:[7E] Elapsed:1 ticks[0m
+[0;32mI (142909) PRIMARY: Wait for sending.....[0m
+[0;32mI (142919) PRIMARY: Send success:7�
+[0;32mI (142919) PRIMARY: Wait for response.....[0m
+[0;32mI (142919) PRIMARY: Got response:[7�] Elapsed:1 ticks[0m
+[0;32mI (143919) PRIMARY: Wait for sending.....[0m
+[0;32mI (143929) PRIMARY: Send success:8[0m
+[0;32mI (143929) PRIMARY: Wait for response.....[0m
+[0;32mI (143929) PRIMARY: Got response:[8] Elapsed:1 ticks[0m
+[0;32mI (144929) PRIMARY: Wait for sending.....[0m
+[0;32mI (144939) PRIMARY: Send success:8t[0m
+[0;32mI (144939) PRIMARY: Wait for response.....[0m
+[0;32mI (144939) PRIMARY: Got response:[8t] Elapsed:1 ticks[0m
+[0;32mI (145939) PRIMARY: Wait for sending.....[0m
+[0;32mI (145949) PRIMARY: Send success:8�
+[0;32mI (145949) PRIMARY: Wait for response.....[0m
+[0;32mI (145949) PRIMARY: Got response:[8�] Elapsed:1 ticks[0m
+[0;32mI (146949) PRIMARY: Wait for sending.....[0m
+[0;32mI (146959) PRIMARY: Send success:9>[0m
+[0;32mI (146959) PRIMARY: Wait for response.....[0m
+[0;32mI (146959) PRIMARY: Got response:[9>] Elapsed:1 ticks[0m
+[0;32mI (147959) PRIMARY: Wait for sending.....[0m
+[0;32mI (147969) PRIMARY: Send success:9�
+[0;32mI (147969) PRIMARY: Wait for response.....[0m
+[0;32mI (147969) PRIMARY: Got response:[9�] Elapsed:1 ticks[0m
+[0;32mI (148969) PRIMARY: Wait for sending.....[0m
+[0;32mI (148979) PRIMARY: Send success::[0m
+[0;32mI (148979) PRIMARY: Wait for response.....[0m
+[0;32mI (148979) PRIMARY: Got response:[:] Elapsed:1 ticks[0m
+[0;32mI (149979) PRIMARY: Wait for sending.....[0m
+[0;32mI (149989) PRIMARY: Send success::m[0m
+[0;32mI (149989) PRIMARY: Wait for response.....[0m
+[0;32mI (149989) PRIMARY: Got response:[:m] Elapsed:1 ticks[0m
+[0;32mI (150989) PRIMARY: Wait for sending.....[0m
+[0;32mI (150999) PRIMARY: Send success::�
+[0;32mI (150999) PRIMARY: Wait for response.....[0m
+[0;32mI (150999) PRIMARY: Got response:[:�] Elapsed:1 ticks[0m
+[0;32mI (151999) PRIMARY: Wait for sending.....[0m
+[0;32mI (152009) PRIMARY: Send success:;7[0m
+[0;32mI (152009) PRIMARY: Wait for response.....[0m
+[0;32mI (152009) PRIMARY: Got response:[;7] Elapsed:1 ticks[0m
+[0;32mI (153009) PRIMARY: Wait for sending.....[0m
+[0;32mI (153019) PRIMARY: Send success:;�
+[0;32mI (153019) PRIMARY: Wait for response.....[0m
+[0;32mI (153019) PRIMARY: Got response:[;�] Elapsed:1 ticks[0m
+[0;32mI (154019) PRIMARY: Wait for sending.....[0m
+[0;32mI (154029) PRIMARY: Send success:<[0m
+[0;32mI (154029) PRIMARY: Wait for response.....[0m
+[0;32mI (154029) PRIMARY: Got response:[<] Elapsed:1 ticks[0m
+[0;32mI (155029) PRIMARY: Wait for sending.....[0m
+[0;32mI (155039) PRIMARY: Send success:<f[0m
+[0;32mI (155039) PRIMARY: Wait for response.....[0m
+[0;32mI (155039) PRIMARY: Got response:[<f] Elapsed:1 ticks[0m
+[0;32mI (156039) PRIMARY: Wait for sending.....[0m
+[0;32mI (156049) PRIMARY: Send success:<�
+[0;32mI (156049) PRIMARY: Wait for response.....[0m
+[0;32mI (156049) PRIMARY: Got response:[<�] Elapsed:1 ticks[0m
+[0;32mI (157049) PRIMARY: Wait for sending.....[0m
+[0;32mI (157059) PRIMARY: Send success:=0[0m
+[0;32mI (157059) PRIMARY: Wait for response.....[0m
+[0;32mI (157059) PRIMARY: Got response:[=0] Elapsed:1 ticks[0m
+[0;32mI (158059) PRIMARY: Wait for sending.....[0m
+[0;32mI (158069) PRIMARY: Send success:=�
+[0;32mI (158069) PRIMARY: Wait for response.....[0m
+[0;32mI (158069) PRIMARY: Got response:[=�] Elapsed:1 ticks[0m
+[0;32mI (159069) PRIMARY: Wait for sending.....[0m
+[0;32mI (159079) PRIMARY: Send success:=�
+[0;32mI (159079) PRIMARY: Wait for response.....[0m
+[0;32mI (159079) PRIMARY: Got response:[=�] Elapsed:1 ticks[0m
+[0;32mI (160079) PRIMARY: Wait for sending.....[0m
+[0;32mI (160089) PRIMARY: Send success:>_[0m
+[0;32mI (160089) PRIMARY: Wait for response.....[0m
+[0;32mI (160089) PRIMARY: Got response:[>_] Elapsed:1 ticks[0m
+[0;32mI (161089) PRIMARY: Wait for sending.....[0m
+[0;32mI (161099) PRIMARY: Send success:>�
+[0;32mI (161099) PRIMARY: Wait for response.....[0m
+[0;32mI (161099) PRIMARY: Got response:[>�] Elapsed:1 ticks[0m
+[0;32mI (162099) PRIMARY: Wait for sending.....[0m
+[0;32mI (162109) PRIMARY: Send success:?)[0m
+[0;32mI (162109) PRIMARY: Wait for response.....[0m
+[0;32mI (162109) PRIMARY: Got response:[?)] Elapsed:1 ticks[0m
+[0;32mI (163109) PRIMARY: Wait for sending.....[0m
+[0;32mI (163119) PRIMARY: Send success:?�
+[0;32mI (163119) PRIMARY: Wait for response.....[0m
+[0;32mI (163119) PRIMARY: Got response:[?�] Elapsed:1 ticks[0m
+[0;32mI (164119) PRIMARY: Wait for sending.....[0m
+[0;32mI (164129) PRIMARY: Send success:?�
+[0;32mI (164129) PRIMARY: Wait for response.....[0m
+[0;32mI (164129) PRIMARY: Got response:[?�] Elapsed:1 ticks[0m
+[0;32mI (165129) PRIMARY: Wait for sending.....[0m
+[0;32mI (165139) PRIMARY: Send success:@X[0m
+[0;32mI (165139) PRIMARY: Wait for response.....[0m
+[0;32mI (165139) PRIMARY: Got response:[@X] Elapsed:1 ticks[0m
+[0;32mI (166139) PRIMARY: Wait for sending.....[0m
+[0;32mI (166149) PRIMARY: Send success:@�
+[0;32mI (166149) PRIMARY: Wait for response.....[0m
+[0;32mI (166149) PRIMARY: Got response:[@�] Elapsed:1 ticks[0m
+[0;32mI (167149) PRIMARY: Wait for sending.....[0m
+[0;32mI (167159) PRIMARY: Send success:A"[0m
+[0;32mI (167159) PRIMARY: Wait for response.....[0m
+[0;32mI (167159) PRIMARY: Got response:[A"] Elapsed:1 ticks[0m
+[0;32mI (168159) PRIMARY: Wait for sending.....[0m
+[0;32mI (168169) PRIMARY: Send success:A�
+[0;32mI (168169) PRIMARY: Wait for response.....[0m
+[0;32mI (168169) PRIMARY: Got response:[A�] Elapsed:1 ticks[0m
+[0;32mI (169169) PRIMARY: Wait for sending.....[0m
+[0;32mI (169179) PRIMARY: Send success:A�
+[0;32mI (169179) PRIMARY: Wait for response.....[0m
+[0;32mI (169179) PRIMARY: Got response:[A�] Elapsed:1 ticks[0m
+[0;32mI (170179) PRIMARY: Wait for sending.....[0m
+[0;32mI (170189) PRIMARY: Send success:BQ[0m
+[0;32mI (170189) PRIMARY: Wait for response.....[0m
+[0;32mI (170189) PRIMARY: Got response:[BQ] Elapsed:1 ticks[0m
+[0;32mI (171189) PRIMARY: Wait for sending.....[0m
+[0;32mI (171199) PRIMARY: Send success:B�
+[0;32mI (171199) PRIMARY: Wait for response.....[0m
+[0;32mI (171199) PRIMARY: Got response:[B�] Elapsed:1 ticks[0m
+[0;32mI (172199) PRIMARY: Wait for sending.....[0m
+[0;32mI (172209) PRIMARY: Send success:C[0m
+[0;32mI (172209) PRIMARY: Wait for response.....[0m
+[0;32mI (172209) PRIMARY: Got response:[C] Elapsed:1 ticks[0m
+[0;32mI (173209) PRIMARY: Wait for sending.....[0m
+[0;32mI (173219) PRIMARY: Send success:C�
+[0;32mI (173219) PRIMARY: Wait for response.....[0m
+[0;32mI (173219) PRIMARY: Got response:[C�] Elapsed:1 ticks[0m
+[0;32mI (174219) PRIMARY: Wait for sending.....[0m
+[0;32mI (174229) PRIMARY: Send success:C�
+[0;32mI (174229) PRIMARY: Wait for response.....[0m
+[0;32mI (174229) PRIMARY: Got response:[C�] Elapsed:1 ticks[0m
+[0;32mI (175229) PRIMARY: Wait for sending.....[0m
+[0;32mI (175239) PRIMARY: Send success:DJ[0m
+[0;32mI (175239) PRIMARY: Wait for response.....[0m
+[0;32mI (175239) PRIMARY: Got response:[DJ] Elapsed:1 ticks[0m
+[0;32mI (176239) PRIMARY: Wait for sending.....[0m
+[0;32mI (176249) PRIMARY: Send success:D�
+[0;32mI (176249) PRIMARY: Wait for response.....[0m
+[0;32mI (176249) PRIMARY: Got response:[D�] Elapsed:1 ticks[0m
+[0;32mI (177249) PRIMARY: Wait for sending.....[0m
+[0;32mI (177259) PRIMARY: Send success:E[0m
+[0;32mI (177259) PRIMARY: Wait for response.....[0m
+[0;32mI (177259) PRIMARY: Got response:[E] Elapsed:1 ticks[0m
+[0;32mI (178259) PRIMARY: Wait for sending.....[0m
+[0;32mI (178269) PRIMARY: Send success:Ey[0m
+[0;32mI (178269) PRIMARY: Wait for response.....[0m
+[0;32mI (178269) PRIMARY: Got response:[Ey] Elapsed:1 ticks[0m
+[0;32mI (179269) PRIMARY: Wait for sending.....[0m
+[0;32mI (179279) PRIMARY: Send success:E�
+[0;32mI (179279) PRIMARY: Wait for response.....[0m
+[0;32mI (179279) PRIMARY: Got response:[E�] Elapsed:1 ticks[0m
+[0;32mI (180279) PRIMARY: Wait for sending.....[0m
+[0;32mI (180289) PRIMARY: Send success:FC[0m
+[0;32mI (180289) PRIMARY: Wait for response.....[0m
+[0;32mI (180289) PRIMARY: Got response:[FC] Elapsed:1 ticks[0m
+[0;32mI (181289) PRIMARY: Wait for sending.....[0m
+[0;32mI (181299) PRIMARY: Send success:F�
+[0;32mI (181299) PRIMARY: Wait for response.....[0m
+[0;32mI (181299) PRIMARY: Got response:[F�] Elapsed:1 ticks[0m
+[0;32mI (182299) PRIMARY: Wait for sending.....[0m
+[0;32mI (182309) PRIMARY: Send success:G[0m
+[0;32mI (182309) PRIMARY: Wait for response.....[0m
+[0;32mI (182309) PRIMARY: Got response:[G] Elapsed:1 ticks[0m
+[0;32mI (183309) PRIMARY: Wait for sending.....[0m
+[0;32mI (183319) PRIMARY: Send success:Gr[0m
+[0;32mI (183319) PRIMARY: Wait for response.....[0m
+[0;32mI (183319) PRIMARY: Got response:[Gr] Elapsed:1 ticks[0m
+[0;32mI (184319) PRIMARY: Wait for sending.....[0m
+[0;32mI (184329) PRIMARY: Send success:G�
+[0;32mI (184329) PRIMARY: Wait for response.....[0m
+[0;32mI (184329) PRIMARY: Got response:[G�] Elapsed:1 ticks[0m
+[0;32mI (185329) PRIMARY: Wait for sending.....[0m
+[0;32mI (185339) PRIMARY: Send success:H<[0m
+[0;32mI (185339) PRIMARY: Wait for response.....[0m
+[0;32mI (185339) PRIMARY: Got response:[H<] Elapsed:1 ticks[0m
+[0;32mI (186339) PRIMARY: Wait for sending.....[0m
+[0;32mI (186349) PRIMARY: Send success:H�
+[0;32mI (186349) PRIMARY: Wait for response.....[0m
+[0;32mI (186349) PRIMARY: Got response:[H�] Elapsed:1 ticks[0m
+[0;32mI (187349) PRIMARY: Wait for sending.....[0m
+[0;32mI (187359) PRIMARY: Send success:I[0m
+[0;32mI (187359) PRIMARY: Wait for response.....[0m
+[0;32mI (187359) PRIMARY: Got response:[I] Elapsed:1 ticks[0m
+[0;32mI (188359) PRIMARY: Wait for sending.....[0m
+[0;32mI (188369) PRIMARY: Send success:Ik[0m
+[0;32mI (188369) PRIMARY: Wait for response.....[0m
+[0;32mI (188369) PRIMARY: Got response:[Ik] Elapsed:1 ticks[0m
+[0;32mI (189369) PRIMARY: Wait for sending.....[0m
+[0;32mI (189379) PRIMARY: Send success:I�
+[0;32mI (189379) PRIMARY: Wait for response.....[0m
+[0;32mI (189379) PRIMARY: Got response:[I�] Elapsed:1 ticks[0m
+[0;32mI (190379) PRIMARY: Wait for sending.....[0m
+[0;32mI (190389) PRIMARY: Send success:J5[0m
+[0;32mI (190389) PRIMARY: Wait for response.....[0m
+[0;32mI (190389) PRIMARY: Got response:[J5] Elapsed:1 ticks[0m
+[0;32mI (191389) PRIMARY: Wait for sending.....[0m
+[0;32mI (191399) PRIMARY: Send success:J�
+[0;32mI (191399) PRIMARY: Wait for response.....[0m
+[0;32mI (191399) PRIMARY: Got response:[J�] Elapsed:1 ticks[0m
+[0;32mI (192399) PRIMARY: Wait for sending.....[0m
+[0;32mI (192409) PRIMARY: Send success:J�
+[0;32mI (192409) PRIMARY: Wait for response.....[0m
+[0;32mI (192409) PRIMARY: Got response:[J�] Elapsed:1 ticks[0m
+[0;32mI (193409) PRIMARY: Wait for sending.....[0m
+[0;32mI (193419) PRIMARY: Send success:Kd[0m
+[0;32mI (193419) PRIMARY: Wait for response.....[0m
+[0;32mI (193419) PRIMARY: Got response:[Kd] Elapsed:1 ticks[0m
+[0;32mI (194419) PRIMARY: Wait for sending.....[0m
+[0;32mI (194429) PRIMARY: Send success:K�
+[0;32mI (194429) PRIMARY: Wait for response.....[0m
+[0;32mI (194429) PRIMARY: Got response:[K�] Elapsed:1 ticks[0m
+[0;32mI (195429) PRIMARY: Wait for sending.....[0m
+[0;32mI (195439) PRIMARY: Send success:L.[0m
+[0;32mI (195439) PRIMARY: Wait for response.....[0m
+[0;32mI (195439) PRIMARY: Got response:[L.] Elapsed:1 ticks[0m
+[0;32mI (196439) PRIMARY: Wait for sending.....[0m
+[0;32mI (196449) PRIMARY: Send success:L�
+[0;32mI (196449) PRIMARY: Wait for response.....[0m
+[0;32mI (196449) PRIMARY: Got response:[L�] Elapsed:1 ticks[0m
+[0;32mI (197449) PRIMARY: Wait for sending.....[0m
+[0;32mI (197459) PRIMARY: Send success:L�
+[0;32mI (197459) PRIMARY: Wait for response.....[0m
+[0;32mI (197459) PRIMARY: Got response:[L�] Elapsed:1 ticks[0m
+[0;32mI (198459) PRIMARY: Wait for sending.....[0m
+[0;32mI (198469) PRIMARY: Send success:M][0m
+[0;32mI (198469) PRIMARY: Wait for response.....[0m
+[0;32mI (198469) PRIMARY: Got response:[M]] Elapsed:1 ticks[0m
+[0;32mI (199469) PRIMARY: Wait for sending.....[0m
+[0;32mI (199479) PRIMARY: Send success:M�
+[0;32mI (199479) PRIMARY: Wait for response.....[0m
+[0;32mI (199479) PRIMARY: Got response:[M�] Elapsed:1 ticks[0m
+[0;32mI (200479) PRIMARY: Wait for sending.....[0m
+[0;32mI (200489) PRIMARY: Send success:N'[0m
+[0;32mI (200489) PRIMARY: Wait for response.....[0m
+[0;32mI (200489) PRIMARY: Got response:[N'] Elapsed:1 ticks[0m
+[0;32mI (201489) PRIMARY: Wait for sending.....[0m
+[0;32mI (201499) PRIMARY: Send success:N�
+[0;32mI (201499) PRIMARY: Wait for response.....[0m
+[0;32mI (201499) PRIMARY: Got response:[N�] Elapsed:1 ticks[0m
+[0;32mI (202499) PRIMARY: Wait for sending.....[0m
+[0;32mI (202509) PRIMARY: Send success:N�
+[0;32mI (202509) PRIMARY: Wait for response.....[0m
+[0;32mI (202509) PRIMARY: Got response:[N�] Elapsed:1 ticks[0m
+[0;32mI (203509) PRIMARY: Wait for sending.....[0m
+[0;32mI (203519) PRIMARY: Send success:OV[0m
+[0;32mI (203519) PRIMARY: Wait for response.....[0m
+[0;32mI (203519) PRIMARY: Got response:[OV] Elapsed:1 ticks[0m
+[0;32mI (204519) PRIMARY: Wait for sending.....[0m
+[0;32mI (204529) PRIMARY: Send success:O�
+[0;32mI (204529) PRIMARY: Wait for response.....[0m
+[0;32mI (204529) PRIMARY: Got response:[O�] Elapsed:1 ticks[0m
+[0;32mI (205529) PRIMARY: Wait for sending.....[0m
+[0;32mI (205539) PRIMARY: Send success:P [0m
+[0;32mI (205539) PRIMARY: Wait for response.....[0m
+[0;32mI (205539) PRIMARY: Got response:[P ] Elapsed:1 ticks[0m
+[0;32mI (206539) PRIMARY: Wait for sending.....[0m
+[0;32mI (206549) PRIMARY: Send success:P�
+[0;32mI (206549) PRIMARY: Wait for response.....[0m
+[0;32mI (206549) PRIMARY: Got response:[P�] Elapsed:1 ticks[0m
+[0;32mI (207549) PRIMARY: Wait for sending.....[0m
+[0;32mI (207559) PRIMARY: Send success:P�
+[0;32mI (207559) PRIMARY: Wait for response.....[0m
+[0;32mI (207559) PRIMARY: Got response:[P�] Elapsed:1 ticks[0m
+[0;32mI (208559) PRIMARY: Wait for sending.....[0m
+[0;32mI (208569) PRIMARY: Send success:QO[0m
+[0;32mI (208569) PRIMARY: Wait for response.....[0m
+[0;32mI (208569) PRIMARY: Got response:[QO] Elapsed:1 ticks[0m
+[0;32mI (209569) PRIMARY: Wait for sending.....[0m
+[0;32mI (209579) PRIMARY: Send success:Q�
+[0;32mI (209579) PRIMARY: Wait for response.....[0m
+[0;32mI (209579) PRIMARY: Got response:[Q�] Elapsed:1 ticks[0m
+[0;32mI (210579) PRIMARY: Wait for sending.....[0m
+[0;32mI (210589) PRIMARY: Send success:R[0m
+[0;32mI (210589) PRIMARY: Wait for response.....[0m
+[0;32mI (210589) PRIMARY: Got response:[R] Elapsed:1 ticks[0m
+[0;32mI (211589) PRIMARY: Wait for sending.....[0m
+[0;32mI (211599) PRIMARY: Send success:R~[0m
+[0;32mI (211599) PRIMARY: Wait for response.....[0m
+[0;32mI (211599) PRIMARY: Got response:[R~] Elapsed:1 ticks[0m
+[0;32mI (212599) PRIMARY: Wait for sending.....[0m
+[0;32mI (212609) PRIMARY: Send success:R�
+[0;32mI (212609) PRIMARY: Wait for response.....[0m
+[0;32mI (212609) PRIMARY: Got response:[R�] Elapsed:1 ticks[0m
+[0;32mI (213609) PRIMARY: Wait for sending.....[0m
+[0;32mI (213619) PRIMARY: Send success:SH[0m
+[0;32mI (213619) PRIMARY: Wait for response.....[0m
+[0;32mI (213619) PRIMARY: Got response:[SH] Elapsed:1 ticks[0m
+[0;32mI (214619) PRIMARY: Wait for sending.....[0m
+[0;32mI (214629) PRIMARY: Send success:S�
+[0;32mI (214629) PRIMARY: Wait for response.....[0m
+[0;32mI (214629) PRIMARY: Got response:[S�] Elapsed:1 ticks[0m
+[0;32mI (215629) PRIMARY: Wait for sending.....[0m
+[0;32mI (215639) PRIMARY: Send success:T[0m
+[0;32mI (215639) PRIMARY: Wait for response.....[0m
+[0;32mI (215639) PRIMARY: Got response:[T] Elapsed:1 ticks[0m

@@ -1,0 +1,71 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/bootloader/esp-idf/esptool_py && /Users/yuhsienchang/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/bootloader/bootloader.bin
+Bootloader binary size 0x5230 bytes. 0x2dd0 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/nrf24/nrf24_init.c.obj
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:19:16: warning: 'is_send_mode_flag' defined but not used [-Wunused-variable]
+   19 | static uint8_t is_send_mode_flag = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/main/nrf24/nrf24_init.c:18:22: warning: 'currentState' defined but not used [-Wunused-variable]
+   18 | static nrf24_state_t currentState = STATE_IDLE;
+      |                      ^~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable main.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/main.bin
+[7/8] cd /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/esp-idf/esptool_py && /Users/yuhsienchang/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/partition_table/partition-table.bin /Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build/main.bin
+main.bin binary size 0x51be0 bytes. Smallest app partition is 0x200000 bytes. 0x1ae420 bytes (84%) free.
+[7/8] cd /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esptool_py && /Users/yuhsienchang/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/yuhsienchang/esp/v5.2.1/esp-idf -D "SERIAL_TOOL=/Users/yuhsienchang/.espressif/python_env/idf5.2_py3.9_env/bin/python;;/Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/yuhsienchang/Downloads/2025-02-14-Gateway-Linux/esp32/ESP32-S3-WROOM-1-N16R8/switch/2025-03-22-sample-1/build -P /Users/yuhsienchang/esp/v5.2.1/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.wchusbserial59090635051 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size detect 0x0 bootloader/bootloader.bin 0x20000 main.bin 0x8000 partition_table/partition-table.bin 0x10000 ota_data_initial.bin
+esptool.py v4.7.0
+Serial port /dev/cu.wchusbserial59090635051
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: f0:9e:9e:11:53:38
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 16MB
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00020000 to 0x00071fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00011fff...
+Flash params set to 0x024f
+Compressed 21040 bytes to 13044...
+Writing at 0x00000000... (100 %)
+Wrote 21040 bytes (13044 compressed) at 0x00000000 in 0.7 seconds (effective 248.5 kbit/s)...
+Hash of data verified.
+Compressed 334816 bytes to 174530...
+Writing at 0x00020000... (9 %)
+Writing at 0x0002c9fd... (18 %)
+Writing at 0x00037079... (27 %)
+Writing at 0x0003d237... (36 %)
+Writing at 0x000438b5... (45 %)
+Writing at 0x00049dd5... (54 %)
+Writing at 0x0004f995... (63 %)
+Writing at 0x00056012... (72 %)
+Writing at 0x0005bc79... (81 %)
+Writing at 0x00065397... (90 %)
+Writing at 0x0006db82... (100 %)
+Wrote 334816 bytes (174530 compressed) at 0x00020000 in 4.5 seconds (effective 600.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 154...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (154 compressed) at 0x00008000 in 0.1 seconds (effective 464.4 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00010000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00010000 in 0.0 seconds (effective 2463.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

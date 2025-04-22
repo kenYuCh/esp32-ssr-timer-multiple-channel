@@ -1,0 +1,2209 @@
+�B���Z�	�: RAMESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c030020 size=108a0h ( 67744) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000308c8 vaddr=3fc94600 size=02a80h ( 10880) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00033350 vaddr=40374000 size=0ccc8h ( 52424) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=2e110h (188688) map[0m
+[0;32mI (200) esp_image: segment 4: paddr=0006e138 vaddr=40380cc8 size=03838h ( 14392) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (209) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     main[0m
+[0;32mI (238) cpu_start: App version:      0.0.1[0m
+[0;32mI (243) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (249) cpu_start: ELF file SHA256:  45ae3ee91...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (260) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (265) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (270) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (274) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FC97DE0 len 00051930 (326 KiB): RAM[0m
+[0;32mI (288) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (294) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (307) spi_flash: detected chip: boya[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (321) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) SYS: REBOOT[0m
+Build at Mar 23 2025 20:47:28
+[0;32mI (1269) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1339) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1339) SYS: Initialize LED[0m
+[0;32mI (1339) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1339) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1349) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1359) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1369) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+[0;32mI (1409) Heap: Minimum free heap ever: 353076 bytes[0m
+[0;32mI (1409) PRIMARY: Start[0m
+[0;32mI (1419) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (1419) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (1419) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (1429) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (1429) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (1439) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1439) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1449) NRF24: spi_bus_initialize=0[0m
+[0;32mI (1459) NRF24: spi_bus_add_device=0[0m
+[0;33mW (1459) PRIMARY: Set RF Data Ratio to 250KBps[0m
+[0;33mW (1469) PRIMARY: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x4142434445
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (1519) PRIMARY: Wait for sending.....[0m
+[0;32mI (1529) PRIMARY: Send success![0m
+[0;32mI (1529) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[0;32mI (2549) PRIMARY: Wait for sending.....[0m
+[0;32mI (2559) PRIMARY: Send success![0m
+[0;32mI (2559) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Into data_task 
+Channel-2, Schedule Running IDLE.
+[0;32mI (3569) PRIMARY: Wait for sending.....[0m
+[0;32mI (3579) PRIMARY: Send success![0m
+[0;32mI (3579) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (4589) PRIMARY: Wait for sending.....[0m
+[0;32mI (4599) PRIMARY: Send success![0m
+[0;32mI (4599) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (5609) PRIMARY: Wait for sending.....[0m
+[0;32mI (5619) PRIMARY: Send success![0m
+[0;32mI (5619) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (6629) PRIMARY: Wait for sending.....[0m
+[0;32mI (6639) PRIMARY: Send success![0m
+[0;32mI (6639) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (7649) PRIMARY: Wait for sending.....[0m
+[0;32mI (7659) PRIMARY: Send success![0m
+[0;32mI (7659) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (8669) PRIMARY: Wait for sending.....[0m
+[0;32mI (8679) PRIMARY: Send success![0m
+[0;32mI (8679) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (9689) PRIMARY: Wait for sending.....[0m
+[0;32mI (9699) PRIMARY: Send success![0m
+[0;32mI (9699) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (10759) PRIMARY: Wait for sending.....[0m
+[0;32mI (10759) PRIMARY: Send success![0m
+[0;32mI (10759) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (11779) PRIMARY: Wait for sending.....[0m
+[0;32mI (11789) PRIMARY: Send success![0m
+[0;32mI (11789) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (12799) PRIMARY: Wait for sending.....[0m
+[0;32mI (12809) PRIMARY: Send success![0m
+[0;32mI (12809) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (13819) PRIMARY: Wait for sending.....[0m
+[0;32mI (13829) PRIMARY: Send success![0m
+[0;32mI (13829) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (14839) PRIMARY: Wait for sending.....[0m
+[0;32mI (14849) PRIMARY: Send success![0m
+[0;32mI (14849) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (15929) PRIMARY: Wait for sending.....[0m
+[0;32mI (15929) PRIMARY: Send success![0m
+[0;32mI (15929) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (16949) PRIMARY: Wait for sending.....[0m
+[0;32mI (16959) PRIMARY: Send success![0m
+[0;32mI (16959) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (17969) PRIMARY: Wait for sending.....[0m
+[0;32mI (17979) PRIMARY: Send success![0m
+[0;32mI (17979) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (18989) PRIMARY: Wait for sending.....[0m
+[0;32mI (18999) PRIMARY: Send success![0m
+[0;32mI (18999) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (20009) PRIMARY: Wait for sending.....[0m
+[0;32mI (20019) PRIMARY: Send success![0m
+[0;32mI (20019) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (21099) PRIMARY: Wait for sending.....[0m
+[0;32mI (21099) PRIMARY: Send success![0m
+[0;32mI (21099) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (22119) PRIMARY: Wait for sending.....[0m
+[0;32mI (22129) PRIMARY: Send success![0m
+[0;32mI (22129) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (23139) PRIMARY: Wait for sending.....[0m
+[0;32mI (23149) PRIMARY: Send success![0m
+[0;32mI (23149) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (24159) PRIMARY: Wait for sending.....[0m
+[0;32mI (24169) PRIMARY: Send success![0m
+[0;32mI (24169) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (25179) PRIMARY: Wait for sending.....[0m
+[0;32mI (25189) PRIMARY: Send success![0m
+[0;32mI (25189) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (26269) PRIMARY: Wait for sending.....[0m
+[0;32mI (26269) PRIMARY: Send success![0m
+[0;32mI (26269) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (27289) PRIMARY: Wait for sending.....[0m
+[0;32mI (27299) PRIMARY: Send success![0m
+[0;32mI (27299) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (28309) PRIMARY: Wait for sending.....[0m
+[0;32mI (28319) PRIMARY: Send success![0m
+[0;32mI (28319) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (29329) PRIMARY: Wait for sending.....[0m
+[0;32mI (29339) PRIMARY: Send success![0m
+[0;32mI (29339) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (30349) PRIMARY: Wait for sending.....[0m
+[0;32mI (30359) PRIMARY: Send success![0m
+[0;32mI (30359) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (31439) PRIMARY: Wait for sending.....[0m
+[0;32mI (31439) PRIMARY: Send success![0m
+[0;32mI (31439) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (32459) PRIMARY: Wait for sending.....[0m
+[0;32mI (32469) PRIMARY: Send success![0m
+[0;32mI (32469) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (33479) PRIMARY: Wait for sending.....[0m
+[0;32mI (33489) PRIMARY: Send success![0m
+[0;32mI (33489) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (34499) PRIMARY: Wait for sending.....[0m
+[0;32mI (34509) PRIMARY: Send success![0m
+[0;32mI (34509) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (35519) PRIMARY: Wait for sending.....[0m
+[0;32mI (35529) PRIMARY: Send success![0m
+[0;32mI (35529) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (36609) PRIMARY: Wait for sending.....[0m
+[0;32mI (36609) PRIMARY: Send success![0m
+[0;32mI (36609) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (37629) PRIMARY: Wait for sending.....[0m
+[0;32mI (37639) PRIMARY: Send success![0m
+[0;32mI (37639) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (38649) PRIMARY: Wait for sending.....[0m
+[0;32mI (38659) PRIMARY: Send success![0m
+[0;32mI (38659) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (39669) PRIMARY: Wait for sending.....[0m
+[0;32mI (39679) PRIMARY: Send success![0m
+[0;32mI (39679) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (40689) PRIMARY: Wait for sending.....[0m
+[0;32mI (40699) PRIMARY: Send success![0m
+[0;32mI (40699) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (41779) PRIMARY: Wait for sending.....[0m
+[0;32mI (41779) PRIMARY: Send success![0m
+[0;32mI (41779) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (42799) PRIMARY: Wait for sending.....[0m
+[0;32mI (42809) PRIMARY: Send success![0m
+[0;32mI (42809) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (43819) PRIMARY: Wait for sending.....[0m
+[0;32mI (43829) PRIMARY: Send success![0m
+[0;32mI (43829) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (44839) PRIMARY: Wait for sending.....[0m
+[0;32mI (44849) PRIMARY: Send success![0m
+[0;32mI (44849) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (45859) PRIMARY: Wait for sending.....[0m
+[0;32mI (45869) PRIMARY: Send success![0m
+[0;32mI (45869) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (46949) PRIMARY: Wait for sending.....[0m
+[0;32mI (46949) PRIMARY: Send success![0m
+[0;32mI (46949) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (47969) PRIMARY: Wait for sending.....[0m
+[0;32mI (47979) PRIMARY: Send success![0m
+[0;32mI (47979) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (48989) PRIMARY: Wait for sending.....[0m
+[0;32mI (48999) PRIMARY: Send success![0m
+[0;32mI (48999) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (50009) PRIMARY: Wait for sending.....[0m
+[0;32mI (50019) PRIMARY: Send success![0m
+[0;32mI (50019) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (51029) PRIMARY: Wait for sending.....[0m
+[0;32mI (51039) PRIMARY: Send success![0m
+[0;32mI (51039) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (52119) PRIMARY: Wait for sending.....[0m
+[0;32mI (52119) PRIMARY: Send success![0m
+[0;32mI (52119) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (53139) PRIMARY: Wait for sending.....[0m
+[0;32mI (53149) PRIMARY: Send success![0m
+[0;32mI (53149) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (54159) PRIMARY: Wait for sending.....[0m
+[0;32mI (54169) PRIMARY: Send success![0m
+[0;32mI (54169) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (55179) PRIMARY: Wait for sending.....[0m
+[0;32mI (55189) PRIMARY: Send success![0m
+[0;32mI (55189) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (56199) PRIMARY: Wait for sending.....[0m
+[0;32mI (56209) PRIMARY: Send success![0m
+[0;32mI (56209) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (57289) PRIMARY: Wait for sending.....[0m
+[0;32mI (57289) PRIMARY: Send success![0m
+[0;32mI (57289) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (58309) PRIMARY: Wait for sending.....[0m
+[0;32mI (58319) PRIMARY: Send success![0m
+[0;32mI (58319) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running IDLE.
+[0;32mI (59329) PRIMARY: Wait for sending.....[0m
+[0;32mI (59339) PRIMARY: Send success![0m
+[0;32mI (59339) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (60349) PRIMARY: Wait for sending.....[0m
+[0;32mI (60359) PRIMARY: Send success![0m
+[0;32mI (60359) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (61369) PRIMARY: Wait for sending.....[0m
+[0;32mI (61379) PRIMARY: Send success![0m
+[0;32mI (61379) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (62459) PRIMARY: Wait for sending.....[0m
+[0;32mI (62459) PRIMARY: Send success![0m
+[0;32mI (62459) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (63479) PRIMARY: Wait for sending.....[0m
+[0;32mI (63489) PRIMARY: Send success![0m
+[0;32mI (63489) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (64499) PRIMARY: Wait for sending.....[0m
+[0;32mI (64509) PRIMARY: Send success![0m
+[0;32mI (64509) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (65519) PRIMARY: Wait for sending.....[0m
+[0;32mI (65529) PRIMARY: Send success![0m
+[0;32mI (65529) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (66539) PRIMARY: Wait for sending.....[0m
+[0;32mI (66549) PRIMARY: Send success![0m
+[0;32mI (66549) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (67639) PRIMARY: Wait for sending.....[0m
+[0;32mI (67639) PRIMARY: Send success![0m
+[0;32mI (67639) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (68659) PRIMARY: Wait for sending.....[0m
+[0;32mI (68669) PRIMARY: Send success![0m
+[0;32mI (68669) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (69679) PRIMARY: Wait for sending.....[0m
+[0;32mI (69689) PRIMARY: Send success![0m
+[0;32mI (69689) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (70699) PRIMARY: Wait for sending.....[0m
+[0;32mI (70709) PRIMARY: Send success![0m
+[0;32mI (70709) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (71719) PRIMARY: Wait for sending.....[0m
+[0;32mI (71729) PRIMARY: Send success![0m
+[0;32mI (71729) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (72819) PRIMARY: Wait for sending.....[0m
+[0;32mI (72819) PRIMARY: Send success![0m
+[0;32mI (72819) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (73839) PRIMARY: Wait for sending.....[0m
+[0;32mI (73849) PRIMARY: Send success![0m
+[0;32mI (73849) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (74859) PRIMARY: Wait for sending.....[0m
+[0;32mI (74869) PRIMARY: Send success![0m
+[0;32mI (74869) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (75879) PRIMARY: Wait for sending.....[0m
+[0;32mI (75889) PRIMARY: Send success![0m
+[0;32mI (75889) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (76899) PRIMARY: Wait for sending.....[0m
+[0;32mI (76909) PRIMARY: Send success![0m
+[0;32mI (76909) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (77999) PRIMARY: Wait for sending.....[0m
+[0;32mI (77999) PRIMARY: Send success![0m
+[0;32mI (77999) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (79019) PRIMARY: Wait for sending.....[0m
+[0;32mI (79029) PRIMARY: Send success![0m
+[0;32mI (79029) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (80039) PRIMARY: Wait for sending.....[0m
+[0;32mI (80049) PRIMARY: Send success![0m
+[0;32mI (80049) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (81059) PRIMARY: Wait for sending.....[0m
+[0;32mI (81069) PRIMARY: Send success![0m
+[0;32mI (81069) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (82079) PRIMARY: Wait for sending.....[0m
+[0;32mI (82089) PRIMARY: Send success![0m
+[0;32mI (82089) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (83179) PRIMARY: Wait for sending.....[0m
+[0;32mI (83179) PRIMARY: Send success![0m
+[0;32mI (83179) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (84199) PRIMARY: Wait for sending.....[0m
+[0;32mI (84209) PRIMARY: Send success![0m
+[0;32mI (84209) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (85219) PRIMARY: Wait for sending.....[0m
+[0;32mI (85229) PRIMARY: Send success![0m
+[0;32mI (85229) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (86239) PRIMARY: Wait for sending.....[0m
+[0;32mI (86249) PRIMARY: Send success![0m
+[0;32mI (86249) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (87259) PRIMARY: Wait for sending.....[0m
+[0;32mI (87269) PRIMARY: Send success![0m
+[0;32mI (87269) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (88359) PRIMARY: Wait for sending.....[0m
+[0;32mI (88359) PRIMARY: Send success![0m
+[0;32mI (88359) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (89379) PRIMARY: Wait for sending.....[0m
+[0;32mI (89389) PRIMARY: Send success![0m
+[0;32mI (89389) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (90399) PRIMARY: Wait for sending.....[0m
+[0;32mI (90409) PRIMARY: Send success![0m
+[0;32mI (90409) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (91419) PRIMARY: Wait for sending.....[0m
+[0;32mI (91429) PRIMARY: Send success![0m
+[0;32mI (91429) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (92439) PRIMARY: Wait for sending.....[0m
+[0;32mI (92449) PRIMARY: Send success![0m
+[0;32mI (92449) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (93539) PRIMARY: Wait for sending.....[0m
+[0;32mI (93539) PRIMARY: Send success![0m
+[0;32mI (93539) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (94559) PRIMARY: Wait for sending.....[0m
+[0;32mI (94569) PRIMARY: Send success![0m
+[0;32mI (94569) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (95579) PRIMARY: Wait for sending.....[0m
+[0;32mI (95589) PRIMARY: Send success![0m
+[0;32mI (95589) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (96599) PRIMARY: Wait for sending.....[0m
+[0;32mI (96609) PRIMARY: Send success![0m
+[0;32mI (96609) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (97619) PRIMARY: Wait for sending.....[0m
+[0;32mI (97629) PRIMARY: Send success![0m
+[0;32mI (97629) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (98719) PRIMARY: Wait for sending.....[0m
+[0;32mI (98719) PRIMARY: Send success![0m
+[0;32mI (98719) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (99739) PRIMARY: Wait for sending.....[0m
+[0;32mI (99749) PRIMARY: Send success![0m
+[0;32mI (99749) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (100759) PRIMARY: Wait for sending.....[0m
+[0;32mI (100769) PRIMARY: Send success![0m
+[0;32mI (100769) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (101779) PRIMARY: Wait for sending.....[0m
+[0;32mI (101789) PRIMARY: Send success![0m
+[0;32mI (101789) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (102799) PRIMARY: Wait for sending.....[0m
+[0;32mI (102809) PRIMARY: Send success![0m
+[0;32mI (102809) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (103899) PRIMARY: Wait for sending.....[0m
+[0;32mI (103899) PRIMARY: Send success![0m
+[0;32mI (103899) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (104919) PRIMARY: Wait for sending.....[0m
+[0;32mI (104929) PRIMARY: Send success![0m
+[0;32mI (104929) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (105939) PRIMARY: Wait for sending.....[0m
+[0;32mI (105949) PRIMARY: Send success![0m
+[0;32mI (105949) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (106959) PRIMARY: Wait for sending.....[0m
+[0;32mI (106969) PRIMARY: Send success![0m
+[0;32mI (106969) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (107979) PRIMARY: Wait for sending.....[0m
+[0;32mI (107989) PRIMARY: Send success![0m
+[0;32mI (107989) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (109079) PRIMARY: Wait for sending.....[0m
+[0;32mI (109079) PRIMARY: Send success![0m
+[0;32mI (109079) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (110099) PRIMARY: Wait for sending.....[0m
+[0;32mI (110109) PRIMARY: Send success![0m
+[0;32mI (110109) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (111119) PRIMARY: Wait for sending.....[0m
+[0;32mI (111129) PRIMARY: Send success![0m
+[0;32mI (111129) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (112139) PRIMARY: Wait for sending.....[0m
+[0;32mI (112149) PRIMARY: Send success![0m
+[0;32mI (112149) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (113159) PRIMARY: Wait for sending.....[0m
+[0;32mI (113169) PRIMARY: Send success![0m
+[0;32mI (113169) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (114259) PRIMARY: Wait for sending.....[0m
+[0;32mI (114259) PRIMARY: Send success![0m
+[0;32mI (114259) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (115279) PRIMARY: Wait for sending.....[0m
+[0;32mI (115289) PRIMARY: Send success![0m
+[0;32mI (115289) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (116299) PRIMARY: Wait for sending.....[0m
+[0;32mI (116309) PRIMARY: Send success![0m
+[0;32mI (116309) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (117319) PRIMARY: Wait for sending.....[0m
+[0;32mI (117329) PRIMARY: Send success![0m
+[0;32mI (117329) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (118339) PRIMARY: Wait for sending.....[0m
+[0;32mI (118349) PRIMARY: Send success![0m
+[0;32mI (118349) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:01 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (119439) PRIMARY: Wait for sending.....[0m
+[0;32mI (119439) PRIMARY: Send success![0m
+[0;32mI (119439) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (120459) PRIMARY: Wait for sending.....[0m
+[0;32mI (120469) PRIMARY: Send success![0m
+[0;32mI (120469) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (121479) PRIMARY: Wait for sending.....[0m
+[0;32mI (121489) PRIMARY: Send success![0m
+[0;32mI (121489) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (122499) PRIMARY: Wait for sending.....[0m
+[0;32mI (122509) PRIMARY: Send success![0m
+[0;32mI (122509) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (123519) PRIMARY: Wait for sending.....[0m
+[0;32mI (123529) PRIMARY: Send success![0m
+[0;32mI (123529) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (124619) PRIMARY: Wait for sending.....[0m
+[0;32mI (124619) PRIMARY: Send success![0m
+[0;32mI (124619) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (125639) PRIMARY: Wait for sending.....[0m
+[0;32mI (125649) PRIMARY: Send success![0m
+[0;32mI (125649) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (126659) PRIMARY: Wait for sending.....[0m
+[0;32mI (126669) PRIMARY: Send success![0m
+[0;32mI (126669) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (127679) PRIMARY: Wait for sending.....[0m
+[0;32mI (127689) PRIMARY: Send success![0m
+[0;32mI (127689) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (128699) PRIMARY: Wait for sending.....[0m
+[0;32mI (128709) PRIMARY: Send success![0m
+[0;32mI (128709) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (129799) PRIMARY: Wait for sending.....[0m
+[0;32mI (129799) PRIMARY: Send success![0m
+[0;32mI (129799) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (130819) PRIMARY: Wait for sending.....[0m
+[0;32mI (130829) PRIMARY: Send success![0m
+[0;32mI (130829) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (131839) PRIMARY: Wait for sending.....[0m
+[0;32mI (131849) PRIMARY: Send success![0m
+[0;32mI (131849) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (132859) PRIMARY: Wait for sending.....[0m
+[0;32mI (132869) PRIMARY: Send success![0m
+[0;32mI (132869) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (133879) PRIMARY: Wait for sending.....[0m
+[0;32mI (133889) PRIMARY: Send success![0m
+[0;32mI (133889) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (134979) PRIMARY: Wait for sending.....[0m
+[0;32mI (134979) PRIMARY: Send success![0m
+[0;32mI (134979) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (135999) PRIMARY: Wait for sending.....[0m
+[0;32mI (136009) PRIMARY: Send success![0m
+[0;32mI (136009) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (137019) PRIMARY: Wait for sending.....[0m
+[0;32mI (137029) PRIMARY: Send success![0m
+[0;32mI (137029) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (138039) PRIMARY: Wait for sending.....[0m
+[0;32mI (138049) PRIMARY: Send success![0m
+[0;32mI (138049) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (139059) PRIMARY: Wait for sending.....[0m
+[0;32mI (139069) PRIMARY: Send success![0m
+[0;32mI (139069) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (140159) PRIMARY: Wait for sending.....[0m
+[0;32mI (140159) PRIMARY: Send success![0m
+[0;32mI (140159) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (141179) PRIMARY: Wait for sending.....[0m
+[0;32mI (141189) PRIMARY: Send success![0m
+[0;32mI (141189) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (142199) PRIMARY: Wait for sending.....[0m
+[0;32mI (142209) PRIMARY: Send success![0m
+[0;32mI (142209) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (143219) PRIMARY: Wait for sending.....[0m
+[0;32mI (143229) PRIMARY: Send success![0m
+[0;32mI (143229) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (144239) PRIMARY: Wait for sending.....[0m
+[0;32mI (144249) PRIMARY: Send success![0m
+[0;32mI (144249) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (145339) PRIMARY: Wait for sending.....[0m
+[0;32mI (145339) PRIMARY: Send success![0m
+[0;32mI (145339) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (146359) PRIMARY: Wait for sending.....[0m
+[0;32mI (146369) PRIMARY: Send success![0m
+[0;32mI (146369) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (147379) PRIMARY: Wait for sending.....[0m
+[0;32mI (147389) PRIMARY: Send success![0m
+[0;32mI (147389) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (148399) PRIMARY: Wait for sending.....[0m
+[0;32mI (148409) PRIMARY: Send success![0m
+[0;32mI (148409) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (149419) PRIMARY: Wait for sending.....[0m
+[0;32mI (149429) PRIMARY: Send success![0m
+[0;32mI (149429) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (150519) PRIMARY: Wait for sending.....[0m
+[0;32mI (150519) PRIMARY: Send success![0m
+[0;32mI (150519) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (151539) PRIMARY: Wait for sending.....[0m
+[0;32mI (151549) PRIMARY: Send success![0m
+[0;32mI (151549) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (152559) PRIMARY: Wait for sending.....[0m
+[0;32mI (152569) PRIMARY: Send success![0m
+[0;32mI (152569) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (153579) PRIMARY: Wait for sending.....[0m
+[0;32mI (153589) PRIMARY: Send success![0m
+[0;32mI (153589) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (154599) PRIMARY: Wait for sending.....[0m
+[0;32mI (154609) PRIMARY: Send success![0m
+[0;32mI (154609) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (155699) PRIMARY: Wait for sending.....[0m
+[0;32mI (155699) PRIMARY: Send success![0m
+[0;32mI (155699) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (156719) PRIMARY: Wait for sending.....[0m
+[0;32mI (156729) PRIMARY: Send success![0m
+[0;32mI (156729) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (157739) PRIMARY: Wait for sending.....[0m
+[0;32mI (157749) PRIMARY: Send success![0m
+[0;32mI (157749) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (158759) PRIMARY: Wait for sending.....[0m
+[0;32mI (158769) PRIMARY: Send success![0m
+[0;32mI (158769) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (159779) PRIMARY: Wait for sending.....[0m
+[0;32mI (159789) PRIMARY: Send success![0m
+[0;32mI (159789) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (160879) PRIMARY: Wait for sending.....[0m
+[0;32mI (160879) PRIMARY: Send success![0m
+[0;32mI (160879) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (161899) PRIMARY: Wait for sending.....[0m
+[0;32mI (161909) PRIMARY: Send success![0m
+[0;32mI (161909) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (162919) PRIMARY: Wait for sending.....[0m
+[0;32mI (162929) PRIMARY: Send success![0m
+[0;32mI (162929) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (163939) PRIMARY: Wait for sending.....[0m
+[0;32mI (163949) PRIMARY: Send success![0m
+[0;32mI (163949) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (164959) PRIMARY: Wait for sending.....[0m
+[0;32mI (164969) PRIMARY: Send success![0m
+[0;32mI (164969) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (166059) PRIMARY: Wait for sending.....[0m
+[0;32mI (166059) PRIMARY: Send success![0m
+[0;32mI (166059) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (167079) PRIMARY: Wait for sending.....[0m
+[0;32mI (167089) PRIMARY: Send success![0m
+[0;32mI (167089) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (168099) PRIMARY: Wait for sending.....[0m
+[0;32mI (168109) PRIMARY: Send success![0m
+[0;32mI (168109) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (169119) PRIMARY: Wait for sending.....[0m
+[0;32mI (169129) PRIMARY: Send success![0m
+[0;32mI (169129) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (170139) PRIMARY: Wait for sending.....[0m
+[0;32mI (170149) PRIMARY: Send success![0m
+[0;32mI (170149) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (171239) PRIMARY: Wait for sending.....[0m
+[0;32mI (171239) PRIMARY: Send success![0m
+[0;32mI (171239) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (172259) PRIMARY: Wait for sending.....[0m
+[0;32mI (172269) PRIMARY: Send success![0m
+[0;32mI (172269) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (173279) PRIMARY: Wait for sending.....[0m
+[0;32mI (173289) PRIMARY: Send success![0m
+[0;32mI (173289) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (174299) PRIMARY: Wait for sending.....[0m
+[0;32mI (174309) PRIMARY: Send success![0m
+[0;32mI (174309) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (175319) PRIMARY: Wait for sending.....[0m
+[0;32mI (175329) PRIMARY: Send success![0m
+[0;32mI (175329) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:02 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (176419) PRIMARY: Wait for sending.....[0m
+[0;32mI (176419) PRIMARY: Send success![0m
+[0;32mI (176419) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (177439) PRIMARY: Wait for sending.....[0m
+[0;32mI (177449) PRIMARY: Send success![0m
+[0;32mI (177449) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (178459) PRIMARY: Wait for sending.....[0m
+[0;32mI (178469) PRIMARY: Send success![0m
+[0;32mI (178469) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (179479) PRIMARY: Wait for sending.....[0m
+[0;32mI (179489) PRIMARY: Send success![0m
+[0;32mI (179489) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (180499) PRIMARY: Wait for sending.....[0m
+[0;32mI (180509) PRIMARY: Send success![0m
+[0;32mI (180509) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (181599) PRIMARY: Wait for sending.....[0m
+[0;32mI (181599) PRIMARY: Send success![0m
+[0;32mI (181599) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (182619) PRIMARY: Wait for sending.....[0m
+[0;32mI (182629) PRIMARY: Send success![0m
+[0;32mI (182629) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (183639) PRIMARY: Wait for sending.....[0m
+[0;32mI (183649) PRIMARY: Send success![0m
+[0;32mI (183649) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (184659) PRIMARY: Wait for sending.....[0m
+[0;32mI (184669) PRIMARY: Send success![0m
+[0;32mI (184669) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (185679) PRIMARY: Wait for sending.....[0m
+[0;32mI (185689) PRIMARY: Send success![0m
+[0;32mI (185689) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (186779) PRIMARY: Wait for sending.....[0m
+[0;32mI (186779) PRIMARY: Send success![0m
+[0;32mI (186779) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (187799) PRIMARY: Wait for sending.....[0m
+[0;32mI (187809) PRIMARY: Send success![0m
+[0;32mI (187809) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (188819) PRIMARY: Wait for sending.....[0m
+[0;32mI (188829) PRIMARY: Send success![0m
+[0;32mI (188829) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (189839) PRIMARY: Wait for sending.....[0m
+[0;32mI (189849) PRIMARY: Send success![0m
+[0;32mI (189849) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (190859) PRIMARY: Wait for sending.....[0m
+[0;32mI (190869) PRIMARY: Send success![0m
+[0;32mI (190869) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (191959) PRIMARY: Wait for sending.....[0m
+[0;32mI (191959) PRIMARY: Send success![0m
+[0;32mI (191959) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (192979) PRIMARY: Wait for sending.....[0m
+[0;32mI (192989) PRIMARY: Send success![0m
+[0;32mI (192989) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (193999) PRIMARY: Wait for sending.....[0m
+[0;32mI (194009) PRIMARY: Send success![0m
+[0;32mI (194009) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (195019) PRIMARY: Wait for sending.....[0m
+[0;32mI (195029) PRIMARY: Send success![0m
+[0;32mI (195029) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (196039) PRIMARY: Wait for sending.....[0m
+[0;32mI (196049) PRIMARY: Send success![0m
+[0;32mI (196049) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (197139) PRIMARY: Wait for sending.....[0m
+[0;32mI (197139) PRIMARY: Send success![0m
+[0;32mI (197139) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (198159) PRIMARY: Wait for sending.....[0m
+[0;32mI (198169) PRIMARY: Send success![0m
+[0;32mI (198169) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (199179) PRIMARY: Wait for sending.....[0m
+[0;32mI (199189) PRIMARY: Send success![0m
+[0;32mI (199189) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (200199) PRIMARY: Wait for sending.....[0m
+[0;32mI (200209) PRIMARY: Send success![0m
+[0;32mI (200209) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (201219) PRIMARY: Wait for sending.....[0m
+[0;32mI (201229) PRIMARY: Send success![0m
+[0;32mI (201229) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (202319) PRIMARY: Wait for sending.....[0m
+[0;32mI (202319) PRIMARY: Send success![0m
+[0;32mI (202319) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (203339) PRIMARY: Wait for sending.....[0m
+[0;32mI (203349) PRIMARY: Send success![0m
+[0;32mI (203349) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (204359) PRIMARY: Wait for sending.....[0m
+[0;32mI (204369) PRIMARY: Send success![0m
+[0;32mI (204369) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (205379) PRIMARY: Wait for sending.....[0m
+[0;32mI (205389) PRIMARY: Send success![0m
+[0;32mI (205389) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (206399) PRIMARY: Wait for sending.....[0m
+[0;32mI (206409) PRIMARY: Send success![0m
+[0;32mI (206409) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (207499) PRIMARY: Wait for sending.....[0m
+[0;32mI (207499) PRIMARY: Send success![0m
+[0;32mI (207499) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (208519) PRIMARY: Wait for sending.....[0m
+[0;32mI (208529) PRIMARY: Send success![0m
+[0;32mI (208529) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (209539) PRIMARY: Wait for sending.....[0m
+[0;32mI (209549) PRIMARY: Send success![0m
+[0;32mI (209549) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (210559) PRIMARY: Wait for sending.....[0m
+[0;32mI (210569) PRIMARY: Send success![0m
+[0;32mI (210569) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (211579) PRIMARY: Wait for sending.....[0m
+[0;32mI (211589) PRIMARY: Send success![0m
+[0;32mI (211589) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (212679) PRIMARY: Wait for sending.....[0m
+[0;32mI (212679) PRIMARY: Send success![0m
+[0;32mI (212679) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (213699) PRIMARY: Wait for sending.....[0m
+[0;32mI (213709) PRIMARY: Send success![0m
+[0;32mI (213709) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (214719) PRIMARY: Wait for sending.....[0m
+[0;32mI (214729) PRIMARY: Send success![0m
+[0;32mI (214729) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (215739) PRIMARY: Wait for sending.....[0m
+[0;32mI (215749) PRIMARY: Send success![0m
+[0;32mI (215749) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (216759) PRIMARY: Wait for sending.....[0m
+[0;32mI (216769) PRIMARY: Send success![0m
+[0;32mI (216769) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (217859) PRIMARY: Wait for sending.....[0m
+[0;32mI (217859) PRIMARY: Send success![0m
+[0;32mI (217859) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (218879) PRIMARY: Wait for sending.....[0m
+[0;32mI (218889) PRIMARY: Send success![0m
+[0;32mI (218889) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (219899) PRIMARY: Wait for sending.....[0m
+[0;32mI (219909) PRIMARY: Send success![0m
+[0;32mI (219909) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (220919) PRIMARY: Wait for sending.....[0m
+[0;32mI (220929) PRIMARY: Send success![0m
+[0;32mI (220929) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (221939) PRIMARY: Wait for sending.....[0m
+[0;32mI (221949) PRIMARY: Send success![0m
+[0;32mI (221949) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (223039) PRIMARY: Wait for sending.....[0m
+[0;32mI (223039) PRIMARY: Send success![0m
+[0;32mI (223039) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (224059) PRIMARY: Wait for sending.....[0m
+[0;32mI (224069) PRIMARY: Send success![0m
+[0;32mI (224069) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (225079) PRIMARY: Wait for sending.....[0m
+[0;32mI (225089) PRIMARY: Send success![0m
+[0;32mI (225089) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (226099) PRIMARY: Wait for sending.....[0m
+[0;32mI (226109) PRIMARY: Send success![0m
+[0;32mI (226109) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (227119) PRIMARY: Wait for sending.....[0m
+[0;32mI (227129) PRIMARY: Send success![0m
+[0;32mI (227129) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (228219) PRIMARY: Wait for sending.....[0m
+[0;32mI (228219) PRIMARY: Send success![0m
+[0;32mI (228219) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (229239) PRIMARY: Wait for sending.....[0m
+[0;32mI (229249) PRIMARY: Send success![0m
+[0;32mI (229249) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (230259) PRIMARY: Wait for sending.....[0m
+[0;32mI (230269) PRIMARY: Send success![0m
+[0;32mI (230269) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (231279) PRIMARY: Wait for sending.....[0m
+[0;32mI (231289) PRIMARY: Send success![0m
+[0;32mI (231289) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (232299) PRIMARY: Wait for sending.....[0m
+[0;32mI (232309) PRIMARY: Send success![0m
+[0;32mI (232309) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+----- SwitchValve ----- Current Time: 00:03 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1  *
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (233399) PRIMARY: Wait for sending.....[0m
+[0;32mI (233399) PRIMARY: Send success![0m
+[0;32mI (233399) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x7B 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (234419) PRIMARY: Wait for sending.....[0m
+[0;32mI (234429) PRIMARY: Send success![0m
+[0;32mI (234429) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+Channel-2, Schedule Running PERIOD_1: 0.
+[0;32mI (235439) PRIMARY: Wait for sending.....[0m
+[0;32mI (235449) PRIMARY: Send success![0m
+[0;32mI (235449) PRIMARY: Wait for response.....[0m
+Buffer contents: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 

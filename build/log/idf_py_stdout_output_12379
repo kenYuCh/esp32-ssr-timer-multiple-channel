@@ -1,0 +1,837 @@
+9b���00046DE8 (283 KiB): RAMESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=2dddch (187868) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0004de04 vaddr=3fc99d00 size=02214h (  8724) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b0988h (723336) map[0m
+[0;32mI (261) esp_image: segment 3: paddr=001009b0 vaddr=3fc9bf14 size=026e4h (  9956) load[0m
+[0;32mI (263) esp_image: segment 4: paddr=0010309c vaddr=40374000 size=15c00h ( 89088) load[0m
+[0;32mI (289) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (289) boot: Disabling RNG early entropy source...[0m
+[0;32mI (301) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     main[0m
+[0;32mI (319) cpu_start: App version:      0.0.1[0m
+[0;32mI (323) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (330) cpu_start: ELF file SHA256:  15a6a0e03...[0m
+[0;32mI (335) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (340) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (345) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (350) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (362) heap_init: At 3FCA2928 len 00046DE8 (283 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: boya[0m
+[0;32mI (391) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (419) main_task: Calling app_main()[0m
+[0;32mI (419) SYS: REBOOT[0m
+Build at Mar 23 2025 09:59:58
+[0;32mI (1069) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1139) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1139) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1139) pp: pp rom version: e7ae62f[0m
+[0;32mI (1139) net80211: net80211 rom version: e7ae62f[0m
+I (1149) wifi:wifi driver task: 3fcadb6c, prio:23, stack:6656, core=0
+I (1159) wifi:wifi firmware version: a9f5b59
+I (1159) wifi:wifi certification version: v7.0
+I (1159) wifi:config NVS flash: enabled
+I (1169) wifi:config nano formating: disabled
+I (1169) wifi:Init data frame dynamic rx buffer num: 32
+I (1169) wifi:Init static rx mgmt buffer num: 5
+I (1179) wifi:Init management short buffer num: 32
+I (1179) wifi:Init static tx buffer num: 16
+I (1189) wifi:Init static tx FG buffer num: 2
+I (1189) wifi:Init static rx buffer size: 1600
+I (1199) wifi:Init static rx buffer num: 10
+I (1199) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1199) wifi_init: rx ba win: 6[0m
+[0;32mI (1209) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1209) wifi_init: udp mbox: 6[0m
+[0;32mI (1209) wifi_init: tcp mbox: 6[0m
+[0;32mI (1219) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1219) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1229) wifi_init: tcp mss: 1440[0m
+[0;32mI (1229) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1239) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1269) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1299) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1299) wifi:enable tsf
+I (1299) wifi:Total power save buffer number: 8
+I (1309) wifi:Init max length of beacon: 752/752
+I (1309) wifi:Init max length of beacon: 752/752
+[0;32mI (1309) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1319) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1429) wifi:ap channel adjust o:1,1 n:11,2
+I (1429) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1429) wifi:state: init -> auth (b0)
+I (5679) wifi:state: auth -> init (200)
+I (5679) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (5679) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (5689) WiFi: 重新連線第 1 次[0m
+[0;32mI (8519) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (8519) WiFi: 重新連線第 2 次[0m
+I (8589) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (8599) wifi:state: init -> auth (b0)
+I (8879) wifi:state: auth -> init (600)
+I (8939) wifi:new:<11,0>, old:<11,2>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (8939) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (8939) WiFi: 重新連線第 3 次[0m
+[0;32mI (11779) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (11779) WiFi: 重新連線第 4 次[0m
+I (11869) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (11869) wifi:state: init -> auth (b0)
+I (12409) wifi:state: auth -> assoc (0)
+I (12429) wifi:state: assoc -> run (10)
+I (15599) wifi:state: run -> init (f00)
+I (15599) wifi:new:<11,0>, old:<11,2>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (15599) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (15609) WiFi: 重新連線第 5 次[0m
+[0;32mI (18439) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;31mE (18439) WiFi: Wi-Fi 連線失敗，設定 FAIL 標誌[0m
+[0;32mI (18439) WIFI: Failed to connect to SSID:SianAP, password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (18449) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (23459) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (23459) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (23459) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (23459) Heap: Minimum free heap ever: 214636 bytes[0m
+[0;32mI (23469) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (23469) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (23479) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (23479) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (23489) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (23489) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (23499) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (23509) NRF24: spi_bus_initialize=0[0m
+[0;32mI (23509) NRF24: spi_bus_add_device=0[0m
+[0;32mI (23519) SENDER: Start[0m
+[0;33mW (23519) SENDER: Set RF Data Ratio to 250KBps[0m
+[0;33mW (23529) SENDER: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x4e RX_DR=1 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x464748494a
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (23579) RECEVIER: Start[0m
+[0;32mI (23579) SENDER: Wait for sending.....[0m
+[0;33mW (23589) RECEVIER: Set RF Data Ratio to 250KBps[0m
+[0;33mW (23589) SENDER: Send fail:[0m
+[0;33mW (23599) RECEVIER: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x4e RX_DR=1 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x464748494a
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (23659) RECEVIER: Listening...[0m
+[0;32mI (24519) RECEVIER: Got data:Hello World 5599[0m
+[0;32mI (24599) SENDER: Wait for sending.....[0m
+[0;33mW (24609) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (24609) SENDER: Send fail:[0m
+[0;32mI (25529) RECEVIER: Got data:Hello World 5700[0m
+[0;32mI (25609) SENDER: Wait for sending.....[0m
+[0;33mW (25619) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (25619) SENDER: Send fail:[0m
+[0;32mI (26539) RECEVIER: Got data:Hello World 5801[0m
+[0;32mI (26619) SENDER: Wait for sending.....[0m
+[0;33mW (26629) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (26629) SENDER: Send fail:[0m
+[0;32mI (27549) RECEVIER: Got data:Hello World 5902[0m
+[0;32mI (27629) SENDER: Wait for sending.....[0m
+[0;33mW (27639) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (27639) SENDER: Send fail:[0m
+[0;32mI (28639) SENDER: Wait for sending.....[0m
+[0;33mW (28649) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (28649) SENDER: Send fail:[0m
+[0;32mI (29569) RECEVIER: Got data:Hello World 6104[0m
+[0;32mI (29649) SENDER: Wait for sending.....[0m
+[0;33mW (29659) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (29659) SENDER: Send fail:[0m
+[0;32mI (30579) RECEVIER: Got data:Hello World 6205[0m
+[0;32mI (30659) SENDER: Wait for sending.....[0m
+[0;33mW (30669) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (30669) SENDER: Send fail:[0m
+[0;32mI (31589) RECEVIER: Got data:Hello World 6306[0m
+[0;32mI (31669) SENDER: Wait for sending.....[0m
+[0;33mW (31679) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (31679) SENDER: Send fail:[0m
+[0;32mI (32599) RECEVIER: Got data:Hello World 6407[0m
+[0;32mI (32679) SENDER: Wait for sending.....[0m
+[0;33mW (32689) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (32689) SENDER: Send fail:[0m
+[0;32mI (33609) RECEVIER: Got data:Hello World 6508[0m
+[0;32mI (33689) SENDER: Wait for sending.....[0m
+[0;33mW (33699) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (33699) SENDER: Send fail:[0m
+[0;32mI (34619) RECEVIER: Got data:Hello World 6609[0m
+
+assert failed: spi_device_transmit spi_master.c:1023 (ret_trans == trans_desc)
+
+
+Backtrace: 0x40375ade:0x3fcc38b0 0x4037cced:0x3fcc38d0 0x403858f9:0x3fcc38f0 0x42015e55:0x3fcc3a10 0x4200c375:0x3fcc3a40 0x4200c38d:0x3fcc3a90 0x4200c427:0x3fcc3ac0 0x4200c4fa:0x3fcc3ae0 0x4200c509:0x3fcc3b10 0x4200bef7:0x3fcc3b30 0x4037d7f9:0x3fcc3b70
+
+
+
+
+ELF file SHA256: 15a6a0e03
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a54
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (49) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (50) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (50) boot: Multicore bootloader[0m
+[0;32mI (53) boot: chip revision: v0.2[0m
+[0;32mI (57) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (62) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (67) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (71) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (80) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (88) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (95) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (103) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (110) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (118) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (125) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (133) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (140) boot: End of partition table[0m
+[0;32mI (145) boot: Defaulting to factory image[0m
+[0;32mI (149) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=2dddch (187868) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=0004de04 vaddr=3fc99d00 size=02214h (  8724) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b0988h (723336) map[0m
+[0;32mI (265) esp_image: segment 3: paddr=001009b0 vaddr=3fc9bf14 size=026e4h (  9956) load[0m
+[0;32mI (267) esp_image: segment 4: paddr=0010309c vaddr=40374000 size=15c00h ( 89088) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (294) boot: Disabling RNG early entropy source...[0m
+[0;32mI (305) cpu_start: Multicore app[0m
+[0;32mI (315) cpu_start: Pro cpu start user code[0m
+[0;32mI (315) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (316) cpu_start: Application information:[0m
+[0;32mI (319) cpu_start: Project name:     main[0m
+[0;32mI (323) cpu_start: App version:      0.0.1[0m
+[0;32mI (328) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (334) cpu_start: ELF file SHA256:  15a6a0e03...[0m
+[0;32mI (339) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (345) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (350) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (354) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (359) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FCA2928 len 00046DE8 (283 KiB): RAM[0m
+[0;32mI (372) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (379) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (385) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (392) spi_flash: detected chip: boya[0m
+[0;32mI (395) spi_flash: flash io: dio[0m
+[0;32mI (400) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (406) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (414) main_task: Started on CPU0[0m
+[0;32mI (424) main_task: Calling app_main()[0m
+[0;32mI (424) SYS: REBOOT[0m
+Build at Mar 23 2025 09:59:58
+[0;32mI (1064) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1134) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1134) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1134) pp: pp rom version: e7ae62f[0m
+[0;32mI (1134) net80211: net80211 rom version: e7ae62f[0m
+I (1144) wifi:wifi driver task: 3fcadb6c, prio:23, stack:6656, core=0
+I (1154) wifi:wifi firmware version: a9f5b59
+I (1154) wifi:wifi certification version: v7.0
+I (1154) wifi:config NVS flash: enabled
+I (1164) wifi:config nano formating: disabled
+I (1164) wifi:Init data frame dynamic rx buffer num: 32
+I (1164) wifi:Init static rx mgmt buffer num: 5
+I (1174) wifi:Init management short buffer num: 32
+I (1174) wifi:Init static tx buffer num: 16
+I (1184) wifi:Init static tx FG buffer num: 2
+I (1184) wifi:Init static rx buffer size: 1600
+I (1194) wifi:Init static rx buffer num: 10
+I (1194) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1194) wifi_init: rx ba win: 6[0m
+[0;32mI (1204) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1204) wifi_init: udp mbox: 6[0m
+[0;32mI (1204) wifi_init: tcp mbox: 6[0m
+[0;32mI (1214) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1214) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1224) wifi_init: tcp mss: 1440[0m
+[0;32mI (1224) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1234) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1254) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1294) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1294) wifi:enable tsf
+I (1294) wifi:Total power save buffer number: 8
+I (1294) wifi:Init max length of beacon: 752/752
+I (1294) wifi:Init max length of beacon: 752/752
+[0;32mI (1304) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1304) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (2824) wifi:ap channel adjust o:1,1 n:11,2
+I (2824) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (2824) wifi:state: init -> auth (b0)
+I (3364) wifi:state: auth -> assoc (0)
+I (3414) wifi:state: assoc -> run (10)
+I (6584) wifi:state: run -> init (f00)
+I (6584) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (6584) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (6584) WiFi: 重新連線第 1 次[0m
+[0;32mI (9424) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (9424) WiFi: 重新連線第 2 次[0m
+I (9454) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (9454) wifi:state: init -> auth (b0)
+I (10014) wifi:state: auth -> assoc (0)
+I (10044) wifi:state: assoc -> run (10)
+I (10234) wifi:connected with SianAP, aid = 20, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (10234) wifi:security: WPA3-SAE, phy: bgn, rssi: -18
+I (10244) wifi:pm start, type: 1
+
+I (10244) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10244) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (10264) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (10414) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64
+[0;32mI (11254) esp_netif_handlers: sta ip: 192.168.1.169, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (11254) WIFI: Connected! IP obtained: 192.168.1.169[0m
+[0;32mI (11254) WIFI: connected to ap SSID:SianAP password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (11264) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (16274) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (16274) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (16274) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (16274) Heap: Minimum free heap ever: 213912 bytes[0m
+[0;32mI (16284) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (16284) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (16294) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (16294) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (16304) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (16304) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16314) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (16324) NRF24: spi_bus_initialize=0[0m
+[0;32mI (16324) NRF24: spi_bus_add_device=0[0m
+[0;32mI (16334) SENDER: Start[0m
+[0;33mW (16334) SENDER: Set RF Data Ratio to 250KBps[0m
+[0;33mW (16344) SENDER: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+[0;32mI (16354) RECEVIER: Start[0m
+================ NRF Configuration ================
+[0;33mW (16364) RECEVIER: Set RF Data Ratio to 250KBps[0m
+STATUS		 = 0x4e RX_DR=1 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+[0;33mW (16364) RECEVIER: CONFIG_RETRANSMIT_DELAY=1[0m
+
+assert failed: spi_device_transmit spi_master.c:1023 (ret_trans == trans_desc)
+
+
+Backtrace: 0x40375ade:0x3fcc3b70 0x4037cced:0x3fcc3b90 0x403858f9:0x3fcc3bb0 0x42015e55:0x3fcc3cd0 0x4200c375:0x3fcc3d00 0x4200c38d:0x3fcc3d50 0x4200c427:0x3fcc3d80 0x4200c759:0x3fcc3da0 0x4200be21:0x3fcc3dd0 0x4200beaa:0x3fcc3df0 0x4037d7f9:0x3fcc3e30
+
+
+
+
+Backtrace: 0x40375ade:0x3fcc2e20 0x4037cced:0x3fcc2e40 0x403858f9:0x3fcc2e60 0x42015e55:0x3fcc2f80 0x4200c375:0x3fcc2fb0 0x4200c38d:0x3fcc3000 0x4200c427:0x3fcc3030 0x4200c7c9:0x3fcc3050 0x4200c94e:0x3fcc3080 0x4200bfc7:0x3fcc30a0 0x4037d7f9:0x3fcc30e0
+
+
+
+
+ELF file SHA256: 15a6a0e03
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a54
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (49) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (50) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (50) boot: Multicore bootloader[0m
+[0;32mI (53) boot: chip revision: v0.2[0m
+[0;32mI (57) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (62) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (67) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (71) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (80) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (88) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (95) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (103) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (110) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (118) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (125) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (133) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (140) boot: End of partition table[0m
+[0;32mI (145) boot: Defaulting to factory image[0m
+[0;32mI (149) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=2dddch (187868) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=0004de04 vaddr=3fc99d00 size=02214h (  8724) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b0988h (723336) map[0m
+[0;32mI (265) esp_image: segment 3: paddr=001009b0 vaddr=3fc9bf14 size=026e4h (  9956) load[0m
+[0;32mI (267) esp_image: segment 4: paddr=0010309c vaddr=40374000 size=15c00h ( 89088) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (294) boot: Disabling RNG early entropy source...[0m
+[0;32mI (305) cpu_start: Multicore app[0m
+[0;32mI (315) cpu_start: Pro cpu start user code[0m
+[0;32mI (315) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (316) cpu_start: Application information:[0m
+[0;32mI (319) cpu_start: Project name:     main[0m
+[0;32mI (323) cpu_start: App version:      0.0.1[0m
+[0;32mI (328) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (334) cpu_start: ELF file SHA256:  15a6a0e03...[0m
+[0;32mI (339) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (345) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (350) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (354) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (359) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FCA2928 len 00046DE8 (283 KiB): RAM[0m
+[0;32mI (372) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (379) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (385) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (392) spi_flash: detected chip: boya[0m
+[0;32mI (395) spi_flash: flash io: dio[0m
+[0;32mI (400) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (406) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (414) main_task: Started on CPU0[0m
+[0;32mI (424) main_task: Calling app_main()[0m
+[0;32mI (424) SYS: REBOOT[0m
+Build at Mar 23 2025 09:59:58
+[0;32mI (744) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (814) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (814) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (814) pp: pp rom version: e7ae62f[0m
+[0;32mI (814) net80211: net80211 rom version: e7ae62f[0m
+I (824) wifi:wifi driver task: 3fcadb6c, prio:23, stack:6656, core=0
+I (834) wifi:wifi firmware version: a9f5b59
+I (834) wifi:wifi certification version: v7.0
+I (834) wifi:config NVS flash: enabled
+I (834) wifi:config nano formating: disabled
+I (844) wifi:Init data frame dynamic rx buffer num: 32
+I (844) wifi:Init static rx mgmt buffer num: 5
+I (854) wifi:Init management short buffer num: 32
+I (854) wifi:Init static tx buffer num: 16
+I (864) wifi:Init static tx FG buffer num: 2
+I (864) wifi:Init static rx buffer size: 1600
+I (864) wifi:Init static rx buffer num: 10
+I (874) wifi:Init dynamic rx buffer num: 32
+[0;32mI (874) wifi_init: rx ba win: 6[0m
+[0;32mI (884) wifi_init: tcpip mbox: 32[0m
+[0;32mI (884) wifi_init: udp mbox: 6[0m
+[0;32mI (884) wifi_init: tcp mbox: 6[0m
+[0;32mI (894) wifi_init: tcp tx win: 5760[0m
+[0;32mI (894) wifi_init: tcp rx win: 5760[0m
+[0;32mI (904) wifi_init: tcp mss: 1440[0m
+[0;32mI (904) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (904) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (924) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (964) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (964) wifi:enable tsf
+I (964) wifi:Total power save buffer number: 8
+I (964) wifi:Init max length of beacon: 752/752
+I (964) wifi:Init max length of beacon: 752/752
+[0;32mI (974) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (984) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1054) wifi:ap channel adjust o:1,1 n:11,2
+I (1054) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1054) wifi:state: init -> auth (b0)
+I (1314) wifi:state: auth -> init (600)
+I (1334) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (1334) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (1334) WiFi: 重新連線第 1 次[0m
+[0;32mI (4174) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (4174) WiFi: 重新連線第 2 次[0m
+I (4224) wifi:new:<11,2>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+I (4234) wifi:state: init -> auth (b0)
+I (4774) wifi:state: auth -> assoc (0)
+I (4794) wifi:state: assoc -> run (10)
+I (4944) wifi:connected with SianAP, aid = 20, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (4944) wifi:security: WPA3-SAE, phy: bgn, rssi: -21
+I (5014) wifi:pm start, type: 1
+
+I (5014) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5014) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (5024) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (5134) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64
+[0;32mI (6034) esp_netif_handlers: sta ip: 192.168.1.169, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6034) WIFI: Connected! IP obtained: 192.168.1.169[0m
+[0;32mI (6034) WIFI: connected to ap SSID:SianAP password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (6044) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (11054) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (11054) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (11054) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (11054) Heap: Minimum free heap ever: 213916 bytes[0m
+[0;32mI (11064) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (11064) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (11074) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (11074) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (11084) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (11084) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11094) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11104) NRF24: spi_bus_initialize=0[0m
+[0;32mI (11104) NRF24: spi_bus_add_device=0[0m
+[0;32mI (11114) SENDER: Start[0m
+[0;33mW (11114) SENDER: Set RF Data Ratio to 250KBps[0m
+[0;33mW (11124) SENDER: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x4e RX_DR=1 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x464748494a
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (11174) RECEVIER: Start[0m
+[0;32mI (11174) SENDER: Wait for sending.....[0m
+[0;33mW (11184) RECEVIER: Set RF Data Ratio to 250KBps[0m
+[0;33mW (11184) SENDER: Send fail:[0m
+[0;33mW (11194) RECEVIER: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x4e RX_DR=1 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x464748494a
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (11254) RECEVIER: Listening...[0m
+[0;32mI (11634) RECEVIER: Got data:Hello World 9437[0m
+[0;32mI (12194) SENDER: Wait for sending.....[0m
+[0;33mW (12204) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (12204) SENDER: Send fail:[0m
+[0;32mI (12644) RECEVIER: Got data:Hello World 9538[0m
+[0;32mI (13204) SENDER: Wait for sending.....[0m
+[0;33mW (13214) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (13214) SENDER: Send fail:[0m
+[0;32mI (13654) RECEVIER: Got data:Hello World 9639[0m
+[0;32mI (14214) SENDER: Wait for sending.....[0m
+[0;33mW (14224) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (14224) SENDER: Send fail:[0m
+[0;32mI (14664) RECEVIER: Got data:Hello World 9740[0m
+[0;32mI (15224) SENDER: Wait for sending.....[0m
+[0;33mW (15234) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (15234) SENDER: Send fail:[0m
+[0;32mI (15674) RECEVIER: Got data:Hello World 9841[0m
+[0;32mI (16234) SENDER: Wait for sending.....[0m
+[0;33mW (16244) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (16244) SENDER: Send fail:[0m
+[0;32mI (16684) RECEVIER: Got data:Hello World 9942[0m
+[0;32mI (17244) SENDER: Wait for sending.....[0m
+[0;33mW (17254) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (17254) SENDER: Send fail:[0m
+[0;32mI (18254) SENDER: Wait for sending.....[0m
+[0;32mI (18264) SENDER: Send success:Hello World 1784[0m
+[0;32mI (18704) RECEVIER: Got data:Hello World 10144[0m
+[0;32mI (19264) SENDER: Wait for sending.....[0m
+[0;33mW (19274) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (19274) SENDER: Send fail:[0m
+[0;32mI (19714) RECEVIER: Got data:Hello World 10245[0m
+[0;32mI (20274) SENDER: Wait for sending.....[0m
+[0;33mW (20284) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (20284) SENDER: Send fail:[0m
+[0;32mI (20724) RECEVIER: Got data:Hello World 10346[0m
+[0;32mI (21284) SENDER: Wait for sending.....[0m
+[0;33mW (21294) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (21294) SENDER: Send fail:[0m
+[0;32mI (21734) RECEVIER: Got data:Hello World 10447[0m
+[0;32mI (22294) SENDER: Wait for sending.....[0m
+[0;32mI (22304) SENDER: Send success:Hello World 2188[0m
+[0;32mI (22744) RECEVIER: Got data:Hello World 10548[0m
+[0;32mI (23304) SENDER: Wait for sending.....[0m
+[0;33mW (23314) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (23314) SENDER: Send fail:[0m
+[0;32mI (23754) RECEVIER: Got data:Hello World 10649[0m
+[0;32mI (24314) SENDER: Wait for sending.....[0m
+[0;33mW (24324) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (24324) SENDER: Send fail:[0m
+[0;32mI (24764) RECEVIER: Got data:Hello World 10750[0m
+[0;32mI (25324) SENDER: Wait for sending.....[0m
+[0;33mW (25334) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (25334) SENDER: Send fail:[0m
+[0;32mI (25774) RECEVIER: Got data:Hello World 10851[0m
+[0;32mI (26334) SENDER: Wait for sending.....[0m
+
+assert failed: spi_device_transmit spi_master.c:1023 (ret_trans == trans_desc)
+
+
+Backtrace: 0x40375ade:0x3fcc2e10 0x4037cced:0x3fcc2e30 0x403858f9:0x3fcc2e50 0x42015e55:0x3fcc2f70 0x4200c375:0x3fcc2fa0 0x4200c38d:0x3fcc2ff0 0x4200c427:0x3fcc3020 0x4200c4fa:0x3fcc3040 0x4200c661:0x3fcc3070 0x4200c016:0x3fcc3090 0x4037d7f9:0x3fcc30d0
+
+
+
+
+ELF file SHA256: 15a6a0e03
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a54
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (49) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (50) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (50) boot: Multicore bootloader[0m
+[0;32mI (53) boot: chip revision: v0.2[0m
+[0;32mI (57) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (62) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (67) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (71) boot: Enabling RNG early entropy source...[0m
+[0;32mI (77) boot: Partition Table:[0m
+[0;32mI (80) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (88) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (95) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (103) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (110) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (118) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (125) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (133) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (140) boot: End of partition table[0m
+[0;32mI (145) boot: Defaulting to factory image[0m
+[0;32mI (149) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=2dddch (187868) map[0m
+[0;32mI (179) esp_image: segment 1: paddr=0004de04 vaddr=3fc99d00 size=02214h (  8724) load[0m
+[0;32mI (180) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b0988h (723336) map[0m
+[0;32mI (265) esp_image: segment 3: paddr=001009b0 vaddr=3fc9bf14 size=026e4h (  9956) load[0m
+[0;32mI (267) esp_image: segment 4: paddr=0010309c vaddr=40374000 size=15c00h ( 89088) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (294) boot: Disabling RNG early entropy source...[0m
+[0;32mI (305) cpu_start: Multicore app[0m
+[0;32mI (315) cpu_start: Pro cpu start user code[0m
+[0;32mI (315) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (316) cpu_start: Application information:[0m
+[0;32mI (319) cpu_start: Project name:     main[0m
+[0;32mI (323) cpu_start: App version:      0.0.1[0m
+[0;32mI (328) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (334) cpu_start: ELF file SHA256:  15a6a0e03...[0m
+[0;32mI (339) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (345) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (350) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (354) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (359) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FCA2928 len 00046DE8 (283 KiB): RAM[0m
+[0;32mI (372) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (379) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (385) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (392) spi_flash: detected chip: boya[0m
+[0;32mI (395) spi_flash: flash io: dio[0m
+[0;32mI (400) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (406) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (414) main_task: Started on CPU0[0m
+[0;32mI (424) main_task: Calling app_main()[0m
+[0;32mI (424) SYS: REBOOT[0m
+Build at Mar 23 2025 09:59:58
+[0;32mI (1024) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (1094) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (1094) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (1094) pp: pp rom version: e7ae62f[0m
+[0;32mI (1094) net80211: net80211 rom version: e7ae62f[0m
+I (1104) wifi:wifi driver task: 3fcadb6c, prio:23, stack:6656, core=0
+I (1114) wifi:wifi firmware version: a9f5b59
+I (1114) wifi:wifi certification version: v7.0
+I (1114) wifi:config NVS flash: enabled
+I (1124) wifi:config nano formating: disabled
+I (1124) wifi:Init data frame dynamic rx buffer num: 32
+I (1124) wifi:Init static rx mgmt buffer num: 5
+I (1134) wifi:Init management short buffer num: 32
+I (1134) wifi:Init static tx buffer num: 16
+I (1144) wifi:Init static tx FG buffer num: 2
+I (1144) wifi:Init static rx buffer size: 1600
+I (1154) wifi:Init static rx buffer num: 10
+I (1154) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1154) wifi_init: rx ba win: 6[0m
+[0;32mI (1164) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1164) wifi_init: udp mbox: 6[0m
+[0;32mI (1164) wifi_init: tcp mbox: 6[0m
+[0;32mI (1174) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1174) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1184) wifi_init: tcp mss: 1440[0m
+[0;32mI (1184) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1194) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1224) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1264) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1264) wifi:enable tsf
+I (1264) wifi:Total power save buffer number: 8
+I (1264) wifi:Init max length of beacon: 752/752
+I (1274) wifi:Init max length of beacon: 752/752
+[0;32mI (1274) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1284) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (1284) wifi:ap channel adjust o:1,1 n:11,2
+I (1294) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (1294) wifi:state: init -> auth (b0)
+I (1564) wifi:state: auth -> init (600)
+I (1574) wifi:new:<11,0>, old:<11,0>, ap:<11,2>, sta:<11,0>, prof:1
+[0;32mI (1574) WIFI: Wi-Fi Disconnected，Trying reconnect...[0m
+[0;32mI (1574) WiFi: 重新連線第 1 次[0m

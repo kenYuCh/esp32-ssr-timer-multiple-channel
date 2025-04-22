@@ -1,0 +1,856 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c0c0020 size=2de4ch (187980) map[0m
+[0;32mI (174) esp_image: segment 1: paddr=0004de74 vaddr=3fc99d00 size=021a4h (  8612) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=b09bch (723388) map[0m
+[0;32mI (261) esp_image: segment 3: paddr=001009e4 vaddr=3fc9bea4 size=02754h ( 10068) load[0m
+[0;32mI (263) esp_image: segment 4: paddr=00103140 vaddr=40374000 size=15c00h ( 89088) load[0m
+[0;32mI (289) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (289) boot: Disabling RNG early entropy source...[0m
+[0;32mI (301) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     main[0m
+[0;32mI (319) cpu_start: App version:      0.0.1[0m
+[0;32mI (323) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (330) cpu_start: ELF file SHA256:  3e7ef65cb...[0m
+[0;32mI (335) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (340) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (345) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (350) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (355) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (362) heap_init: At 3FCA2918 len 00046DF8 (283 KiB): RAM[0m
+[0;32mI (368) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (380) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (387) spi_flash: detected chip: boya[0m
+[0;32mI (391) spi_flash: flash io: dio[0m
+[0;32mI (395) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (402) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (409) main_task: Started on CPU0[0m
+[0;32mI (419) main_task: Calling app_main()[0m
+[0;32mI (419) SYS: REBOOT[0m
+Build at Mar 23 2025 11:34:04
+[0;32mI (929) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (999) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (999) SYS: Initialize LED[0m
+Handling WIFI connections.
+[0;32mI (999) pp: pp rom version: e7ae62f[0m
+[0;32mI (999) net80211: net80211 rom version: e7ae62f[0m
+I (1009) wifi:wifi driver task: 3fcadb5c, prio:23, stack:6656, core=0
+I (1019) wifi:wifi firmware version: a9f5b59
+I (1019) wifi:wifi certification version: v7.0
+I (1019) wifi:config NVS flash: enabled
+I (1019) wifi:config nano formating: disabled
+I (1029) wifi:Init data frame dynamic rx buffer num: 32
+I (1029) wifi:Init static rx mgmt buffer num: 5
+I (1039) wifi:Init management short buffer num: 32
+I (1039) wifi:Init static tx buffer num: 16
+I (1049) wifi:Init static tx FG buffer num: 2
+I (1049) wifi:Init static rx buffer size: 1600
+I (1049) wifi:Init static rx buffer num: 10
+I (1059) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1059) wifi_init: rx ba win: 6[0m
+[0;32mI (1069) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1069) wifi_init: udp mbox: 6[0m
+[0;32mI (1069) wifi_init: tcp mbox: 6[0m
+[0;32mI (1079) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1079) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1089) wifi_init: tcp mss: 1440[0m
+[0;32mI (1089) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1099) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1119) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (1159) wifi:mode : sta (f0:9e:9e:11:53:38) + softAP (f0:9e:9e:11:53:39)
+I (1159) wifi:enable tsf
+I (1159) wifi:Total power save buffer number: 8
+I (1159) wifi:Init max length of beacon: 752/752
+I (1159) wifi:Init max length of beacon: 752/752
+[0;32mI (1169) WIFI: Wi-Fi enable， Starting connect...[0m
+[0;32mI (1169) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (2689) wifi:ap channel adjust o:1,1 n:11,2
+I (2689) wifi:new:<11,0>, old:<1,1>, ap:<11,2>, sta:<11,0>, prof:1
+I (2689) wifi:state: init -> auth (b0)
+I (3209) wifi:state: auth -> assoc (0)
+I (3219) wifi:state: assoc -> run (10)
+I (3379) wifi:connected with SianAP, aid = 20, channel 11, BW20, bssid = 74:90:bc:48:0b:82
+I (3379) wifi:security: WPA3-SAE, phy: bgn, rssi: -20
+I (3389) wifi:pm start, type: 1
+
+I (3389) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3389) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3459) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (3479) wifi:<ba-add>idx:0 (ifx:0, 74:90:bc:48:0b:82), tid:0, ssn:3, winSize:64
+[0;32mI (4399) esp_netif_handlers: sta ip: 192.168.1.169, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4399) WIFI: Connected! IP obtained: 192.168.1.169[0m
+[0;32mI (4399) WIFI: connected to ap SSID:SianAP password:sian79917[0m
+Wi-Fi TX Power Setting success
+WiFi init completed!.
+[0;32mI (4409) HTTPS_OTA_FIRMWARE: OTA Initialization.[0m
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+OTA Wait ....
+[0;32mI (9419) HTTPS_OTA_FIRMWARE: OTA started[0m
+[0;31mE (9419) esp_https_ota: No option for server verification is enabled in esp_http_client config.[0m
+[0;31mE (9419) HTTPS_OTA_FIRMWARE: ESP HTTPS OTA Begin failed[0m
+[0;32mI (9419) Heap: Minimum free heap ever: 213904 bytes[0m
+[0;32mI (9429) PRIMARY: Start[0m
+[0;32mI (9429) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (9439) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (9439) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (9449) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (9449) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (9449) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9459) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9469) NRF24: spi_bus_initialize=0[0m
+[0;32mI (9479) NRF24: spi_bus_add_device=0[0m
+[0;33mW (9479) PRIMARY: Set RF Data Ratio to 250KBps[0m
+[0;33mW (9489) PRIMARY: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x4142434445
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (9539) PRIMARY: Wait for sending.....[0m
+[0;32mI (9549) PRIMARY: Send success:[0m
+[0;32mI (9549) PRIMARY: Wait for response.....[0m
+[0;32mI (9559) PRIMARY: Got response:[Hello World 913] Elapsed:2 ticks[0m
+[0;32mI (10559) PRIMARY: Wait for sending.....[0m
+[0;32mI (10569) PRIMARY: Send success:[0m
+[0;32mI (10569) PRIMARY: Wait for response.....[0m
+[0;32mI (10579) PRIMARY: Got response:[Hello World 1015] Elapsed:2 ticks[0m
+[0;32mI (11579) PRIMARY: Wait for sending.....[0m
+[0;32mI (11589) PRIMARY: Send success:[0m
+[0;32mI (11589) PRIMARY: Wait for response.....[0m
+[0;32mI (11599) PRIMARY: Got response:[Hello World 1117] Elapsed:2 ticks[0m
+[0;32mI (12599) PRIMARY: Wait for sending.....[0m
+[0;32mI (12609) PRIMARY: Send success:[0m
+[0;32mI (12609) PRIMARY: Wait for response.....[0m
+[0;32mI (12619) PRIMARY: Got response:[Hello World 1219] Elapsed:2 ticks[0m
+[0;32mI (13619) PRIMARY: Wait for sending.....[0m
+[0;32mI (13629) PRIMARY: Send success:[0m
+[0;32mI (13629) PRIMARY: Wait for response.....[0m
+[0;32mI (13639) PRIMARY: Got response:[Hello World 1321] Elapsed:2 ticks[0m
+[0;32mI (14639) PRIMARY: Wait for sending.....[0m
+[0;32mI (14649) PRIMARY: Send success:[0m
+[0;32mI (14649) PRIMARY: Wait for response.....[0m
+[0;32mI (14659) PRIMARY: Got response:[Hello World 1423] Elapsed:2 ticks[0m
+[0;32mI (15659) PRIMARY: Wait for sending.....[0m
+[0;32mI (15669) PRIMARY: Send success:[0m
+[0;32mI (15669) PRIMARY: Wait for response.....[0m
+[0;32mI (15679) PRIMARY: Got response:[Hello World 1525] Elapsed:2 ticks[0m
+[0;32mI (16679) PRIMARY: Wait for sending.....[0m
+[0;32mI (16689) PRIMARY: Send success:[0m
+[0;32mI (16689) PRIMARY: Wait for response.....[0m
+[0;32mI (16699) PRIMARY: Got response:[Hello World 1627] Elapsed:2 ticks[0m
+[0;32mI (17699) PRIMARY: Wait for sending.....[0m
+[0;32mI (17709) PRIMARY: Send success:[0m
+[0;32mI (17709) PRIMARY: Wait for response.....[0m
+[0;32mI (17719) PRIMARY: Got response:[Hello World 1729] Elapsed:2 ticks[0m
+[0;32mI (18719) PRIMARY: Wait for sending.....[0m
+[0;32mI (18729) PRIMARY: Send success:[0m
+[0;32mI (18729) PRIMARY: Wait for response.....[0m
+[0;32mI (18739) PRIMARY: Got response:[Hello World 1831] Elapsed:2 ticks[0m
+[0;32mI (19739) PRIMARY: Wait for sending.....[0m
+[0;32mI (19749) PRIMARY: Send success:[0m
+[0;32mI (19749) PRIMARY: Wait for response.....[0m
+[0;32mI (19759) PRIMARY: Got response:[Hello World 1933] Elapsed:2 ticks[0m
+[0;32mI (20759) PRIMARY: Wait for sending.....[0m
+[0;32mI (20769) PRIMARY: Send success:[0m
+[0;32mI (20769) PRIMARY: Wait for response.....[0m
+[0;32mI (20779) PRIMARY: Got response:[Hello World 2035] Elapsed:2 ticks[0m
+[0;32mI (21779) PRIMARY: Wait for sending.....[0m
+[0;32mI (21789) PRIMARY: Send success:[0m
+[0;32mI (21789) PRIMARY: Wait for response.....[0m
+[0;32mI (21799) PRIMARY: Got response:[Hello World 2137] Elapsed:2 ticks[0m
+[0;32mI (22799) PRIMARY: Wait for sending.....[0m
+[0;32mI (22809) PRIMARY: Send success:[0m
+[0;32mI (22809) PRIMARY: Wait for response.....[0m
+[0;32mI (22819) PRIMARY: Got response:[Hello World 2239] Elapsed:2 ticks[0m
+[0;32mI (23819) PRIMARY: Wait for sending.....[0m
+[0;32mI (23829) PRIMARY: Send success:[0m
+[0;32mI (23829) PRIMARY: Wait for response.....[0m
+[0;32mI (23839) PRIMARY: Got response:[Hello World 2341] Elapsed:2 ticks[0m
+[0;32mI (24839) PRIMARY: Wait for sending.....[0m
+[0;32mI (24849) PRIMARY: Send success:[0m
+[0;32mI (24849) PRIMARY: Wait for response.....[0m
+[0;32mI (24859) PRIMARY: Got response:[Hello World 2443] Elapsed:2 ticks[0m
+[0;32mI (25859) PRIMARY: Wait for sending.....[0m
+[0;32mI (25869) PRIMARY: Send success:[0m
+[0;32mI (25869) PRIMARY: Wait for response.....[0m
+[0;32mI (25879) PRIMARY: Got response:[Hello World 2545] Elapsed:2 ticks[0m
+[0;32mI (26879) PRIMARY: Wait for sending.....[0m
+[0;32mI (26889) PRIMARY: Send success:[0m
+[0;32mI (26889) PRIMARY: Wait for response.....[0m
+[0;32mI (26899) PRIMARY: Got response:[Hello World 2647] Elapsed:2 ticks[0m
+[0;32mI (27899) PRIMARY: Wait for sending.....[0m
+[0;32mI (27909) PRIMARY: Send success:[0m
+[0;32mI (27909) PRIMARY: Wait for response.....[0m
+[0;32mI (27919) PRIMARY: Got response:[Hello World 2749] Elapsed:2 ticks[0m
+[0;32mI (28919) PRIMARY: Wait for sending.....[0m
+[0;32mI (28929) PRIMARY: Send success:[0m
+[0;32mI (28929) PRIMARY: Wait for response.....[0m
+[0;32mI (28939) PRIMARY: Got response:[Hello World 2851] Elapsed:2 ticks[0m
+[0;32mI (29939) PRIMARY: Wait for sending.....[0m
+[0;32mI (29949) PRIMARY: Send success:[0m
+[0;32mI (29949) PRIMARY: Wait for response.....[0m
+[0;32mI (29959) PRIMARY: Got response:[Hello World 2953] Elapsed:2 ticks[0m
+[0;32mI (30959) PRIMARY: Wait for sending.....[0m
+[0;32mI (30969) PRIMARY: Send success:[0m
+[0;32mI (30969) PRIMARY: Wait for response.....[0m
+[0;32mI (30979) PRIMARY: Got response:[Hello World 3055] Elapsed:2 ticks[0m
+[0;32mI (31979) PRIMARY: Wait for sending.....[0m
+[0;32mI (31989) PRIMARY: Send success:[0m
+[0;32mI (31989) PRIMARY: Wait for response.....[0m
+[0;32mI (31999) PRIMARY: Got response:[Hello World 3157] Elapsed:2 ticks[0m
+[0;32mI (32999) PRIMARY: Wait for sending.....[0m
+[0;32mI (33009) PRIMARY: Send success:[0m
+[0;32mI (33009) PRIMARY: Wait for response.....[0m
+[0;32mI (33019) PRIMARY: Got response:[Hello World 3259] Elapsed:2 ticks[0m
+[0;32mI (34019) PRIMARY: Wait for sending.....[0m
+[0;32mI (34029) PRIMARY: Send success:[0m
+[0;32mI (34029) PRIMARY: Wait for response.....[0m
+[0;32mI (34039) PRIMARY: Got response:[Hello World 3361] Elapsed:2 ticks[0m
+[0;32mI (35039) PRIMARY: Wait for sending.....[0m
+[0;32mI (35049) PRIMARY: Send success:[0m
+[0;32mI (35049) PRIMARY: Wait for response.....[0m
+[0;32mI (35059) PRIMARY: Got response:[Hello World 3463] Elapsed:2 ticks[0m
+[0;32mI (36059) PRIMARY: Wait for sending.....[0m
+[0;32mI (36069) PRIMARY: Send success:[0m
+[0;32mI (36069) PRIMARY: Wait for response.....[0m
+[0;32mI (36079) PRIMARY: Got response:[Hello World 3565] Elapsed:2 ticks[0m
+[0;32mI (37079) PRIMARY: Wait for sending.....[0m
+[0;32mI (37089) PRIMARY: Send success:[0m
+[0;32mI (37089) PRIMARY: Wait for response.....[0m
+[0;32mI (37099) PRIMARY: Got response:[Hello World 3667] Elapsed:2 ticks[0m
+[0;32mI (38099) PRIMARY: Wait for sending.....[0m
+[0;32mI (38109) PRIMARY: Send success:[0m
+[0;32mI (38109) PRIMARY: Wait for response.....[0m
+[0;32mI (38119) PRIMARY: Got response:[Hello World 3769] Elapsed:2 ticks[0m
+[0;32mI (39119) PRIMARY: Wait for sending.....[0m
+[0;32mI (39129) PRIMARY: Send success:[0m
+[0;32mI (39129) PRIMARY: Wait for response.....[0m
+[0;32mI (39139) PRIMARY: Got response:[Hello World 3871] Elapsed:2 ticks[0m
+[0;32mI (40139) PRIMARY: Wait for sending.....[0m
+[0;32mI (40149) PRIMARY: Send success:[0m
+[0;32mI (40149) PRIMARY: Wait for response.....[0m
+[0;32mI (40159) PRIMARY: Got response:[Hello World 3973] Elapsed:2 ticks[0m
+[0;32mI (41159) PRIMARY: Wait for sending.....[0m
+[0;32mI (41169) PRIMARY: Send success:[0m
+[0;32mI (41169) PRIMARY: Wait for response.....[0m
+[0;32mI (41179) PRIMARY: Got response:[Hello World 4075] Elapsed:2 ticks[0m
+[0;32mI (42179) PRIMARY: Wait for sending.....[0m
+[0;32mI (42189) PRIMARY: Send success:[0m
+[0;32mI (42189) PRIMARY: Wait for response.....[0m
+[0;32mI (42199) PRIMARY: Got response:[Hello World 4177] Elapsed:2 ticks[0m
+[0;32mI (43199) PRIMARY: Wait for sending.....[0m
+[0;32mI (43209) PRIMARY: Send success:[0m
+[0;32mI (43209) PRIMARY: Wait for response.....[0m
+[0;32mI (43219) PRIMARY: Got response:[Hello World 4279] Elapsed:2 ticks[0m
+[0;32mI (44219) PRIMARY: Wait for sending.....[0m
+[0;32mI (44229) PRIMARY: Send success:[0m
+[0;32mI (44229) PRIMARY: Wait for response.....[0m
+[0;32mI (44239) PRIMARY: Got response:[Hello World 4381] Elapsed:2 ticks[0m
+[0;32mI (45239) PRIMARY: Wait for sending.....[0m
+[0;32mI (45249) PRIMARY: Send success:[0m
+[0;32mI (45249) PRIMARY: Wait for response.....[0m
+[0;32mI (45259) PRIMARY: Got response:[Hello World 4483] Elapsed:2 ticks[0m
+[0;32mI (46259) PRIMARY: Wait for sending.....[0m
+[0;32mI (46269) PRIMARY: Send success:[0m
+[0;32mI (46269) PRIMARY: Wait for response.....[0m
+[0;32mI (46279) PRIMARY: Got response:[Hello World 4585] Elapsed:2 ticks[0m
+[0;32mI (47279) PRIMARY: Wait for sending.....[0m
+[0;32mI (47289) PRIMARY: Send success:[0m
+[0;32mI (47289) PRIMARY: Wait for response.....[0m
+[0;32mI (47299) PRIMARY: Got response:[Hello World 4687] Elapsed:2 ticks[0m
+[0;32mI (48299) PRIMARY: Wait for sending.....[0m
+[0;32mI (48309) PRIMARY: Send success:[0m
+[0;32mI (48309) PRIMARY: Wait for response.....[0m
+[0;32mI (48319) PRIMARY: Got response:[Hello World 4789] Elapsed:2 ticks[0m
+[0;32mI (49319) PRIMARY: Wait for sending.....[0m
+[0;32mI (49329) PRIMARY: Send success:[0m
+[0;32mI (49329) PRIMARY: Wait for response.....[0m
+[0;32mI (49339) PRIMARY: Got response:[Hello World 4891] Elapsed:2 ticks[0m
+[0;32mI (50339) PRIMARY: Wait for sending.....[0m
+[0;32mI (50349) PRIMARY: Send success:[0m
+[0;32mI (50349) PRIMARY: Wait for response.....[0m
+[0;32mI (50359) PRIMARY: Got response:[Hello World 4993] Elapsed:2 ticks[0m
+[0;32mI (51359) PRIMARY: Wait for sending.....[0m
+[0;32mI (51369) PRIMARY: Send success:[0m
+[0;32mI (51369) PRIMARY: Wait for response.....[0m
+[0;32mI (51379) PRIMARY: Got response:[Hello World 5095] Elapsed:2 ticks[0m
+[0;32mI (52379) PRIMARY: Wait for sending.....[0m
+[0;32mI (52389) PRIMARY: Send success:[0m
+[0;32mI (52389) PRIMARY: Wait for response.....[0m
+[0;32mI (52399) PRIMARY: Got response:[Hello World 5197] Elapsed:2 ticks[0m
+[0;32mI (53399) PRIMARY: Wait for sending.....[0m
+[0;32mI (53409) PRIMARY: Send success:[0m
+[0;32mI (53409) PRIMARY: Wait for response.....[0m
+[0;32mI (53419) PRIMARY: Got response:[Hello World 5299] Elapsed:2 ticks[0m
+[0;32mI (54419) PRIMARY: Wait for sending.....[0m
+[0;32mI (54429) PRIMARY: Send success:[0m
+[0;32mI (54429) PRIMARY: Wait for response.....[0m
+[0;32mI (54439) PRIMARY: Got response:[Hello World 5401] Elapsed:2 ticks[0m
+[0;32mI (55439) PRIMARY: Wait for sending.....[0m
+[0;32mI (55449) PRIMARY: Send success:[0m
+[0;32mI (55449) PRIMARY: Wait for response.....[0m
+[0;32mI (55459) PRIMARY: Got response:[Hello World 5503] Elapsed:2 ticks[0m
+[0;32mI (56459) PRIMARY: Wait for sending.....[0m
+[0;32mI (56469) PRIMARY: Send success:[0m
+[0;32mI (56469) PRIMARY: Wait for response.....[0m
+[0;32mI (56479) PRIMARY: Got response:[Hello World 5605] Elapsed:2 ticks[0m
+[0;32mI (57479) PRIMARY: Wait for sending.....[0m
+[0;32mI (57489) PRIMARY: Send success:[0m
+[0;32mI (57489) PRIMARY: Wait for response.....[0m
+[0;32mI (57499) PRIMARY: Got response:[Hello World 5707] Elapsed:2 ticks[0m
+[0;32mI (58499) PRIMARY: Wait for sending.....[0m
+[0;32mI (58509) PRIMARY: Send success:[0m
+[0;32mI (58509) PRIMARY: Wait for response.....[0m
+[0;32mI (58519) PRIMARY: Got response:[Hello World 5809] Elapsed:2 ticks[0m
+[0;32mI (59519) PRIMARY: Wait for sending.....[0m
+[0;32mI (59529) PRIMARY: Send success:[0m
+[0;32mI (59529) PRIMARY: Wait for response.....[0m
+[0;32mI (59539) PRIMARY: Got response:[Hello World 5911] Elapsed:2 ticks[0m
+[0;32mI (60539) PRIMARY: Wait for sending.....[0m
+[0;32mI (60549) PRIMARY: Send success:[0m
+[0;32mI (60549) PRIMARY: Wait for response.....[0m
+[0;32mI (60559) PRIMARY: Got response:[Hello World 6013] Elapsed:2 ticks[0m
+[0;32mI (61559) PRIMARY: Wait for sending.....[0m
+[0;32mI (61569) PRIMARY: Send success:[0m
+[0;32mI (61569) PRIMARY: Wait for response.....[0m
+[0;32mI (61579) PRIMARY: Got response:[Hello World 6115] Elapsed:2 ticks[0m
+[0;32mI (62579) PRIMARY: Wait for sending.....[0m
+[0;32mI (62589) PRIMARY: Send success:[0m
+[0;32mI (62589) PRIMARY: Wait for response.....[0m
+[0;32mI (62599) PRIMARY: Got response:[Hello World 6217] Elapsed:2 ticks[0m
+[0;32mI (63599) PRIMARY: Wait for sending.....[0m
+[0;32mI (63609) PRIMARY: Send success:[0m
+[0;32mI (63609) PRIMARY: Wait for response.....[0m
+[0;32mI (63619) PRIMARY: Got response:[Hello World 6319] Elapsed:2 ticks[0m
+[0;32mI (64619) PRIMARY: Wait for sending.....[0m
+[0;32mI (64629) PRIMARY: Send success:[0m
+[0;32mI (64629) PRIMARY: Wait for response.....[0m
+[0;32mI (64639) PRIMARY: Got response:[Hello World 6421] Elapsed:2 ticks[0m
+[0;32mI (65639) PRIMARY: Wait for sending.....[0m
+[0;32mI (65649) PRIMARY: Send success:[0m
+[0;32mI (65649) PRIMARY: Wait for response.....[0m
+[0;32mI (65659) PRIMARY: Got response:[Hello World 6523] Elapsed:2 ticks[0m
+[0;32mI (66659) PRIMARY: Wait for sending.....[0m
+[0;32mI (66669) PRIMARY: Send success:[0m
+[0;32mI (66669) PRIMARY: Wait for response.....[0m
+[0;32mI (66679) PRIMARY: Got response:[Hello World 6625] Elapsed:2 ticks[0m
+[0;32mI (67679) PRIMARY: Wait for sending.....[0m
+[0;32mI (67689) PRIMARY: Send success:[0m
+[0;32mI (67689) PRIMARY: Wait for response.....[0m
+[0;32mI (67699) PRIMARY: Got response:[Hello World 6727] Elapsed:2 ticks[0m
+[0;32mI (68699) PRIMARY: Wait for sending.....[0m
+[0;32mI (68709) PRIMARY: Send success:[0m
+[0;32mI (68709) PRIMARY: Wait for response.....[0m
+[0;32mI (68719) PRIMARY: Got response:[Hello World 6829] Elapsed:2 ticks[0m
+[0;32mI (69719) PRIMARY: Wait for sending.....[0m
+[0;32mI (69729) PRIMARY: Send success:[0m
+[0;32mI (69729) PRIMARY: Wait for response.....[0m
+[0;32mI (69739) PRIMARY: Got response:[Hello World 6931] Elapsed:2 ticks[0m
+[0;32mI (70739) PRIMARY: Wait for sending.....[0m
+[0;32mI (70749) PRIMARY: Send success:[0m
+[0;32mI (70749) PRIMARY: Wait for response.....[0m
+[0;32mI (70759) PRIMARY: Got response:[Hello World 7033] Elapsed:2 ticks[0m
+[0;32mI (71759) PRIMARY: Wait for sending.....[0m
+[0;32mI (71769) PRIMARY: Send success:[0m
+[0;32mI (71769) PRIMARY: Wait for response.....[0m
+[0;32mI (71779) PRIMARY: Got response:[Hello World 7135] Elapsed:2 ticks[0m
+[0;32mI (72779) PRIMARY: Wait for sending.....[0m
+[0;32mI (72789) PRIMARY: Send success:[0m
+[0;32mI (72789) PRIMARY: Wait for response.....[0m
+[0;32mI (72799) PRIMARY: Got response:[Hello World 7237] Elapsed:2 ticks[0m
+[0;32mI (73799) PRIMARY: Wait for sending.....[0m
+[0;32mI (73809) PRIMARY: Send success:[0m
+[0;32mI (73809) PRIMARY: Wait for response.....[0m
+[0;32mI (73819) PRIMARY: Got response:[Hello World 7339] Elapsed:2 ticks[0m
+[0;32mI (74819) PRIMARY: Wait for sending.....[0m
+[0;32mI (74829) PRIMARY: Send success:[0m
+[0;32mI (74829) PRIMARY: Wait for response.....[0m
+[0;32mI (74839) PRIMARY: Got response:[Hello World 7441] Elapsed:2 ticks[0m
+[0;32mI (75839) PRIMARY: Wait for sending.....[0m
+[0;32mI (75849) PRIMARY: Send success:[0m
+[0;32mI (75849) PRIMARY: Wait for response.....[0m
+[0;32mI (75859) PRIMARY: Got response:[Hello World 7543] Elapsed:2 ticks[0m
+[0;32mI (76859) PRIMARY: Wait for sending.....[0m
+[0;32mI (76869) PRIMARY: Send success:[0m
+[0;32mI (76869) PRIMARY: Wait for response.....[0m
+[0;32mI (76879) PRIMARY: Got response:[Hello World 7645] Elapsed:2 ticks[0m
+[0;32mI (77879) PRIMARY: Wait for sending.....[0m
+[0;32mI (77889) PRIMARY: Send success:[0m
+[0;32mI (77889) PRIMARY: Wait for response.....[0m
+[0;32mI (77899) PRIMARY: Got response:[Hello World 7747] Elapsed:2 ticks[0m
+[0;32mI (78899) PRIMARY: Wait for sending.....[0m
+[0;32mI (78909) PRIMARY: Send success:[0m
+[0;32mI (78909) PRIMARY: Wait for response.....[0m
+[0;32mI (78919) PRIMARY: Got response:[Hello World 7849] Elapsed:2 ticks[0m
+[0;32mI (79919) PRIMARY: Wait for sending.....[0m
+[0;32mI (79929) PRIMARY: Send success:[0m
+[0;32mI (79929) PRIMARY: Wait for response.....[0m
+[0;32mI (79939) PRIMARY: Got response:[Hello World 7951] Elapsed:2 ticks[0m
+[0;32mI (80939) PRIMARY: Wait for sending.....[0m
+[0;32mI (80949) PRIMARY: Send success:[0m
+[0;32mI (80949) PRIMARY: Wait for response.....[0m
+[0;32mI (80959) PRIMARY: Got response:[Hello World 8053] Elapsed:2 ticks[0m
+[0;32mI (81959) PRIMARY: Wait for sending.....[0m
+[0;32mI (81969) PRIMARY: Send success:[0m
+[0;32mI (81969) PRIMARY: Wait for response.....[0m
+[0;32mI (81979) PRIMARY: Got response:[Hello World 8155] Elapsed:2 ticks[0m
+[0;32mI (82979) PRIMARY: Wait for sending.....[0m
+[0;32mI (82989) PRIMARY: Send success:[0m
+[0;32mI (82989) PRIMARY: Wait for response.....[0m
+[0;32mI (82999) PRIMARY: Got response:[Hello World 8257] Elapsed:2 ticks[0m
+[0;32mI (83999) PRIMARY: Wait for sending.....[0m
+[0;32mI (84009) PRIMARY: Send success:[0m
+[0;32mI (84009) PRIMARY: Wait for response.....[0m
+[0;32mI (84019) PRIMARY: Got response:[Hello World 8359] Elapsed:2 ticks[0m
+[0;32mI (85019) PRIMARY: Wait for sending.....[0m
+[0;32mI (85029) PRIMARY: Send success:[0m
+[0;32mI (85029) PRIMARY: Wait for response.....[0m
+[0;32mI (85039) PRIMARY: Got response:[Hello World 8461] Elapsed:2 ticks[0m
+[0;32mI (86039) PRIMARY: Wait for sending.....[0m
+[0;32mI (86049) PRIMARY: Send success:[0m
+[0;32mI (86049) PRIMARY: Wait for response.....[0m
+[0;32mI (86059) PRIMARY: Got response:[Hello World 8563] Elapsed:2 ticks[0m
+[0;32mI (87059) PRIMARY: Wait for sending.....[0m
+[0;32mI (87069) PRIMARY: Send success:[0m
+[0;32mI (87069) PRIMARY: Wait for response.....[0m
+[0;32mI (87079) PRIMARY: Got response:[Hello World 8665] Elapsed:2 ticks[0m
+[0;32mI (88079) PRIMARY: Wait for sending.....[0m
+[0;32mI (88089) PRIMARY: Send success:[0m
+[0;32mI (88089) PRIMARY: Wait for response.....[0m
+[0;32mI (88099) PRIMARY: Got response:[Hello World 8767] Elapsed:2 ticks[0m
+[0;32mI (89099) PRIMARY: Wait for sending.....[0m
+[0;32mI (89109) PRIMARY: Send success:[0m
+[0;32mI (89109) PRIMARY: Wait for response.....[0m
+[0;32mI (89119) PRIMARY: Got response:[Hello World 8869] Elapsed:2 ticks[0m
+[0;32mI (90119) PRIMARY: Wait for sending.....[0m
+[0;32mI (90129) PRIMARY: Send success:[0m
+[0;32mI (90129) PRIMARY: Wait for response.....[0m
+[0;32mI (90139) PRIMARY: Got response:[Hello World 8971] Elapsed:2 ticks[0m
+[0;32mI (91139) PRIMARY: Wait for sending.....[0m
+[0;32mI (91149) PRIMARY: Send success:[0m
+[0;32mI (91149) PRIMARY: Wait for response.....[0m
+[0;32mI (91159) PRIMARY: Got response:[Hello World 9073] Elapsed:2 ticks[0m
+[0;32mI (92159) PRIMARY: Wait for sending.....[0m
+[0;32mI (92169) PRIMARY: Send success:[0m
+[0;32mI (92169) PRIMARY: Wait for response.....[0m
+[0;32mI (92179) PRIMARY: Got response:[Hello World 9175] Elapsed:2 ticks[0m
+[0;32mI (93179) PRIMARY: Wait for sending.....[0m
+[0;32mI (93189) PRIMARY: Send success:[0m
+[0;32mI (93189) PRIMARY: Wait for response.....[0m
+[0;32mI (93199) PRIMARY: Got response:[Hello World 9277] Elapsed:2 ticks[0m
+[0;32mI (94199) PRIMARY: Wait for sending.....[0m
+[0;32mI (94209) PRIMARY: Send success:[0m
+[0;32mI (94209) PRIMARY: Wait for response.....[0m
+[0;32mI (94219) PRIMARY: Got response:[Hello World 9379] Elapsed:2 ticks[0m
+[0;32mI (95219) PRIMARY: Wait for sending.....[0m
+[0;32mI (95229) PRIMARY: Send success:[0m
+[0;32mI (95229) PRIMARY: Wait for response.....[0m
+[0;32mI (95239) PRIMARY: Got response:[Hello World 9481] Elapsed:2 ticks[0m
+[0;32mI (96239) PRIMARY: Wait for sending.....[0m
+[0;32mI (96249) PRIMARY: Send success:[0m
+[0;32mI (96249) PRIMARY: Wait for response.....[0m
+[0;32mI (96259) PRIMARY: Got response:[Hello World 9583] Elapsed:2 ticks[0m
+[0;32mI (97259) PRIMARY: Wait for sending.....[0m
+[0;32mI (97269) PRIMARY: Send success:[0m
+[0;32mI (97269) PRIMARY: Wait for response.....[0m
+[0;32mI (97279) PRIMARY: Got response:[Hello World 9685] Elapsed:2 ticks[0m
+[0;32mI (98279) PRIMARY: Wait for sending.....[0m
+[0;33mW (98289) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (98289) PRIMARY: Send fail:[0m
+[0;32mI (99289) PRIMARY: Wait for sending.....[0m
+[0;32mI (99299) PRIMARY: Send success:[0m
+[0;32mI (99299) PRIMARY: Wait for response.....[0m
+[0;32mI (99299) PRIMARY: Got response:[Hello World 9787] Elapsed:1 ticks[0m
+[0;32mI (100299) PRIMARY: Wait for sending.....[0m
+[0;32mI (100309) PRIMARY: Send success:[0m
+[0;32mI (100309) PRIMARY: Wait for response.....[0m
+[0;32mI (100309) PRIMARY: Got response:[Hello World 9888] Elapsed:1 ticks[0m
+[0;32mI (101309) PRIMARY: Wait for sending.....[0m
+[0;32mI (101319) PRIMARY: Send success:[0m
+[0;32mI (101319) PRIMARY: Wait for response.....[0m
+[0;32mI (101319) PRIMARY: Got response:[Hello World 9989] Elapsed:1 ticks[0m
+[0;32mI (102319) PRIMARY: Wait for sending.....[0m
+[0;32mI (102329) PRIMARY: Send success:[0m
+[0;32mI (102329) PRIMARY: Wait for response.....[0m
+[0;32mI (102329) PRIMARY: Got response:[Hello World 10090] Elapsed:1 ticks[0m
+[0;32mI (103329) PRIMARY: Wait for sending.....[0m
+[0;32mI (103339) PRIMARY: Send success:[0m
+[0;32mI (103339) PRIMARY: Wait for response.....[0m
+[0;32mI (103339) PRIMARY: Got response:[Hello World 10191] Elapsed:1 ticks[0m
+[0;32mI (104339) PRIMARY: Wait for sending.....[0m
+[0;32mI (104349) PRIMARY: Send success:[0m
+[0;32mI (104349) PRIMARY: Wait for response.....[0m
+[0;32mI (104349) PRIMARY: Got response:[Hello World 10292] Elapsed:1 ticks[0m
+[0;32mI (105349) PRIMARY: Wait for sending.....[0m
+[0;32mI (105359) PRIMARY: Send success:[0m
+[0;32mI (105359) PRIMARY: Wait for response.....[0m
+[0;32mI (105359) PRIMARY: Got response:[Hello World 10393] Elapsed:1 ticks[0m
+[0;32mI (106359) PRIMARY: Wait for sending.....[0m
+[0;32mI (106369) PRIMARY: Send success:[0m
+[0;32mI (106369) PRIMARY: Wait for response.....[0m
+[0;32mI (106369) PRIMARY: Got response:[Hello World 10494] Elapsed:1 ticks[0m
+[0;32mI (107369) PRIMARY: Wait for sending.....[0m
+[0;32mI (107379) PRIMARY: Send success:[0m
+[0;32mI (107379) PRIMARY: Wait for response.....[0m
+[0;32mI (107379) PRIMARY: Got response:[Hello World 10595] Elapsed:1 ticks[0m
+[0;32mI (108379) PRIMARY: Wait for sending.....[0m
+[0;32mI (108389) PRIMARY: Send success:[0m
+[0;32mI (108389) PRIMARY: Wait for response.....[0m
+[0;32mI (108389) PRIMARY: Got response:[Hello World 10696] Elapsed:1 ticks[0m
+[0;32mI (109389) PRIMARY: Wait for sending.....[0m
+[0;32mI (109399) PRIMARY: Send success:[0m
+[0;32mI (109399) PRIMARY: Wait for response.....[0m
+[0;32mI (109399) PRIMARY: Got response:[Hello World 10797] Elapsed:1 ticks[0m
+[0;32mI (110399) PRIMARY: Wait for sending.....[0m
+[0;32mI (110409) PRIMARY: Send success:[0m
+[0;32mI (110409) PRIMARY: Wait for response.....[0m
+[0;32mI (110409) PRIMARY: Got response:[Hello World 10898] Elapsed:1 ticks[0m
+[0;32mI (111409) PRIMARY: Wait for sending.....[0m
+[0;32mI (111419) PRIMARY: Send success:[0m
+[0;32mI (111419) PRIMARY: Wait for response.....[0m
+[0;32mI (111419) PRIMARY: Got response:[Hello World 10999] Elapsed:1 ticks[0m
+[0;32mI (112419) PRIMARY: Wait for sending.....[0m
+[0;33mW (112429) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (112429) PRIMARY: Send fail:[0m
+[0;32mI (113429) PRIMARY: Wait for sending.....[0m
+[0;32mI (113439) PRIMARY: Send success:[0m
+[0;32mI (113439) PRIMARY: Wait for response.....[0m
+[0;32mI (113439) PRIMARY: Got response:[Hello World 11100] Elapsed:1 ticks[0m
+[0;32mI (114439) PRIMARY: Wait for sending.....[0m
+[0;32mI (114449) PRIMARY: Send success:[0m
+[0;32mI (114449) PRIMARY: Wait for response.....[0m
+[0;32mI (114449) PRIMARY: Got response:[Hello World 11302] Elapsed:1 ticks[0m
+[0;32mI (115449) PRIMARY: Wait for sending.....[0m
+[0;32mI (115459) PRIMARY: Send success:[0m
+[0;32mI (115459) PRIMARY: Wait for response.....[0m
+[0;32mI (115459) PRIMARY: Got response:[Hello World 11403] Elapsed:1 ticks[0m
+[0;32mI (116459) PRIMARY: Wait for sending.....[0m
+[0;32mI (116469) PRIMARY: Send success:[0m
+[0;32mI (116469) PRIMARY: Wait for response.....[0m
+[0;32mI (116469) PRIMARY: Got response:[Hello World 11504] Elapsed:1 ticks[0m
+[0;32mI (117469) PRIMARY: Wait for sending.....[0m
+[0;32mI (117479) PRIMARY: Send success:[0m
+[0;32mI (117479) PRIMARY: Wait for response.....[0m
+[0;32mI (117479) PRIMARY: Got response:[Hello World 11605] Elapsed:1 ticks[0m
+[0;32mI (118479) PRIMARY: Wait for sending.....[0m
+[0;32mI (118489) PRIMARY: Send success:[0m
+[0;32mI (118489) PRIMARY: Wait for response.....[0m
+[0;32mI (118489) PRIMARY: Got response:[Hello World 11706] Elapsed:1 ticks[0m
+[0;32mI (119489) PRIMARY: Wait for sending.....[0m
+[0;32mI (119499) PRIMARY: Send success:[0m
+[0;32mI (119499) PRIMARY: Wait for response.....[0m
+[0;32mI (119499) PRIMARY: Got response:[Hello World 11807] Elapsed:1 ticks[0m
+[0;32mI (120499) PRIMARY: Wait for sending.....[0m
+[0;32mI (120509) PRIMARY: Send success:[0m
+[0;32mI (120509) PRIMARY: Wait for response.....[0m
+[0;32mI (120509) PRIMARY: Got response:[Hello World 11908] Elapsed:1 ticks[0m
+[0;32mI (121509) PRIMARY: Wait for sending.....[0m
+[0;32mI (121519) PRIMARY: Send success:[0m
+[0;32mI (121519) PRIMARY: Wait for response.....[0m
+[0;32mI (121519) PRIMARY: Got response:[Hello World 12009] Elapsed:1 ticks[0m
+[0;32mI (122519) PRIMARY: Wait for sending.....[0m
+[0;32mI (122529) PRIMARY: Send success:[0m
+[0;32mI (122529) PRIMARY: Wait for response.....[0m
+[0;32mI (122529) PRIMARY: Got response:[Hello World 12110] Elapsed:1 ticks[0m
+[0;32mI (123529) PRIMARY: Wait for sending.....[0m
+[0;32mI (123539) PRIMARY: Send success:[0m
+[0;32mI (123539) PRIMARY: Wait for response.....[0m
+[0;32mI (123539) PRIMARY: Got response:[Hello World 12211] Elapsed:1 ticks[0m
+[0;32mI (124539) PRIMARY: Wait for sending.....[0m
+[0;32mI (124549) PRIMARY: Send success:[0m
+[0;32mI (124549) PRIMARY: Wait for response.....[0m
+[0;32mI (124549) PRIMARY: Got response:[Hello World 12312] Elapsed:1 ticks[0m
+[0;32mI (125549) PRIMARY: Wait for sending.....[0m
+[0;32mI (125559) PRIMARY: Send success:[0m
+[0;32mI (125559) PRIMARY: Wait for response.....[0m
+[0;32mI (125559) PRIMARY: Got response:[Hello World 12413] Elapsed:1 ticks[0m
+[0;32mI (126559) PRIMARY: Wait for sending.....[0m
+[0;32mI (126569) PRIMARY: Send success:[0m
+[0;32mI (126569) PRIMARY: Wait for response.....[0m
+[0;32mI (126569) PRIMARY: Got response:[Hello World 12514] Elapsed:1 ticks[0m
+[0;32mI (127569) PRIMARY: Wait for sending.....[0m
+[0;32mI (127579) PRIMARY: Send success:[0m
+[0;32mI (127579) PRIMARY: Wait for response.....[0m
+[0;32mI (127579) PRIMARY: Got response:[Hello World 12615] Elapsed:1 ticks[0m
+[0;32mI (128579) PRIMARY: Wait for sending.....[0m
+[0;32mI (128589) PRIMARY: Send success:[0m
+[0;32mI (128589) PRIMARY: Wait for response.....[0m
+[0;32mI (128589) PRIMARY: Got response:[Hello World 12716] Elapsed:1 ticks[0m
+[0;32mI (129589) PRIMARY: Wait for sending.....[0m
+[0;32mI (129599) PRIMARY: Send success:[0m
+[0;32mI (129599) PRIMARY: Wait for response.....[0m
+[0;32mI (129599) PRIMARY: Got response:[Hello World 12817] Elapsed:1 ticks[0m
+[0;32mI (130599) PRIMARY: Wait for sending.....[0m
+[0;32mI (130609) PRIMARY: Send success:[0m
+[0;32mI (130609) PRIMARY: Wait for response.....[0m
+[0;32mI (130609) PRIMARY: Got response:[Hello World 12918] Elapsed:1 ticks[0m
+[0;32mI (131609) PRIMARY: Wait for sending.....[0m
+[0;32mI (131619) PRIMARY: Send success:[0m
+[0;32mI (131619) PRIMARY: Wait for response.....[0m
+[0;32mI (131619) PRIMARY: Got response:[Hello World 13019] Elapsed:1 ticks[0m
+[0;32mI (132619) PRIMARY: Wait for sending.....[0m
+[0;32mI (132629) PRIMARY: Send success:[0m
+[0;32mI (132629) PRIMARY: Wait for response.....[0m
+[0;32mI (132629) PRIMARY: Got response:[Hello World 13120] Elapsed:1 ticks[0m
+[0;32mI (133629) PRIMARY: Wait for sending.....[0m
+[0;32mI (133639) PRIMARY: Send success:[0m
+[0;32mI (133639) PRIMARY: Wait for response.....[0m
+[0;32mI (133639) PRIMARY: Got response:[Hello World 13221] Elapsed:1 ticks[0m
+[0;32mI (134639) PRIMARY: Wait for sending.....[0m
+[0;32mI (134649) PRIMARY: Send success:[0m
+[0;32mI (134649) PRIMARY: Wait for response.....[0m
+[0;32mI (134649) PRIMARY: Got response:[Hello World 13322] Elapsed:1 ticks[0m
+[0;32mI (135649) PRIMARY: Wait for sending.....[0m
+[0;32mI (135659) PRIMARY: Send success:[0m
+[0;32mI (135659) PRIMARY: Wait for response.....[0m
+[0;32mI (135659) PRIMARY: Got response:[Hello World 13423] Elapsed:1 ticks[0m
+[0;32mI (136659) PRIMARY: Wait for sending.....[0m
+[0;32mI (136669) PRIMARY: Send success:[0m
+[0;32mI (136669) PRIMARY: Wait for response.....[0m
+[0;32mI (136669) PRIMARY: Got response:[Hello World 13524] Elapsed:1 ticks[0m
+[0;32mI (137669) PRIMARY: Wait for sending.....[0m
+[0;32mI (137679) PRIMARY: Send success:[0m
+[0;32mI (137679) PRIMARY: Wait for response.....[0m
+[0;32mI (137679) PRIMARY: Got response:[Hello World 13625] Elapsed:1 ticks[0m
+[0;32mI (138679) PRIMARY: Wait for sending.....[0m
+[0;32mI (138689) PRIMARY: Send success:[0m
+[0;32mI (138689) PRIMARY: Wait for response.....[0m
+[0;32mI (138689) PRIMARY: Got response:[Hello World 13726] Elapsed:1 ticks[0m
+[0;32mI (139689) PRIMARY: Wait for sending.....[0m
+[0;32mI (139699) PRIMARY: Send success:[0m
+[0;32mI (139699) PRIMARY: Wait for response.....[0m
+[0;32mI (139699) PRIMARY: Got response:[Hello World 13827] Elapsed:1 ticks[0m
+[0;32mI (140699) PRIMARY: Wait for sending.....[0m
+[0;32mI (140709) PRIMARY: Send success:[0m
+[0;32mI (140709) PRIMARY: Wait for response.....[0m
+[0;32mI (140709) PRIMARY: Got response:[Hello World 13928] Elapsed:1 ticks[0m
+[0;32mI (141709) PRIMARY: Wait for sending.....[0m
+[0;32mI (141719) PRIMARY: Send success:[0m
+[0;32mI (141719) PRIMARY: Wait for response.....[0m
+[0;32mI (141719) PRIMARY: Got response:[Hello World 14029] Elapsed:1 ticks[0m
+[0;32mI (142719) PRIMARY: Wait for sending.....[0m
+[0;32mI (142729) PRIMARY: Send success:[0m
+[0;32mI (142729) PRIMARY: Wait for response.....[0m
+[0;32mI (142729) PRIMARY: Got response:[Hello World 14130] Elapsed:1 ticks[0m
+[0;32mI (143729) PRIMARY: Wait for sending.....[0m
+[0;32mI (143739) PRIMARY: Send success:[0m
+[0;32mI (143739) PRIMARY: Wait for response.....[0m
+[0;32mI (143739) PRIMARY: Got response:[Hello World 14231] Elapsed:1 ticks[0m
+[0;32mI (144739) PRIMARY: Wait for sending.....[0m
+[0;32mI (144749) PRIMARY: Send success:[0m
+[0;32mI (144749) PRIMARY: Wait for response.....[0m
+[0;32mI (144749) PRIMARY: Got response:[Hello World 14332] Elapsed:1 ticks[0m
+[0;32mI (145749) PRIMARY: Wait for sending.....[0m
+[0;32mI (145759) PRIMARY: Send success:[0m
+[0;32mI (145759) PRIMARY: Wait for response.....[0m
+[0;32mI (145759) PRIMARY: Got response:[Hello World 14433] Elapsed:1 ticks[0m
+[0;32mI (146759) PRIMARY: Wait for sending.....[0m
+[0;32mI (146769) PRIMARY: Send success:[0m
+[0;32mI (146769) PRIMARY: Wait for response.....[0m
+[0;32mI (146769) PRIMARY: Got response:[Hello World 14534] Elapsed:1 ticks[0m
+[0;32mI (147769) PRIMARY: Wait for sending.....[0m
+[0;32mI (147779) PRIMARY: Send success:[0m
+[0;32mI (147779) PRIMARY: Wait for response.....[0m
+[0;32mI (147779) PRIMARY: Got response:[Hello World 14635] Elapsed:1 ticks[0m
+[0;32mI (148779) PRIMARY: Wait for sending.....[0m
+[0;32mI (148789) PRIMARY: Send success:[0m
+[0;32mI (148789) PRIMARY: Wait for response.....[0m
+[0;32mI (148789) PRIMARY: Got response:[Hello World 14736] Elapsed:1 ticks[0m
+[0;32mI (149789) PRIMARY: Wait for sending.....[0m
+[0;32mI (149799) PRIMARY: Send success:[0m
+[0;32mI (149799) PRIMARY: Wait for response.....[0m
+[0;32mI (149799) PRIMARY: Got response:[Hello World 14837] Elapsed:1 ticks[0m
+[0;32mI (150799) PRIMARY: Wait for sending.....[0m
+[0;32mI (150809) PRIMARY: Send success:[0m
+[0;32mI (150809) PRIMARY: Wait for response.....[0m
+[0;32mI (150809) PRIMARY: Got response:[Hello World 14938] Elapsed:1 ticks[0m
+[0;32mI (151809) PRIMARY: Wait for sending.....[0m
+[0;32mI (151819) PRIMARY: Send success:[0m
+[0;32mI (151819) PRIMARY: Wait for response.....[0m
+[0;32mI (151819) PRIMARY: Got response:[Hello World 15039] Elapsed:1 ticks[0m
+[0;32mI (152819) PRIMARY: Wait for sending.....[0m
+[0;32mI (152829) PRIMARY: Send success:[0m
+[0;32mI (152829) PRIMARY: Wait for response.....[0m
+[0;32mI (152829) PRIMARY: Got response:[Hello World 15140] Elapsed:1 ticks[0m
+[0;32mI (153829) PRIMARY: Wait for sending.....[0m
+[0;32mI (153839) PRIMARY: Send success:[0m
+[0;32mI (153839) PRIMARY: Wait for response.....[0m
+[0;32mI (153839) PRIMARY: Got response:[Hello World 15241] Elapsed:1 ticks[0m
+[0;32mI (154839) PRIMARY: Wait for sending.....[0m
+[0;32mI (154849) PRIMARY: Send success:[0m
+[0;32mI (154849) PRIMARY: Wait for response.....[0m
+[0;32mI (154849) PRIMARY: Got response:[Hello World 15342] Elapsed:1 ticks[0m
+[0;32mI (155849) PRIMARY: Wait for sending.....[0m
+[0;32mI (155859) PRIMARY: Send success:[0m
+[0;32mI (155859) PRIMARY: Wait for response.....[0m
+[0;32mI (155859) PRIMARY: Got response:[Hello World 15443] Elapsed:1 ticks[0m
+[0;32mI (156859) PRIMARY: Wait for sending.....[0m
+[0;32mI (156869) PRIMARY: Send success:[0m
+[0;32mI (156869) PRIMARY: Wait for response.....[0m
+[0;32mI (156869) PRIMARY: Got response:[Hello World 15544] Elapsed:1 ticks[0m
+[0;32mI (157869) PRIMARY: Wait for sending.....[0m
+[0;32mI (157879) PRIMARY: Send success:[0m
+[0;32mI (157879) PRIMARY: Wait for response.....[0m
+[0;32mI (157879) PRIMARY: Got response:[Hello World 15645] Elapsed:1 ticks[0m
+[0;32mI (158879) PRIMARY: Wait for sending.....[0m
+[0;32mI (158889) PRIMARY: Send success:[0m
+[0;32mI (158889) PRIMARY: Wait for response.....[0m
+[0;32mI (158889) PRIMARY: Got response:[Hello World 15746] Elapsed:1 ticks[0m
+[0;32mI (159889) PRIMARY: Wait for sending.....[0m
+[0;32mI (159899) PRIMARY: Send success:[0m
+[0;32mI (159899) PRIMARY: Wait for response.....[0m
+[0;32mI (159899) PRIMARY: Got response:[Hello World 15847] Elapsed:1 ticks[0m
+[0;32mI (160899) PRIMARY: Wait for sending.....[0m
+[0;32mI (160909) PRIMARY: Send success:[0m
+[0;32mI (160909) PRIMARY: Wait for response.....[0m
+[0;32mI (160909) PRIMARY: Got response:[Hello World 15948] Elapsed:1 ticks[0m
+[0;32mI (161909) PRIMARY: Wait for sending.....[0m
+[0;32mI (161919) PRIMARY: Send success:[0m
+[0;32mI (161919) PRIMARY: Wait for response.....[0m
+[0;32mI (161919) PRIMARY: Got response:[Hello World 16049] Elapsed:1 ticks[0m
+[0;32mI (162919) PRIMARY: Wait for sending.....[0m
+[0;32mI (162929) PRIMARY: Send success:[0m
+[0;32mI (162929) PRIMARY: Wait for response.....[0m
+[0;32mI (162929) PRIMARY: Got response:[Hello World 16150] Elapsed:1 ticks[0m
+[0;32mI (163929) PRIMARY: Wait for sending.....[0m
+[0;32mI (163939) PRIMARY: Send success:[0m
+[0;32mI (163939) PRIMARY: Wait for response.....[0m
+[0;32mI (163939) PRIMARY: Got response:[Hello World 16251] Elapsed:1 ticks[0m
+[0;32mI (164939) PRIMARY: Wait for sending.....[0m
+[0;32mI (164949) PRIMARY: Send success:[0m
+[0;32mI (164949) PRIMARY: Wait for response.....[0m
+[0;32mI (164949) PRIMARY: Got response:[Hello World 16352] Elapsed:1 ticks[0m
+[0;32mI (165949) PRIMARY: Wait for sending.....[0m
+[0;32mI (165959) PRIMARY: Send success:[0m
+[0;32mI (165959) PRIMARY: Wait for response.....[0m
+[0;32mI (165959) PRIMARY: Got response:[Hello World 16453] Elapsed:1 ticks[0m
+[0;32mI (166959) PRIMARY: Wait for sending.....[0m
+[0;32mI (166969) PRIMARY: Send success:[0m
+[0;32mI (166969) PRIMARY: Wait for response.....[0m
+[0;32mI (166969) PRIMARY: Got response:[Hello World 16554] Elapsed:1 ticks[0m
+[0;32mI (167969) PRIMARY: Wait for sending.....[0m
+[0;32mI (167979) PRIMARY: Send success:[0m
+[0;32mI (167979) PRIMARY: Wait for response.....[0m
+[0;32mI (167979) PRIMARY: Got response:[Hello World 16655] Elapsed:1 ticks[0m
+[0;32mI (168979) PRIMARY: Wait for sending.....[0m
+[0;32mI (168989) PRIMARY: Send success:[0m
+[0;32mI (168989) PRIMARY: Wait for response.....[0m
+[0;32mI (168989) PRIMARY: Got response:[Hello World 16756] Elapsed:1 ticks[0m
+[0;32mI (169989) PRIMARY: Wait for sending.....[0m
+[0;32mI (169999) PRIMARY: Send success:[0m
+[0;32mI (169999) PRIMARY: Wait for response.....[0m
+[0;32mI (169999) PRIMARY: Got response:[Hello World 16857] Elapsed:1 ticks[0m
+[0;32mI (170999) PRIMARY: Wait for sending.....[0m
+[0;32mI (171009) PRIMARY: Send success:[0m
+[0;32mI (171009) PRIMARY: Wait for response.....[0m
+[0;32mI (171009) PRIMARY: Got response:[Hello World 16958] Elapsed:1 ticks[0m
+[0;32mI (172009) PRIMARY: Wait for sending.....[0m
+[0;32mI (172019) PRIMARY: Send success:[0m
+[0;32mI (172019) PRIMARY: Wait for response.....[0m
+[0;32mI (172019) PRIMARY: Got response:[Hello World 17059] Elapsed:1 ticks[0m
+[0;32mI (173019) PRIMARY: Wait for sending.....[0m
+[0;32mI (173029) PRIMARY: Send success:[0m
+[0;32mI (173029) PRIMARY: Wait for response.....[0m
+[0;32mI (173029) PRIMARY: Got response:[Hello World 17160] Elapsed:1 ticks[0m
+[0;32mI (174029) PRIMARY: Wait for sending.....[0m
+[0;32mI (174039) PRIMARY: Send success:[0m
+[0;32mI (174039) PRIMARY: Wait for response.....[0m
+[0;32mI (174039) PRIMARY: Got response:[Hello World 17261] Elapsed:1 ticks[0m
+[0;32mI (175039) PRIMARY: Wait for sending.....[0m
+[0;32mI (175049) PRIMARY: Send success:[0m
+[0;32mI (175049) PRIMARY: Wait for response.....[0m
+[0;32mI (175049) PRIMARY: Got response:[Hello World 17362] Elapsed:1 ticks[0m
+[0;32mI (176049) PRIMARY: Wait for sending.....[0m
+[0;32mI (176059) PRIMARY: Send success:[0m
+[0;32mI (176059) PRIMARY: Wait for response.....[0m
+[0;32mI (176059) PRIMARY: Got response:[Hello World 17463] Elapsed:1 ticks[0m
+[0;32mI (177059) PRIMARY: Wait for sending.....[0m
+[0;32mI (177069) PRIMARY: Send success:[0m
+[0;32mI (177069) PRIMARY: Wait for response.....[0m
+[0;32mI (177069) PRIMARY: Got response:[Hello World 17564] Elapsed:1 ticks[0m
+[0;32mI (178069) PRIMARY: Wait for sending.....[0m
+[0;32mI (178079) PRIMARY: Send success:[0m
+[0;32mI (178079) PRIMARY: Wait for response.....[0m
+[0;32mI (178079) PRIMARY: Got response:[Hello World 17665] Elapsed:1 ticks[0m
+[0;32mI (179079) PRIMARY: Wait for sending.....[0m
+[0;32mI (179089) PRIMARY: Send success:[0m
+[0;32mI (179089) PRIMARY: Wait for response.....[0m
+[0;32mI (179089) PRIMARY: Got response:[Hello World 17766] Elapsed:1 ticks[0m
+[0;32mI (180089) PRIMARY: Wait for sending.....[0m
+[0;32mI (180099) PRIMARY: Send success:[0m
+[0;32mI (180099) PRIMARY: Wait for response.....[0m
+[0;32mI (180099) PRIMARY: Got response:[Hello World 17867] Elapsed:1 ticks[0m
+[0;32mI (181099) PRIMARY: Wait for sending.....[0m
+[0;32mI (181109) PRIMARY: Send success:[0m
+[0;32mI (181109) PRIMARY: Wait for response.....[0m
+[0;32mI (181109) PRIMARY: Got response:[Hello World 17968] Elapsed:1 ticks[0m
+[0;32mI (182109) PRIMARY: Wait for sending.....[0m
+[0;32mI (182119) PRIMARY: Send success:[0m
+[0;32mI (182119) PRIMARY: Wait for response.....[0m
+[0;32mI (182119) PRIMARY: Got response:[Hello World 18069] Elapsed:1 ticks[0m
+[0;32mI (183119) PRIMARY: Wait for sending.....[0m
+[0;32mI (183129) PRIMARY: Send success:[0m
+[0;32mI (183129) PRIMARY: Wait for response.....[0m
+[0;32mI (183129) PRIMARY: Got response:[Hello World 18170] Elapsed:1 ticks[0m

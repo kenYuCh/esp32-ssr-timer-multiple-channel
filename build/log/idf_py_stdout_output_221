@@ -1,0 +1,227 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+SHA-256 comparison failed:
+Calculated: f6480e415161efbbcec0fe27d1780e22870b6d8f0027b8455711d0f74c133f59
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9914
+[0;32mI (45) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Mar 22 2025 23:26:23[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (67) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (76) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 otadata          OTA data         01 00 00010000 00002000[0m
+[0;32mI (106) boot:  3 factory          factory app      00 00 00020000 00200000[0m
+[0;32mI (113) boot:  4 ota_0            OTA app          00 10 00220000 00200000[0m
+[0;32mI (121) boot:  5 ota_1            OTA app          00 11 00420000 00200000[0m
+[0;32mI (128) boot:  6 spiffs           Unknown data     01 82 00620000 00080000[0m
+[0;32mI (136) boot: End of partition table[0m
+[0;32mI (140) boot: Defaulting to factory image[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3c030020 size=108b0h ( 67760) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=000308d8 vaddr=3fc94600 size=02b80h ( 11136) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00033460 vaddr=40374000 size=0cbb8h ( 52152) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=2e174h (188788) map[0m
+[0;32mI (200) esp_image: segment 4: paddr=0006e19c vaddr=40380bb8 size=03948h ( 14664) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (209) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (234) cpu_start: Project name:     main[0m
+[0;32mI (238) cpu_start: App version:      0.0.1[0m
+[0;32mI (243) cpu_start: Compile time:     Mar 23 2025 09:51:18[0m
+[0;32mI (249) cpu_start: ELF file SHA256:  d99156a4c...[0m
+[0;32mI (255) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (260) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (265) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (270) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (274) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FC97DE8 len 00051928 (326 KiB): RAM[0m
+[0;32mI (288) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (294) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (300) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (307) spi_flash: detected chip: boya[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;32mI (315) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (321) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) SYS: REBOOT[0m
+Build at Mar 23 2025 21:50:59
+[0;32mI (639) NVS: Initialze NVS[0m
+ - WiFi SSID: SianAP
+ - WiFi Password: sian79917
+ - MQTT URL: mqtts://192.168.1.108
+ - MQTT Username: ghost29083
+ - MQTT Password: 123456789
+ - Measurement publish period (seconds): 60
+ - UTC: CST-8
+ - DeviceSerial: 123
+ - OTA_URL: 
+[0;32mI (709) SPIFFS: SPIFFS Mounted.[0m
+[0;32mI (709) SYS: Initialize LED[0m
+[0;32mI (709) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (709) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (719) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (729) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (739) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+swv-channel load. 
+[0;32mI (779) Heap: Minimum free heap ever: 353068 bytes[0m
+[0;32mI (779) PRIMARY: Start[0m
+[0;32mI (779) NRF24: CONFIG_MISO_GPIO=12[0m
+[0;32mI (789) NRF24: CONFIG_MOSI_GPIO=11[0m
+[0;32mI (789) NRF24: CONFIG_SCLK_GPIO=10[0m
+[0;32mI (799) NRF24: CONFIG_CE_GPIO=8[0m
+[0;32mI (799) NRF24: CONFIG_CSN_GPIO=9[0m
+[0;32mI (799) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (809) gpio: GPIO[9]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (819) NRF24: spi_bus_initialize=0[0m
+[0;32mI (829) NRF24: spi_bus_add_device=0[0m
+[0;33mW (829) PRIMARY: Set RF Data Ratio to 250KBps[0m
+[0;33mW (839) PRIMARY: CONFIG_RETRANSMIT_DELAY=1[0m
+================ SPI Configuration ================
+CSN Pin  	 = GPIO9
+CE Pin		 = GPIO8
+Clock Speed	 = 4000000
+================ NRF Configuration ================
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x464748494a 0x4142434445
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x464748494a
+RX_PW_P0-6	 = 0x20 0x20 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x5a
+RF_SETUP	 = 0x27
+CONFIG		 = 0x2b
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250Kbps
+CRC Length	 = 8 bits
+PA Power	 = PA_MAX
+Retransmit	 = 500 us
+[0;32mI (889) PRIMARY: Wait for sending.....[0m
+[0;33mW (909) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (909) PRIMARY: Send fail:[0m
+[0;32mI (1209) PRIMARY: Wait for sending.....[0m
+[0;33mW (1219) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1219) PRIMARY: Send fail:[0m
+[0;32mI (1519) PRIMARY: Wait for sending.....[0m
+[0;33mW (1529) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1529) PRIMARY: Send fail:[0m
+[0;32mI (1829) PRIMARY: Wait for sending.....[0m
+[0;33mW (1839) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (1839) PRIMARY: Send fail:[0m
+[0;32mI (2139) PRIMARY: Wait for sending.....[0m
+[0;33mW (2149) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2149) PRIMARY: Send fail:[0m
+[0;32mI (2449) PRIMARY: Wait for sending.....[0m
+[0;33mW (2459) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2459) PRIMARY: Send fail:[0m
+[0;32mI (2759) PRIMARY: Wait for sending.....[0m
+[0;33mW (2769) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (2769) PRIMARY: Send fail:[0m
+Into data_task 
+Channel-2, Schedule Running IDLE.
+[0;32mI (3069) PRIMARY: Wait for sending.....[0m
+[0;33mW (3079) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3079) PRIMARY: Send fail:[0m
+[0;32mI (3379) PRIMARY: Wait for sending.....[0m
+[0;33mW (3389) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3389) PRIMARY: Send fail:[0m
+[0;32mI (3689) PRIMARY: Wait for sending.....[0m
+[0;33mW (3699) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (3699) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (3999) PRIMARY: Wait for sending.....[0m
+[0;33mW (4009) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (4009) PRIMARY: Send fail:[0m
+[0;32mI (4309) PRIMARY: Wait for sending.....[0m
+[0;33mW (4319) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (4319) PRIMARY: Send fail:[0m
+[0;32mI (4619) PRIMARY: Wait for sending.....[0m
+[0;33mW (4629) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (4629) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+[0;32mI (4929) PRIMARY: Wait for sending.....[0m
+[0;33mW (4939) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (4939) PRIMARY: Send fail:[0m
+[0;32mI (5239) PRIMARY: Wait for sending.....[0m
+[0;33mW (5249) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (5249) PRIMARY: Send fail:[0m
+[0;32mI (5549) PRIMARY: Wait for sending.....[0m
+[0;33mW (5559) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (5559) PRIMARY: Send fail:[0m
+Channel-2, Schedule Running IDLE.
+----- SwitchValve ----- Current Time: 00:00 -----
+**** channel 1, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 2, mode: 2, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:01, StopTime: 08:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 2: StartTime: 10:01, StopTime: 16:59, on_time:    60, interval_time:    60, count:  1000, period_enable: 1 
+--- Period: 3: StartTime: 17:33, StopTime: 23:59, on_time:    60, interval_time:    60, count:  4002, period_enable: 1 
+**** channel 3, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 4, mode: 1, trigger: 0, output_state: 1 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+**** channel 5, mode: 0, trigger: 0, output_state: 0 ****
+--- Period: 1: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 2: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+--- Period: 3: StartTime: 00:00, StopTime: 00:00, on_time:     0, interval_time:     0, count:     0, period_enable: 0 
+[0;32mI (5949) PRIMARY: Wait for sending.....[0m
+[0;33mW (5969) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (5969) PRIMARY: Send fail:[0m
+[0;32mI (6269) PRIMARY: Wait for sending.....[0m
+[0;33mW (6279) NRF24: Maximum number of TX retries interrupt[0m
+[0;33mW (6279) PRIMARY: Send fail:[0m
+RestartPrimaryTask
+[0;31mE (11959) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (11959) task_wdt:  - PRIMARY (CPU 0/1)[0m
+[0;31mE (11959) task_wdt:  - main (CPU 0)[0m
+[0;31mE (11959) task_wdt: Tasks currently running:[0m
+[0;31mE (11959) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (11959) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (11959) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42014A7B:0x3FC95710 0x42014F00:0x3FC95730 0x403772F5:0x3FC95760 0x40379637:0x3FC9C2E0 0x42003466:0x3FC9C300 0x4037C819:0x3FC9C320 0x4037B8C5:0x3FC9C340
+
+[0;31mE (11959) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40379186:0x3FC95D40 0x403772F5:0x3FC95D60 0x40379637:0x3FC9CA40 0x42003466:0x3FC9CA60 0x4037C819:0x3FC9CA80 0x4037B8C5:0x3FC9CAA0
+
