@@ -6,7 +6,7 @@
 
 // --------------------------------------- DEVICE Base ------- Check
 #define MAX_PORT 30
-#define GATEWAY_ID "AA01830FF1"
+#define GATEWAY_ID "as0ll3kdfh38"
 #define USE_MODEL MODEL_TYPE_SENSOR
 #define USE_MODEL_METHOD METHOD_I2C_TYPE
 #define USE_BOARD SEEED_ESP32_WROOM_D3
