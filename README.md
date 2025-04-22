@@ -34,3 +34,6 @@ Below is short explanation of remaining files in the project folder.
 Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
 They are not used or needed when building with CMake and idf.py.
 # esp32-ssr-timer-multiple-channel
+
+
+<img width="875" alt="截圖 2025-03-08 中午12 05 16" src="https://github.com/user-attachments/assets/63b1dfb2-968f-443e-973e-697ee578451a" />
