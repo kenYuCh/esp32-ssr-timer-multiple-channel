@@ -1,14 +1,7 @@
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C6 | ESP32-H2 | ESP32-P4 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
 
-# _Sample project_
-
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
-
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
-
-
+# ESP32 SSR Timer Multiple Channel
 
 ## How to use example
 We encourage the users to use the example as a template for the new projects.
@@ -33,7 +26,7 @@ Below is short explanation of remaining files in the project folder.
 ```
 Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
 They are not used or needed when building with CMake and idf.py.
-# ESP32 SSR Timer Multiple Channel
+
 
 ## Overview
 This project involves controlling a 4-Channel Relay Module using an ESP32-S3 microcontroller. The relays can handle 110~220VAC or 3~32VDC. The system communicates via MQTT to manage multiple channels, each with three non-overlapping operating periods. Each period includes configurable parameters such as start time, stop time, running duration, interval duration, and number of runs.
