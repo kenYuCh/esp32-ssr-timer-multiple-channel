@@ -62,6 +62,7 @@ Each of the four relay channels can be independently controlled. Each channel su
 - **Count (`cnt`)**: Number of ON/OFF cycles (e.g., "4002").
 - **Period Enable (`period_en`)**: Enable/disable period (1 = enabled, 0 = disabled).
 - **Mode (`mode`)**: Operation mode (e.g., "2" for timer-based control).
+- !!! ctrl: channelId-periodId
 
 ## MQTT Communication
 The system uses MQTT to receive configuration commands. Each message is a JSON payload specifying the channel, period, and parameters. Below are example payloads for a single channel's three periods:
