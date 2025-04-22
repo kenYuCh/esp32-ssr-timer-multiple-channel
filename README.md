@@ -65,7 +65,7 @@ Each of the four relay channels can be independently controlled. Each channel su
 
 ## MQTT Communication
 The system uses MQTT to receive configuration commands. Each message is a JSON payload specifying the channel, period, and parameters. Below are example payloads for a single channel's three periods:
-
+[ Reserve one channel (CH5) ]
 <img width="875" alt="截圖 2025-03-08 中午12 05 16" src="https://github.com/user-attachments/assets/02556598-5b79-4c7e-abc5-24cf3ce75077" />
 
 ### Period 1
