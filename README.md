@@ -36,4 +36,10 @@ They are not used or needed when building with CMake and idf.py.
 # esp32-ssr-timer-multiple-channel
 
 
+There are four relays in total that can control 110~220VAC 3~32VDC.
+Tools: ESP32 s3, 4-Channel Relay Module,
+Communication: MQTT
+illustrate:
+Each Channel has three operating periods, and each period cannot be repeated.
+There will be a start time and a stop time that can be operated, and parameters such as the running seconds, interval seconds, and the number of runs can be set.
 <img width="875" alt="截圖 2025-03-08 中午12 05 16" src="https://github.com/user-attachments/assets/63b1dfb2-968f-443e-973e-697ee578451a" />
