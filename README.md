@@ -43,6 +43,7 @@ This project involves controlling a 4-Channel Relay Module using an ESP32-S3 mic
 - **Relay Module**: 4-Channel Relay Module (compatible with 110~220VAC, 3~32VDC)
 - **Power Supply**: Ensure proper voltage for ESP32-S3 and relay module
 - **Network**: Wi-Fi for MQTT communication
+- **NVS**: The nvs mechanism is used. All setting parameters will be permanently stored in the device.
 
 ## Software Requirements
 - **Platform**: ESP32-IDF
