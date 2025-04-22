@@ -45,7 +45,7 @@ This project involves controlling a 4-Channel Relay Module using an ESP32-S3 mic
 - **Network**: Wi-Fi for MQTT communication
 
 ## Software Requirements
-- **Platform**: Arduino IDE or PlatformIO
+- **Platform**: ESP32 IDF
 - **Libraries**:
   - PubSubClient (for MQTT)
   - WiFi (for ESP32 Wi-Fi connectivity)
