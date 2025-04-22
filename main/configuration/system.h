@@ -3,8 +3,8 @@
 #define SYSTEMS_H
 
 // --------------------------------------- WIFI ---------------------------------------
-#define WIFI_SSID      "SianAP"
-#define WIFI_PASSWORD  "sian79917"
+#define WIFI_SSID      "XXXXX"
+#define WIFI_PASSWORD  "XXXXXX"
 #define WIFI_CHECK_CONN_EVERY_X_SEC 5
 
 
