@@ -47,3 +47,58 @@ Each Channel has three operating periods, and each period cannot be repeated.
 
 There will be a start time and a stop time that can be operated, and parameters such as the running seconds, interval seconds, and the number of runs can be set.
 <img width="875" alt="截圖 2025-03-08 中午12 05 16" src="https://github.com/user-attachments/assets/63b1dfb2-968f-443e-973e-697ee578451a" />
+
+## MQTT operations:
+'''
+// period-1
+{
+	"id":	"0",
+	"sn":	"123",
+	"label":	"switch valve",
+	"label_en": "multiple channels",
+	"ctrl":	"2-1",
+	"params":	[
+        {"name": "st_time", "value": "00:001"},
+        {"name": "sp_time", "value": "08:59"},
+        {"name": "on_dur", "value": "30"},
+        {"name": "intv_dur", "value": "10"},
+        {"name": "cnt", "value": "4002"},
+        {"name": "period_en", "value": "1"},
+        {"name": "mode", "value": "2"}
+	]
+}
+// period-2
+{
+	"id":	"0",
+	"sn":	"123",
+	"label":	"switch valve",
+	"label_en": "multiple channels",
+	"ctrl":	"2-2",
+	"params":	[
+        {"name": "st_time", "value": "10:33"},
+        {"name": "sp_time", "value": "14:59"},
+        {"name": "on_dur", "value": "30"},
+        {"name": "intv_dur", "value": "10"},
+        {"name": "cnt", "value": "4002"},
+        {"name": "period_en", "value": "1"},
+        {"name": "mode", "value": "2"}
+	]
+}
+// period-3
+{
+	"id":	"0",
+	"sn":	"123",
+	"label":	"switch valve",
+	"label_en": "multiple channels",
+	"ctrl":	"2-3",
+	"params":	[
+        {"name": "st_time", "value": "17:33"},
+        {"name": "sp_time", "value": "23:59"},
+        {"name": "on_dur", "value": "30"},
+        {"name": "intv_dur", "value": "10"},
+        {"name": "cnt", "value": "4002"},
+        {"name": "period_en", "value": "1"},
+        {"name": "mode", "value": "2"}
+	]
+}
+'''
